@@ -1,0 +1,35 @@
+Meine Projektidee soll beinhalten: 
+
+- Ein Quiz mit vier Multiple Choice Antwortmöglichkeiten. (Webanwendung)
+
+- Der Fragepool besteht aus simplen und komplexen Fragen. (Bereiche Medien, Computer, Games und Film)
+
+- Die Fragen werden mit der Zeit anspruchsvoller/komplexer.
+
+- Schnelligkeit und schnelles Denken steht im Vordergrund!
+
+
+- Besonderheiten: 
+
+	- Es besteht ein Zeitlimit für jede Frage, welche immer kürzer wird. (Maximal 15 Sekunden zum Anfang pro Frage)
+
+	- Als Eingabegerät wird die Maus genutzt.
+	
+	- Je schneller der Nutzer/Spieler die Fragen beantwortet, desto mehr "Punkte" erhält dieser.
+
+	- Ziel des Quizes ist es, eine möglichst hohe Punktzahl (Highscore), durch Schnelligkeit, zu erreichen.
+
+	- "Joker" oder Hilfen gibt es keine.
+
+	- Der Nutzer startet mit 3 "Leben".
+
+	- Bei 10 richtig beantworteten Fragen hintereinander, besteht die Möglichkeit ein "Leben" zurück zu erhalten.
+
+	- Verloren hat man, sobald alle "Leben" verloren sind (falsche Antworten).
+
+
+
+
+
+	
+	
