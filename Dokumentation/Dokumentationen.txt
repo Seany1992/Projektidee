@@ -1,0 +1,31 @@
+Projektdokumentation 
+
+07.04.2016
+- HTML-Datei strukt.html erstellt.
+- 20 User als Collaborators für mein Repository hinzugefügt (Aufgabe3)
+
+
+12.04.2016
+-Feedback abgegeben
+SusannaAlbrecht:
+<!-- Feedback Seanny1992 12.04.2016
++-Sehr gute Struktur für die Projektidee, die alles wichtige und nennenswertes beinhaltet 
+
+
+16.04.2016
+-Feedback abgegeben
+soenkelange:
+<!-- Feedback Seany1992 16.04.2016
+ +- Gute Struktur für die Projektidee, die  nahezu alles wichtige und nennenswerte beinhaltet.
+ +- Wie sieht es mit einer Log-In Maske aus, mit entsprechend vielen Eingabefeldern für die einzelnen Spielernamen?
+ +- Eine Schaltfläche zum Aufrufen der Spielregeln, in Form einer einfachen Textdatei? 
+ +- Hast du dir bereits Gedanken gemacht, über mögliche Bilddatein (bildbereiche) für die Spielkarten etc.?
+ +--> 
+
+SunnySunny93:
+<!-- Feedback Seanny1992 16.04.2016 
+ +- Sehr gut ausgearbeitete und übersichtliche Struktur für die Projektidee, die alles wichtige und nennenswerte beinhaltet.
+ +- Wie sieht es mit einer Schaltfäche (Button) aus, zum vorzeitigen Beenden der Runde?
+ +-->
+
+  
