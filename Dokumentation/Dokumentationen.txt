@@ -2,30 +2,38 @@ Projektdokumentation
 
 07.04.2016
 - HTML-Datei strukt.html erstellt.
-- 20 User als Collaborators für mein Repository hinzugefügt (Aufgabe3)
+- 20 User als Collaborators fÃ¼r mein Repository hinzugefÃ¼gt (Aufgabe3)
 
 
 12.04.2016
 -Feedback abgegeben
 SusannaAlbrecht:
 <!-- Feedback Seanny1992 12.04.2016
-+-Sehr gute Struktur für die Projektidee, die alles wichtige und nennenswertes beinhaltet 
++-Sehr gute Struktur fÃ¼r die Projektidee, die alles wichtige und nennenswertes beinhaltet 
 
 
 16.04.2016
 -Feedback abgegeben
 soenkelange:
 <!-- Feedback Seany1992 16.04.2016
- +- Gute Struktur für die Projektidee, die  nahezu alles wichtige und nennenswerte beinhaltet.
- +- Wie sieht es mit einer Log-In Maske aus, mit entsprechend vielen Eingabefeldern für die einzelnen Spielernamen?
- +- Eine Schaltfläche zum Aufrufen der Spielregeln, in Form einer einfachen Textdatei? 
- +- Hast du dir bereits Gedanken gemacht, über mögliche Bilddatein (bildbereiche) für die Spielkarten etc.?
+ +- Gute Struktur fÃ¼r die Projektidee, die  nahezu alles wichtige und nennenswerte beinhaltet.
+ +- Wie sieht es mit einer Log-In Maske aus, mit entsprechend vielen Eingabefeldern fÃ¼r die einzelnen Spielernamen?
+ +- Eine SchaltflÃ¤che zum Aufrufen der Spielregeln, in Form einer einfachen Textdatei? 
+ +- Hast du dir bereits Gedanken gemacht, Ã¼ber mÃ¶gliche Bilddatein (bildbereiche) fÃ¼r die Spielkarten etc.?
  +--> 
 
 SunnySunny93:
 <!-- Feedback Seanny1992 16.04.2016 
- +- Sehr gut ausgearbeitete und übersichtliche Struktur für die Projektidee, die alles wichtige und nennenswerte beinhaltet.
- +- Wie sieht es mit einer Schaltfäche (Button) aus, zum vorzeitigen Beenden der Runde?
+ +- Sehr gut ausgearbeitete und Ã¼bersichtliche Struktur fÃ¼r die Projektidee, die alles wichtige und nennenswerte beinhaltet.
+ +- Wie sieht es mit einer SchaltfÃ¤che (Button) aus, zum vorzeitigen Beenden der Runde?
  +-->
 
+
+17.04.2016
+- Feedback abgegben
+s-hajir:
+<!-- Feedback Seany1992 17.04.2016
+- Gute Struktur, die vieles beinhaltet, was wichtig ist!
+- Wie sieht es mit weiteren SchaltflÃ¤chen, zur Fortbewegung der Spielfigur aus? (z.B. fÃ¼r Einagben mit dem Touchscreen)
+-->
   
