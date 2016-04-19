@@ -30,10 +30,19 @@ SunnySunny93:
 
 
 17.04.2016
-- Feedback abgegben
+- Feedback abgegeben
 s-hajir:
 <!-- Feedback Seany1992 17.04.2016
 - Gute Struktur, die vieles beinhaltet, was wichtig ist!
 - Wie sieht es mit weiteren Schaltflächen, zur Fortbewegung der Spielfigur aus? (z.B. für Einagben mit dem Touchscreen)
 -->
   
+
+19.04.2016
+- Feedback abgegeben
+Senyl:
+<!-- Feedback Seany1992 19.04.2016 
+- Im großen und ganzen eine gut ausgearbeitete Struktur zur Projektidee. 
+- Wie sieht es mit einer Spielanleitung aus? Man könnte eine Schaltfläche (Button) implementieren, die eine Textdatei mit Regelwerk zum Nachschlagen, öffnet.
+- Ich würde eine Einbindung der Statistiken am Ende einer Runde, für sinnvoll erachten. (Zusammenfassung des Spielergebnisses) 
+  -->
