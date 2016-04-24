@@ -46,3 +46,13 @@ Senyl:
 - Wie sieht es mit einer Spielanleitung aus? Man könnte eine Schaltfläche (Button) implementieren, die eine Textdatei mit Regelwerk zum Nachschlagen, öffnet.
 - Ich würde eine Einbindung der Statistiken am Ende einer Runde, für sinnvoll erachten. (Zusammenfassung des Spielergebnisses) 
   -->
+
+
+24.04.2016
+shayan2013:
+<!-- Feedback Seany1992 24.04.2016
+- Gute Struktur, die vieles beinhaltet, was wichtig ist!
+- Ich würde noch ein Auswahlmenü mit Schaltflächen, für den Schwierigkeitsgrad, integrieren (siehe Projektidee).
+- Hilfreich ist auch immer eine Button zum Aufrufen der Hilfe (Spielregeln), in Form einer Textdatei.
+- Am Ende würde ich noch eine Tabelle mit der Spielstatistik einfügen (Stichwort Datenbank).
+-->
