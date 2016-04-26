@@ -1,0 +1,36 @@
+body 
+{
+	font-family:Verdana; 	/*Schriftart*/
+	background-color:lightgrey;
+	font-size: 14px	
+}
+
+header
+{
+	margin: 30px 40px;		/*Außenabstand, zwei Werte
+							Der erste Wert für den Abstand oben und unten, 
+							der Zweite Wert für links und rechts*/
+	background:darkblue;
+	color:#ffffff;
+	padding: 4px 10px;		/*Innenabstand (padding, englisch: Polsterung)*/
+	overflow: 
+}
+
+li 
+{
+	list-style:none;		/*in einer ul formatierung der Bullet Points*/
+	font-style:italic;	
+}
+
+.container 
+{
+	width: 900px;
+	margin: 30px 40px; 
+	overflow: auto;
+	font-size: 16px;
+}
+
+
+
+
+h3 {color:darkblue;}
