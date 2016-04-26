@@ -56,3 +56,9 @@ shayan2013:
 - Hilfreich ist auch immer eine Button zum Aufrufen der Hilfe (Spielregeln), in Form einer Textdatei.
 - Am Ende würde ich noch eine Tabelle mit der Spielstatistik einfügen (Stichwort Datenbank).
 -->
+
+25.04.2016
+- Erstellung einer Idee für die erste Grundstruktur mittels Html. Eigenständige Einarbeitung in HTML5, mittels Skript und einschlägigen Webseiten.
+
+26.04.2016
+- Erstellung einer zu der Html Datei passenden CSS Datei. Eigenständige Einarbeitung in CSS. 
