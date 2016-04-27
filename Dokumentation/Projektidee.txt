@@ -1,70 +1,78 @@
 === Projektidee Seany1992, 2016-04-05 ===
 
-- Ein Quiz mit vier Multiple Choice Antwortmöglichkeiten. (Webanwendung)
+Meine Projektidee: Ein Quiz (verteilte Webanwendung)
+
+- Einem Quiz mit vier Multiple Choice AntwortmÃ¶glichkeiten. Durch anklicken der richtigen Antwort, gelangt man zur nÃ¤chsten Frage.
+
+- Es wird fÃ¼r die Bedienung, die Maus oder der Touchscreen als Eingabegemethoden erkannt, die SchaltflÃ¤chen etc. werden damit bedient.
+
+- Die Spieler werden die MÃ¶glichkeit haben sich einloggen zu kÃ¶nnen, um ihren Nutzernamen anzugeben ggf. mit Passwort (Log in Maske).
+
+- Nur eine Antwort ist immer richtig, durch SchaltflÃ¤chen kann man "weiter" oder "zurÃ¼ck" gehen in den Fragen und am Ende (letzte
+  Frage) wird durch "Abgabe" die erreichte Punktzahl errechnet.
+
+- Eine Highscoreliste am Ende jeder Runde ist geplant. (Stichwort Datenbank)
+
+- Einrichtung eines Interfaces, damit der Admin neue Fragen hinzufÃ¼gen -und sie bearbeiten kann.
+
+- User kÃ¶nnen sich Ã¼ber die Fragen und Antworten austauschen, d.h. sie kÃ¶nnen Feedback abgeben. (User Forum)
 
 - Der Fragepool besteht aus simplen und komplexen Fragen. (Bereiche Medien, Computer, Games und Film)
 
-- Die Fragen werden mit der Zeit anspruchsvoller/komplexer.
-
-- Schnelligkeit und schnelles Denken steht im Vordergrund!
-
-
 - Besonderheiten: 
 
-	- Es besteht ein Zeitlimit für jede Frage, welche immer kürzer wird. (Maximal 15 Sekunden zum Anfang pro Frage)
-
-	- Als Eingabegerät wird die Maus genutzt.
+	- Es besteht ein Zeitlimit fÃ¼r jede Frage, welche immer kÃ¼rzer wird. (Maximal 15 Sekunden zum Anfang pro Frage)
 	
-	- Je schneller der Nutzer/Spieler die Fragen beantwortet, desto mehr "Punkte" erhält dieser.
+	- Je schneller der Nutzer/Spieler die Fragen beantwortet, desto mehr "Punkte" erhÃ¤lt dieser.
 
-	- Ziel des Quizes ist es, eine möglichst hohe Punktzahl (Highscore), durch Schnelligkeit, zu erreichen.
-
-	- "Joker" oder Hilfen gibt es keine.
+	- Ziel des Quizes ist es, eine mÃ¶glichst hohe Punktzahl (Highscore), durch Schnelligkeit, zu erreichen.
 
 	- Der Nutzer startet mit 3 "Leben".
 
-	- Bei 10 richtig beantworteten Fragen hintereinander, besteht die Möglichkeit ein "Leben" zurück zu erhalten.
+	- Bei 10 richtig beantworteten Fragen hintereinander, besteht die MÃ¶glichkeit ein "Leben" zurÃ¼ck zu erhalten.
 
-	- Verloren hat man, sobald alle "Leben" verloren sind (falsche Antworten).
+	- Verloren hat man, sobald alle "Leben" verloren sind, durch falsche Antworten. (Niederlagebedingung)
+	
+	- Geschafft hat man es, wenn man durch alle Fragen gekommen ist und man mindestens noch 1 "Leben" Ã¼brig hat. (Siegbedingung)
 
 === Feedback Alpers, 2016-04-06 ===
 
 Der Vorschlag ist gut.
 
-Allerdings legen Sie bei der Beschreibung den Fokus an einigen Stellen auf Aspekte, die nicht direkt die zu programmierende Funktionalität betreffen:
+Allerdings legen Sie bei der Beschreibung den Fokus an einigen Stellen auf Aspekte, die nicht direkt die zu programmierende FunktionalitÃ¤t betreffen:
 
 > Der Fragepool besteht aus simplen und komplexen Fragen. (Bereiche Medien, Computer, Games und Film)
 > Die Fragen werden mit der Zeit anspruchsvoller/komplexer.
 
-Das sind zwei inhaltliche Punkte: Zum einen die Schwierigkeit, die sich nicht aus dem Programmablauf, sondern aus der textuellen Gestaltung des Inhalts ergibt. Zum anderen wären die Themenbereiche zu nennen. Beides wären Aufgabenbereich für Texter und weniger für Programmierer.
+Das sind zwei inhaltliche Punkte: Zum einen die Schwierigkeit, die sich nicht aus dem Programmablauf, sondern aus der textuellen Gestaltung des Inhalts ergibt. Zum anderen wÃ¤ren die Themenbereiche zu nennen. Beides wÃ¤ren Aufgabenbereich fÃ¼r Texter und weniger fÃ¼r Programmierer.
 
 > Schnelligkeit und schnelles Denken steht im Vordergrund!
 
 Das ist ein Werbeslogan.
 
-> Als Eingabegerät wird die Maus genutzt.
+> Als EingabegerÃ¤t wird die Maus genutzt.
 
-Wirklich? Sie wollen nicht, dass das Spiel mit einem Touchscreen bedient werden kann? Letztlich ist das eine Designentscheidung und hat mit der eigentlichen Funktionalität des Spiels aus Sicht der Programmierung nur wenig zu tun.
+Wirklich? Sie wollen nicht, dass das Spiel mit einem Touchscreen bedient werden kann? Letztlich ist das eine Designentscheidung und hat mit der eigentlichen FunktionalitÃ¤t des Spiels aus Sicht der Programmierung nur wenig zu tun.
 
 > "Joker" oder Hilfen gibt es keine.
 
 Wenn es etwas nicht gibt, dann lassen Sie es bei der Beschreibung bitte weg.
 
-=== Zweiter Aufgabenblock (identisch für alle Studierenden) ===
+=== Zweiter Aufgabenblock (identisch fÃ¼r alle Studierenden) ===
 
 Sie haben jetzt gezeigt, dass Sie einfache Arbeiten mit einem Git-Repository beherrschen.
-Als Teil der letzten Aufgabe sollten Sie beschreiben, was Ihre Anwendung tun soll, also was für Funktionalitäten Ihre Anwendung bieten soll.
-Wenn Sie hier nichts angegeben haben, dann werde ich Ihnen einen Vorschlag hochladen, mit dem Sie weiterarbeiten können.
-In der Veranstaltung haben Sie außerdem gelernt, was Markup Languages sind.
+Als Teil der letzten Aufgabe sollten Sie beschreiben, was Ihre Anwendung tun soll, also was fÃ¼r FunktionalitÃ¤ten Ihre Anwendung bieten soll.
+Wenn Sie hier nichts angegeben haben, dann werde ich Ihnen einen Vorschlag hochladen, mit dem Sie weiterarbeiten kÃ¶nnen.
+In der Veranstaltung haben Sie auÃŸerdem gelernt, was Markup Languages sind.
 
-Die nächste Aufgabe besteht aus den folgenden Teilen:
+Die nÃ¤chste Aufgabe besteht aus den folgenden Teilen:
 
 1.) Lesen Sie mein Feedback durch und setzen Sie die beschriebenen Aufgaben um.
 
-Für die folgende Aufgabe sollten Sie mindestens eine halbe Stunde investieren. Zwei Stunden wäre aber etwas zu viel des guten.
-Bearbeiten Sie die Aufgaben 2. und 3. bitte innerhalb von 48 Stunden, weil andere Studierende davon abhängen, dass Sie sie beendet haben.
+FÃ¼r die folgende Aufgabe sollten Sie mindestens eine halbe Stunde investieren. Zwei Stunden wÃ¤re aber etwas zu viel des guten.
+Bearbeiten Sie die Aufgaben 2. und 3. bitte innerhalb von 48 Stunden, weil andere Studierende davon abhÃ¤ngen, dass Sie sie beendet haben.
 Bearbeiten Sie die Aufgaben auf jeden Fall in der vorgegebenen Reihenfolge.
-Und bearbeiten Sie eine Aufgabe nicht nachträglich nochmal. (Wenn Sie also z.B. Aufgabe 3. bearbeiten, dann ändern Sie bitte nichts an Aufgabe 1. nachträglich ab. Dafür wird später noch genug Zeit sein.)
+Und bearbeiten Sie eine Aufgabe nicht nachtrÃ¤glich nochmal. (Wenn Sie also z.B. Aufgabe 3. bearbeiten, dann Ã¤ndern Sie bitte nichts an Aufgabe 1. nachtrÃ¤glich ab. DafÃ¼r wird spÃ¤ter noch genug Zeit sein.)
 
 2.) Bennen Sie die strukturellen Elemente, aus denen Ihre Anwendung bestehen soll.
 Es ist dabei egal, ob es diese Elemente in HTML gibt.
@@ -74,68 +82,68 @@ Speichern Sie diese Aufstellung als HTML-Kommentar in einer Datei mit dem Namen
 
 strukt.html
 
-, die Sie in Ihrem Repository abspeichern. Wichtig: Die Datei soll nicht im Unterverzeichnis Dokumentation des Repositories gespeichert werden, weil sie die Basis für das erste HTML-Dokument werden wird.
+, die Sie in Ihrem Repository abspeichern. Wichtig: Die Datei soll nicht im Unterverzeichnis Dokumentation des Repositories gespeichert werden, weil sie die Basis fÃ¼r das erste HTML-Dokument werden wird.
 
-Wenn Sie noch unsicher sind: Strukturelle Elemente können alles mögliche sein:
+Wenn Sie noch unsicher sind: Strukturelle Elemente kÃ¶nnen alles mÃ¶gliche sein:
 - Tabellen
 - Listen
-- Schaltflächen
+- SchaltflÃ¤chen
 - Textfelder
 - Bildbereiche
 - Hintergrundmusik
-- Absätze
+- AbsÃ¤tze
 - ...
 
 In anderen Worten: Ein strukturelles Element ist etwas, das ein abgegrenzter Teil der Anwendung ist.
 Notieren Sie kurz, welche Funktion jedes der von Ihnen genannten Elemente haben soll.
 
 Hier einige Beispiele:
-- Schaltfläche (Nutzer können per Klick bestätigen, dass eine Eingabe abgeschickt werden soll.)
-- Textfeld für Namen (Nutzer können Ihren Nachnamen eintragen.)
-- Log-In-Maske (Bereich, in dem Nutzer sich einloggen können.)
+- SchaltflÃ¤che (Nutzer kÃ¶nnen per Klick bestÃ¤tigen, dass eine Eingabe abgeschickt werden soll.)
+- Textfeld fÃ¼r Namen (Nutzer kÃ¶nnen Ihren Nachnamen eintragen.)
+- Log-In-Maske (Bereich, in dem Nutzer sich einloggen kÃ¶nnen.)
 - - Teile der Log-In-Maske:
-- - Textfeld für Username
-- - Textfeld, das die Eingabe nicht anzeigt, fürs Passwort
-- Tabelle, 7 x 5 Felder (Jedes Feld soll ein Bild anzeigen, das ein Feld des Spielbretts ist. Wenn Nutzer ein Feld anwählen, soll ein Menü erscheinen.)
-- - Menü für jedes Feld der Tabelle mit Texteinträgen (Eintrag für "Gebäude abreißen", "Feld kaufen")
+- - Textfeld fÃ¼r Username
+- - Textfeld, das die Eingabe nicht anzeigt, fÃ¼rs Passwort
+- Tabelle, 7 x 5 Felder (Jedes Feld soll ein Bild anzeigen, das ein Feld des Spielbretts ist. Wenn Nutzer ein Feld anwÃ¤hlen, soll ein MenÃ¼ erscheinen.)
+- - MenÃ¼ fÃ¼r jedes Feld der Tabelle mit TexteintrÃ¤gen (Eintrag fÃ¼r "GebÃ¤ude abreiÃŸen", "Feld kaufen")
 - Hintergrundbild (Hier sollen einzelne Bilder als Diashow eingeblendet werden.)
 - Werbebanner
-- Schaltfläche für die Maskierung von NSFW (NSFW = Not safe for work)(NutzerInnen können über diese Schaltfläche eine andere Anwendung in der Vordergrund einblenden lassen, damit der Chef nicht sieht, dass sie gerade spielen.)
+- SchaltflÃ¤che fÃ¼r die Maskierung von NSFW (NSFW = Not safe for work)(NutzerInnen kÃ¶nnen Ã¼ber diese SchaltflÃ¤che eine andere Anwendung in der Vordergrund einblenden lassen, damit der Chef nicht sieht, dass sie gerade spielen.)
 
-3.) Schauen Sie jetzt in der Liste der Repositories (nicht in der Tabelle der Accounts) nach, welche zehn Repositories vor und nach Ihrem Repository aufgeführt sind und geben Sie den Besitzern dieser Repositories Zugriffsrechte auf Ihr Repository.
+3.) Schauen Sie jetzt in der Liste der Repositories (nicht in der Tabelle der Accounts) nach, welche zehn Repositories vor und nach Ihrem Repository aufgefÃ¼hrt sind und geben Sie den Besitzern dieser Repositories Zugriffsrechte auf Ihr Repository.
 
 Bsp.: Sie haben das Repository BerndStromberg. Dann folgen die zehn Repositories der Nutzer BlackWolf63, Cantinaband, CaptainWeasle, ColePfeiffer, CurvLietzau,
-DangerDulf, dnbdel, Domsche, Eldinox und Eupuco und vor Ihnen gibt es die fünf Repositories der Nutzer 2238867, amelie-beh, Anger21, anita1997 und Asphalon. all diesen Accounts geben Sie jetzt Zugriffsrechte auf Ihr Repository, so wie Sie das schon für mich getan haben. Wenn Sie, wie BerndStrommberg zu weit am Anfang der Liste stehen (hier gibt es ja nur fünf andere Accounts bis zum Anfang der Liste), dann geben Sie zusätzlich noch den Besitzern der letzten fünf Repositories Zugriffsrechte. Es sollten insgesamt 20 Accounts Zugriffsrecht haben.
+DangerDulf, dnbdel, Domsche, Eldinox und Eupuco und vor Ihnen gibt es die fÃ¼nf Repositories der Nutzer 2238867, amelie-beh, Anger21, anita1997 und Asphalon. all diesen Accounts geben Sie jetzt Zugriffsrechte auf Ihr Repository, so wie Sie das schon fÃ¼r mich getan haben. Wenn Sie, wie BerndStrommberg zu weit am Anfang der Liste stehen (hier gibt es ja nur fÃ¼nf andere Accounts bis zum Anfang der Liste), dann geben Sie zusÃ¤tzlich noch den Besitzern der letzten fÃ¼nf Repositories Zugriffsrechte. Es sollten insgesamt 20 Accounts Zugriffsrecht haben.
 
-Für die nächsten zwei Aufgaben sollten Sie pro Repository zwischen zehn Minuten und einer Stunde aufwenden. Weniger ist zu wenig und mehr ist zu viel.
-Beachten Sie dabei bitte, dass Sie hier letzten Endes Kritik an der Arbeit eines/einer anderen üben und das einige von Ihnen noch nie programmiert haben. Arbeiten Sie deshalb bitte daran, alles, was Sie ergänzen so neutral und höflich wie möglich zu formulieren, denn Unwissenheit und mangelndes Verständnis fürs Programmieren sind eben nicht das selbe wie Dummheit oder Faulheit.
+FÃ¼r die nÃ¤chsten zwei Aufgaben sollten Sie pro Repository zwischen zehn Minuten und einer Stunde aufwenden. Weniger ist zu wenig und mehr ist zu viel.
+Beachten Sie dabei bitte, dass Sie hier letzten Endes Kritik an der Arbeit eines/einer anderen Ã¼ben und das einige von Ihnen noch nie programmiert haben. Arbeiten Sie deshalb bitte daran, alles, was Sie ergÃ¤nzen so neutral und hÃ¶flich wie mÃ¶glich zu formulieren, denn Unwissenheit und mangelndes VerstÃ¤ndnis fÃ¼rs Programmieren sind eben nicht das selbe wie Dummheit oder Faulheit.
 
-Bitte erledigen Sie diese Aufgaben innerhalb der nächsten sieben Tage.
+Bitte erledigen Sie diese Aufgaben innerhalb der nÃ¤chsten sieben Tage.
 
-4.) Als nächstes greifen Sie auf die nach Ihrem Repository nachfolgenden fünf Repositories zu und bearbeiten hier die folgende Aufgabe. (Hier hängen Sie also davon ab, dass andere Kommilitonen Aufgabe 3. erledigt haben.) 
+4.) Als nÃ¤chstes greifen Sie auf die nach Ihrem Repository nachfolgenden fÃ¼nf Repositories zu und bearbeiten hier die folgende Aufgabe. (Hier hÃ¤ngen Sie also davon ab, dass andere Kommilitonen Aufgabe 3. erledigt haben.) 
 
-Lesen Sie sich die Projektidee durch und machen Sie sich ähnlich wie bei 2. einfache Stichpunkte über strukturelle Elemente, die Sie bei dieser Projektidee sinnvoll finden. (Hier erstmal nur Stichpunkte, Details arbeiten Sie unter 5. aus.)
+Lesen Sie sich die Projektidee durch und machen Sie sich Ã¤hnlich wie bei 2. einfache Stichpunkte Ã¼ber strukturelle Elemente, die Sie bei dieser Projektidee sinnvoll finden. (Hier erstmal nur Stichpunkte, Details arbeiten Sie unter 5. aus.)
 
-5.) Öffnen Sie jetzt die Datei strukt.html des Repositories, das Sie gerade bearbeiten. Ergänzen Sie Elemente, die Sie unter 4. notiert haben und die noch nicht eingetragen sind in der unter 2. beschriebenen Form.
+5.) Ã–ffnen Sie jetzt die Datei strukt.html des Repositories, das Sie gerade bearbeiten. ErgÃ¤nzen Sie Elemente, die Sie unter 4. notiert haben und die noch nicht eingetragen sind in der unter 2. beschriebenen Form.
 
-Abschließender Hinweis zu 4. und 5.:
+AbschlieÃŸender Hinweis zu 4. und 5.:
 
-Auch wenn das nirgends explizit steht sollen Sie Änderungen in das Repository pushen, aus dem sie die Datei strukt.html gepullt haben.
-Es ist dabei sehr wahrscheinlich, dass Sie (vielleicht auch erst später während der Projektbearbeitung) einen merge durchführen müssen. Wenn Sie sich noch nicht angesehen haben, wie das geht, dann tun Sie es jetzt.
+Auch wenn das nirgends explizit steht sollen Sie Ã„nderungen in das Repository pushen, aus dem sie die Datei strukt.html gepullt haben.
+Es ist dabei sehr wahrscheinlich, dass Sie (vielleicht auch erst spÃ¤ter wÃ¤hrend der Projektbearbeitung) einen merge durchfÃ¼hren mÃ¼ssen. Wenn Sie sich noch nicht angesehen haben, wie das geht, dann tun Sie es jetzt.
 
-Viele Grüße,
+Viele GrÃ¼ÃŸe,
 Markus Alpers
 
 === Feedback Alpers, 2016-04-27 ===
 
-Momentan ist Ihr Entwurf noch zu knapp, um als ein vollwertiges Projekt zu gelten. Erweitern Sie Ihre aktuelle Projektidee jetzt. Hier ein paar Vorschläge, was Sie da alles tun könnten/sollten:
+Momentan ist Ihr Entwurf noch zu knapp, um als ein vollwertiges Projekt zu gelten. Erweitern Sie Ihre aktuelle Projektidee jetzt. Hier ein paar VorschlÃ¤ge, was Sie da alles tun kÃ¶nnten/sollten:
 
-- Fragen sollten mit Hilfe eines Interface für Admins geändert werden können. 
-- Neue Fragen sollten über ein Interface durch Admins eingestellt werden können.
+- Fragen sollten mit Hilfe eines Interface fÃ¼r Admins geÃ¤ndert werden kÃ¶nnen. 
+- Neue Fragen sollten Ã¼ber ein Interface durch Admins eingestellt werden kÃ¶nnen.
 - Bauen Sie einen Log-In ein.
-- Nutzer sollten sich mit anderen in einer Highscore-Liste vergleichen können.
-- Nutzer sollten ein Feedback geben können. (Stichwort: Antwort ... war missverständlich. / Die Antwort ist falsch.)
-- Es sollte einen Trainingsmodus geben, bei dem Fragen, die falsch beantwortet wurden öfter wieder gestellt werden als Fragen, die richtig beantwortet wurden.
-- Ein Forum wäre auch gut; User lieben nichts so sehr wie Diskussionen.
+- Nutzer sollten sich mit anderen in einer Highscore-Liste vergleichen kÃ¶nnen.
+- Nutzer sollten ein Feedback geben kÃ¶nnen. (Stichwort: Antwort ... war missverstÃ¤ndlich. / Die Antwort ist falsch.)
+- Es sollte einen Trainingsmodus geben, bei dem Fragen, die falsch beantwortet wurden Ã¶fter wieder gestellt werden als Fragen, die richtig beantwortet wurden.
+- Ein Forum wÃ¤re auch gut; User lieben nichts so sehr wie Diskussionen.
 
 === Feedback Ende ===
