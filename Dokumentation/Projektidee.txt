@@ -125,3 +125,17 @@ Es ist dabei sehr wahrscheinlich, dass Sie (vielleicht auch erst später während 
 
 Viele Grüße,
 Markus Alpers
+
+=== Feedback Alpers, 2016-04-27 ===
+
+Momentan ist Ihr Entwurf noch zu knapp, um als ein vollwertiges Projekt zu gelten. Erweitern Sie Ihre aktuelle Projektidee jetzt. Hier ein paar Vorschläge, was Sie da alles tun könnten/sollten:
+
+- Fragen sollten mit Hilfe eines Interface für Admins geändert werden können. 
+- Neue Fragen sollten über ein Interface durch Admins eingestellt werden können.
+- Bauen Sie einen Log-In ein.
+- Nutzer sollten sich mit anderen in einer Highscore-Liste vergleichen können.
+- Nutzer sollten ein Feedback geben können. (Stichwort: Antwort ... war missverständlich. / Die Antwort ist falsch.)
+- Es sollte einen Trainingsmodus geben, bei dem Fragen, die falsch beantwortet wurden öfter wieder gestellt werden als Fragen, die richtig beantwortet wurden.
+- Ein Forum wäre auch gut; User lieben nichts so sehr wie Diskussionen.
+
+=== Feedback Ende ===
