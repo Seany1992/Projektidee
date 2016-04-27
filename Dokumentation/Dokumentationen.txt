@@ -61,4 +61,8 @@ shayan2013:
 - Erstellung einer Idee für die erste Grundstruktur mittels Html. Eigenständige Einarbeitung in HTML5, mittels Skript und einschlägigen Webseiten.
 
 26.04.2016
-- Erstellung einer zu der Html Datei passenden CSS Datei. Eigenständige Einarbeitung in CSS. 
+- Erstellung einer zu der Html Datei passenden CSS Datei. Eigenständige Einarbeitung in CSS.
+
+27.04.2016
+- Überarbeitung der Projektidee, mithilfe vom Feedback von Herrn Alpers
+- Überarbeitung der strukt.html Datei, mithilfe vom Feedback von Herrn Alpers und Kommilitonen.
