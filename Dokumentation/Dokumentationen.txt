@@ -1,4 +1,4 @@
-Projektdokumentation 
+﻿Projektdokumentation 
 
 07.04.2016
 - HTML-Datei strukt.html erstellt.
@@ -66,3 +66,11 @@ shayan2013:
 27.04.2016
 - Überarbeitung der Projektidee, mithilfe vom Feedback von Herrn Alpers
 - Überarbeitung der strukt.html Datei, mithilfe vom Feedback von Herrn Alpers und Kommilitonen.
+
+10.05.2016
+- Ordner "Prototyp", mit ersten Gehversuchen in HTML CSS hinzugefügt.
+- Projektidee aktualisiert
+- Stuktur aktualisiert
+
+15.05.2016
+- Ordnerstruktur "Aufgaben" zum Repository hinzugefügt
