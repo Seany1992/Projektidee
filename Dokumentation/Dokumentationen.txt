@@ -74,3 +74,6 @@ shayan2013:
 
 15.05.2016
 - Ordnerstruktur "Aufgaben" zum Repository hinzugefügt
+
+25.05.2016
+- Aufgaben 1.0, 1.1 und 1.2 in der strukt.html erledigt
