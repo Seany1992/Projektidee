@@ -118,7 +118,233 @@ AUSWERTUNG/ABRECHNUNG
 	- Tabelle mit Ausgaben des User Feedbacks (für alle einsehbar)
 - Button zum Neustart des Quizes
 
+
+
+<!-- Nummerierung Aufgabe 1.0 Version 3.0 25.05.2016 -->
+<!--
+STARTSEITE
+-01- - Textfeld (Titel vom Projekt)
+-02- - Log In Maske 
+-03-	- Textfeld (Überschrift: "Registrierung") 
+-04-	- Eingabefeld (Username:)
+-05-	- Eingabefeld (Passwort: Die Eingabe wird nicht angezeigt)
+-06-	- Button zum Absenden der Benutzereingaben (Anmeldung)
+-07- - Log in Maske für Admin
+-08-	- Textfeld (Admin Login)
+-09- 	- Eingabefeld (Adminname:)
+-10-	- Eingabefeld (Passwort: Die Eingabe wird nicht angezeigt)
+-11-	- Button (Anmelden)
+-12- - Schaltfläche zum Aufrufen der Hilfe (Regeln Textdatei)
+-13- - Button zum Starten des Quiz (Link zur ersten Frage)
+-14- - Interface für den Admin zum Verwalten des Userfeedbacks
+-15-	- Textfeld (Adminseite: Userfeedback)
+-16-	- Liste (Nach Eingang sortierte Liste: neuesten Userfeedbacks
+-17-	- 3 Buttons (Userfeedback anzeigen|Userfeedback beantworten| Userfeedback löschen)
+-18- - Interface für den Admin, um den Fragekatalog zu erweitern. 
+-19-	- Textfeld (Frage erstellen)
+-20-	- Eingabefeld (Frage formulieren)
+-21-	- 4 Eingabefelder (Antworten formulieren)
+-22-	- 4 Checkboxen (zur Markierung der richtigen Antwort)
+-23-	- Button (Frage erstellen)
+-24- - Interface für den Admin, um den bestehenden Fragekatalog zu bearbeiten. 
+-25-	- Textfeld (Frage bearbeiten)
+-26-	- Eingabefeld (Frage bearbeiten)
+-27-	- 4 Eingabefelder (Antworten formulieren)
+-28-	- 4 Checkboxen (zur Markierung der richtigen Antwort)
+-29-	- Button (Frage bearbeiten)
+	
+HAUPTSEITE 
+-30- - Textfeld (fortlaufende Nummerierung der Fragen)
+-31- - Textfeld für die Frage
+-32- - 4 Textfelder für die Antworten
+-33- - 4 Radio Buttons für Antwortmöglichkeit 
+-34- - Hintergrundbild (Themespezifische Einblendung von Bildern)
+-35- - 2 Schaltflächen für "weiter" und "zurück"
+-36- - 3 Felder ("Leben", "Punktzahl", Zeitlimit)
+ 
+AUSWERTUNG/ABRECHNUNG
+-37- - Textfeld (Überschrift "Auswertung")
+-38- - Textfeld (Anzahl der richtigen und falschen Antworten)
+-39- - Tabelle mit Highscore-Liste
+-40-	- Textfeld (Überschrift: Topspieler)
+-41-	- Inhalt der Tabelle (Username|Erreichte Punktzahl)
+-42- - User Forum (Feedback Formular)
+-43-	- Textfelder für Userfeedback / Feedback zu einzelnen Fragen
+-44-	- Button zum Absenden der einzelnen Feedbacks
+-45-	- Tabelle mit Ausgaben des User Feedbacks (für alle einsehbar)
+-46- - Button zum Neustart des Quizes
 -->
+
+
+
+
+<!-- Gruppen bilden Aufgabe 1.1  25.05.2016 -->
+<!--
+Gruppen:
+[I]LogIn Spieler
+-01- - Textfeld (Titel vom Projekt)
+-03- - Textfeld (Überschrift: "Registrierung") 
+-04- - Eingabefeld (Username:)
+-05- - Eingabefeld (Passwort: Die Eingabe wird nicht angezeigt)
+-06- - Button zum Absenden der Benutzereingaben (Anmeldung)
+
+[II]LogIn Admin
+-08- - Textfeld (Admin Login)
+-09- - Eingabefeld (Adminname:)
+-10- - Eingabefeld (Passwort: Die Eingabe wird nicht angezeigt)
+-11- - Button (Anmelden)
+
+[III]Verwaltung des Userfeedbacks
+-15- - Textfeld (Adminseite: Userfeedback)
+-16- - Liste (Nach Eingang sortierte Liste: neuesten Userfeedbacks
+-17- - 3 Buttons (Userfeedback anzeigen|Userfeedback beantworten| Userfeedback löschen)
+
+[IV]Erweiterung des Fragenkataloges
+-19- - Textfeld (Frage erstellen)
+-20- - Eingabefeld (Frage formulieren)
+-21- - 4 Eingabefelder (Antworten formulieren)
+-22- - 4 Checkboxen (zur Markierung der richtigen Antwort)
+-23- - Button (Frage erstellen)
+
+[V]Bearbeitung des Fragenkataloges
+-25- - Textfeld (Frage bearbeiten)
+-26- - Eingabefeld (Frage bearbeiten)
+-27- - 4 Eingabefelder (Antworten formulieren)
+-28- - 4 Checkboxen (zur Markierung der richtigen Antwort)
+-29- - Button (Frage bearbeiten)
+
+[VI]Start des Quiz
+-12- - Schaltfläche zum Aufrufen der Hilfe (Regeln Textdatei)
+-13- - Button zum Starten des Quiz (Link zur ersten Frage)
+
+[VII]Fragen und Antworten (Quizteil)
+-01- - Textfeld (Titel vom Projekt)   
+-30- - Textfeld (fortlaufende Nummerierung der Fragen)
+-31- - Textfeld für die Frage
+-32- - 4 Textfelder für die Antworten
+-33- - 4 Radio Buttons für Antwortmöglichkeit 
+-34- - Hintergrundbild (Themespezifische Einblendung von Bildern)
+-35- - 2 Schaltflächen für "weiter" und "zurück"
+-36- - 3 Felder ("Leben", "Punktzahl", Zeitlimit)
+ 
+[VIII]Auswertung
+-04- - Eingabefeld für Username    // Kommentar: Anzeige des Usernamens
+-37- - Textfeld (Überschrift "Auswertung")
+-38- - Textfeld (Anzahl der richtigen und falschen Antworten)
+-46- - Button zum Neustart des Quizes
+
+[IX]Highscoretabelle 
+-39- - Tabelle mit Highscore-Liste
+-40- - Textfeld (Überschrift: Topspieler)
+-41- - Inhalt der Tabelle (Username|Erreichte Punktzahl)
+-04- - Eingabefeld für Username    // Kommentar: Anzeige des Usernamens
+
+[X]Userforum
+-42- - User Forum (Feedback Formular)
+-43- - Textfelder für Userfeedback / Feedback zu einzelnen Fragen
+-44- - Button zum Absenden der einzelnen Feedbacks
+-45- - Tabelle mit Ausgaben des User Feedbacks (für alle einsehbar)
+-->
+
+
+
+
+<!-- Ansichten bilden Aufgabe 1.2  25.05.2016 -->
+<!--
+
+-----------------------
+---    view_index   ---
+-----------------------
+[I]LogIn Spieler
+-01- - Textfeld (Titel vom Projekt)
+-03- - Textfeld (Überschrift: "Registrierung") 
+-04- - Eingabefeld für Username 
+-05- - Eingabefeld für Passwort, das die Eingabe nicht anzeigt
+-06- - Button zum Absenden der Benutzereingaben (Anmeldung)
+
+[II]LogIn Admin
+-07- - Textfeld (Admin Login)
+-08- - Eingabefeld (Adminname:)
+-09- - Eingabefeld (Passwort: Die Eingabe wird nicht angezeigt)
+-10- - Button (Anmelden)
+
+[VI]Start des Quiz
+-12- - Schaltfläche zum Aufrufen der Hilfe (Regeln Textdatei)
+-13- - Button zum Starten des Quiz (Link zur ersten Frage)
+
+
+-----------------------
+---view_userfeedback---
+-----------------------
+[III]Verwaltung des Userfeedbacks
+-15- - Textfeld (Adminseite: Userfeedback)
+-16- - Liste (Nach Eingang sortierte Liste: neuesten Userfeedbacks
+-17- - 3 Buttons (Userfeedback anzeigen|Userfeedback beantworten| Userfeedback löschen)
+
+
+--------------------------
+---view_fragenErstellen---
+--------------------------
+[IV]Erweiterung des Fragenkataloges
+-19- - Textfeld (Frage erstellen)
+-20- - Eingabefeld (Frage formulieren)
+-21- - 4 Eingabefelder (Antworten formulieren)
+-22- - 4 Checkboxen (zur Markierung der richtigen Antwort)
+-23- - Button (Frage erstellen)
+
+
+---------------------------
+---view_fragenBearbeiten---
+---------------------------
+[V]Bearbeitung des Fragenkataloges
+-25- - Textfeld (Frage bearbeiten)
+-26- - Eingabefeld (Frage bearbeiten)
+-27- - 4 Eingabefelder (Antworten formulieren)
+-28- - 4 Checkboxen (zur Markierung der richtigen Antwort)
+-29- - Button (Frage bearbeiten)
+
+
+-----------------------
+--- view_frageseite ---
+-----------------------
+-01- - Textfeld (Titel vom Projekt)   
+-30- - Textfeld (fortlaufende Nummerierung der Fragen)
+-31- - Textfeld für die Frage
+-32- - 4 Textfelder für die Antworten
+-33- - 4 Radio Buttons für Antwortmöglichkeit 
+-34- - Hintergrundbild (Themespezifische Einblendung von Bildern)
+-35- - 2 Schaltflächen für "weiter" und "zurück"
+-36- - 3 Felder ("Leben", "Punktzahl", Zeitlimit)
+
+
+-----------------------
+--- view_auswertung ---
+-----------------------
+[VIII]Auswertung
+-04- - Eingabefeld für Username    // Kommentar: Anzeige des Usernamens
+-37- - Textfeld (Überschrift "Auswertung")
+-38- - Textfeld (Anzahl der richtigen und falschen Antworten)
+-46- - Button zum Neustart des Quizes
+
+[IX]Highscoretabelle 
+-39- - Tabelle mit Highscore-Liste
+-40- - Textfeld (Überschrift: Topspieler)
+-41- - Inhalt der Tabelle (Username|Erreichte Punktzahl)
+-04- - Eingabefeld für Username    // Kommentar: Anzeige des Usernamens
+
+
+----------------------- 
+--- view_Userforum  ---
+-----------------------
+[X]Userforum
+-42- - User Forum (Feedback Formular)
+-43- - Textfelder für Userfeedback / Feedback zu einzelnen Fragen
+-44- - Button zum Absenden der einzelnen Feedbacks
+-45- - Tabelle mit Ausgaben des User Feedbacks (für alle einsehbar)
+-->
+
+
+
 
 
 </body>

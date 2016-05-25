@@ -83,6 +83,7 @@ Meine Projektidee: Es soll ein Quiz auf Basis von Html, PHP und SQL programmiert
 
 - Quiz mit vier Multiple Choice Antwortmöglichkeiten. Durch eine richtige Antwort, gelangt man zur nächsten Frage.
 - Die Spieler können sich einloggen und ein Konto einrichten, geschieht mit Nutzernamen und Passwort (Log in Maske).
+- Es wird eine LogIn Maske für den Admin geben.
 - Eine richtige Antwort, durch Schaltflächen kann man "weiter" oder "zurück" gehen in den Fragen
 - Durch "Abgabe" (bei der letzten Frage) wird die erreichte Punktzahl errechnet.
 - Eine Highscoreliste am Ende jedes Spieldurchlaufes ist geplant. (Stichwort Datenbank SQL)
