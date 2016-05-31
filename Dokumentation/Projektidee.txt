@@ -115,17 +115,19 @@ Meine Projektidee: Es soll ein Quiz auf Basis von Html, PHP und SQL programmiert
 
 - Vier Multiple Choice Antwortmöglichkeiten, durch eine richtige Antwort gelangt man zur nächsten Frage.
 - LogIn: Die Spieler können sich einloggen und ein Konto einrichten, beinhaltet Nutzernamen und Passwort.
+- LogIn für den Admin mitsamt Nutzernamen und Passwort.
 - Nachdem Quizteil wird die erreichte Punktzahl errechnet (Highscore)
 - Es wird eine Highscoreliste am Ende jedes Spieldurchlaufes geben.(Datenbank SQL)
 - Der Admin hat die Möglichkeit neue Fragen hinzuzufügen und sie zu bearbeiten.
 - Nutzer werden sich über  Fragen und deren Antwortmöglichkeiten austauschen können d.h. Interaktion mit anderen Spielern (User Forum).
 - Ticketsystem für den Admin ist geplant, zur Verwaltung von User-feedbacks.
-- Es wird für Anfänger ein Trainingsmodus eingebaut
+- Es wird für Anfänger ein Trainingsmodus eingebaut.
 
 - Besonderheiten (Spielregeln): 
 
 	- Ziel des Quiz: Eine hohe Punktzahl (Highscore), durch Schnelligkeit & richtige Antworten. 
 	
+	- Spieler startet mit 3 "Leben/Versuchen".
 	
 	- Zeitlimit bei jeder Frage, welches immer kürzer wird. (Maximal 15 Sekunden zum Anfang pro Frage)
 	
