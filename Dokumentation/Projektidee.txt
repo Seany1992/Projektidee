@@ -1,4 +1,70 @@
-﻿=== Projektidee Seany1992, 2016-04-05 ===
+﻿=====================================================
+=== Projektidee Seany1992, 2016-05-31 Version 3.0 ===
+=====================================================
+
+Meine Projektidee: Es soll ein Quiz auf Basis von Html, PHP und SQL programmiert werden (verteilte Webanwendung)
+
+- Vier Multiple Choice Antwortmöglichkeiten, durch eine richtige Antwort gelangt man zur nächsten Frage.
+- LogIn: Die Spieler können sich einloggen und ein Konto einrichten, beinhaltet Nutzernamen und Passwort.
+- LogIn für den Admin mitsamt Nutzernamen und Passwort.
+- Nachdem Quizteil wird die erreichte Punktzahl errechnet (Highscore)
+- Es wird eine Highscoreliste am Ende jedes Spieldurchlaufes geben.(Datenbank SQL)
+- Der Admin hat die Möglichkeit neue Fragen hinzuzufügen und sie zu bearbeiten.
+- Nutzer werden sich über  Fragen und deren Antwortmöglichkeiten austauschen können d.h. Interaktion mit anderen Spielern (User Forum).
+- Ticketsystem für den Admin ist geplant, zur Verwaltung von User-feedbacks.
+- Es wird für Anfänger ein Trainingsmodus eingebaut.
+
+- Besonderheiten (Spielregeln): 
+
+	- Ziel des Quiz: Eine hohe Punktzahl (Highscore), durch Schnelligkeit & richtige Antworten. 
+	
+	- Spieler startet mit 3 "Leben/Versuchen".
+	
+	- Zeitlimit bei jeder Frage, welches immer kürzer wird. (Maximal 15 Sekunden zum Anfang pro Frage)
+	
+	- Höhere Punktzahl durch schnelle Beantwortung. Es wird ein Zähler mitlaufen, der die benötige Zeit pro Frage abfängt.
+
+	- 5 richtig beantworteten Fragen hintereinander, Spieler erhält ein "Leben/Versuch" zurück.
+
+	- Niederlagebedingung: Sobald der Spieler alle "Leben/Versuche" verloren hat, dies geschieht durch falsche Antworten.
+	
+	- Siegbedingung: 20 Richtige Antworten und mindestens 1 "Leben/Versuch" übrig.
+
+=====================================================
+=== Projektidee Seany1992, 2016-05-10 Version 2.0 ===
+=====================================================
+
+Meine Projektidee: Es soll ein Quiz auf Basis von Html, PHP und SQL programmiert werden (verteilte Webanwendung)
+
+- Quiz mit vier Multiple Choice Antwortmöglichkeiten. Durch eine richtige Antwort, gelangt man zur nächsten Frage.
+- Die Spieler können sich einloggen und ein Konto einrichten, geschieht mit Nutzernamen und Passwort (Log in Maske).
+- Es wird eine LogIn Maske für den Admin geben.
+- Eine richtige Antwort, durch Schaltflächen kann man "weiter" oder "zurück" gehen in den Fragen
+- Durch "Abgabe" (bei der letzten Frage) wird die erreichte Punktzahl errechnet.
+- Eine Highscoreliste am Ende jedes Spieldurchlaufes ist geplant. (Stichwort Datenbank SQL)
+- Einrichtung eines Interfaces, damit der Admin neue Fragen hinzufügen -und sie bearbeiten kann.
+- User können sich über die Fragen und Antwortmöglichkeiten austauschen, d.h. sie können Feedback abgeben. (User Forum)
+- Ticketsystem für den Admin ist geplant, zur Verwaltung von User-feedback.
+
+- Besonderheiten (Spielregeln): 
+	
+	- Der Spieler startet mit 3 "Leben".
+	
+	- Es besteht ein Zeitlimit für jede Frage, welche immer kürzer wird. (Maximal 15 Sekunden zum Anfang pro Frage)
+	
+	- Je schneller der Nutzer/Spieler die Fragen beantwortet, desto mehr "Punkte" erhält dieser. Es wird ein Zähler mitlaufen, der die benötige Zeit pro Frage abfängt.
+
+	- Ziel des Quiz: Möglichst hohe Punktzahl (Highscore), voraussetzung Schnelligkeit & richtige Antworten. (Zielbedingung)
+
+	- Bei 6 richtig beantworteten Fragen hintereinander, besteht die Möglichkeit ein "Leben" zurück zu erhalten.
+
+	- Das Spiel ist vorbei, sobald der Spieler alle "Leben" verloren hat, dies geschieht durch falsche Antworten. (Niederlagebedingung)
+	
+	- Geschafft hat man es, wenn man durch alle Fragen gekommen ist und man mindestens noch 1 "Leben" übrig hat. (Siegbedingung)
+
+=========================================
+=== Projektidee Seany1992, 2016-04-05 ===
+=========================================
 
 Meine Projektidee: Ein Quiz (verteilte Webanwendung)
 
@@ -36,8 +102,9 @@ Meine Projektidee: Ein Quiz (verteilte Webanwendung)
 	- Geschafft hat man es, wenn man durch alle Fragen gekommen ist und man mindestens noch 1 "Leben" übrig hat. (Siegbedingung)
 
 
-
+===================================
 === Feedback Alpers, 2016-04-06 ===
+===================================
 
 Der Vorschlag ist gut.
 
@@ -60,9 +127,9 @@ Wirklich? Sie wollen nicht, dass das Spiel mit einem Touchscreen bedient werden 
 
 Wenn es etwas nicht gibt, dann lassen Sie es bei der Beschreibung bitte weg.
 
-
-
+===================================
 === Feedback Alpers, 2016-04-27 ===
+===================================
 
 Momentan ist Ihr Entwurf noch zu knapp, um als ein vollwertiges Projekt zu gelten. Erweitern Sie Ihre aktuelle Projektidee jetzt. Hier ein paar Vorschläge, was Sie da alles tun könnten/sollten:
 
@@ -74,71 +141,20 @@ Momentan ist Ihr Entwurf noch zu knapp, um als ein vollwertiges Projekt zu gelte
 - Es sollte einen Trainingsmodus geben, bei dem Fragen, die falsch beantwortet wurden öfter wieder gestellt werden als Fragen, die richtig beantwortet wurden.
 - Ein Forum wäre auch gut; User lieben nichts so sehr wie Diskussionen.
 
-=== Feedback Ende ===
+===================================
+=== Feedback Alpers, 2016-06-08 ===
+===================================
 
+Momentan fehlen noch zwei Aspekte:
 
-=== Projektidee Seany1992, 2016-05-10 Version 2.0 ===
+(1) Die Interaktion zwischen Spieler und Spiel (z.B. durch einen computergesteuerten Gegenspieler).
+(2) Die Interaktion zwischen menschlichen Spielern.
 
-Meine Projektidee: Es soll ein Quiz auf Basis von Html, PHP und SQL programmiert werden (verteilte Webanwendung)
+Anm.: Eine Webanwendung ist eine verteilte Anwendung. Wenn Sie also von einer verteilten Webanwendung sprechen ist das doppelt gemoppelt.
 
-- Quiz mit vier Multiple Choice Antwortmöglichkeiten. Durch eine richtige Antwort, gelangt man zur nächsten Frage.
-- Die Spieler können sich einloggen und ein Konto einrichten, geschieht mit Nutzernamen und Passwort (Log in Maske).
-- Es wird eine LogIn Maske für den Admin geben.
-- Eine richtige Antwort, durch Schaltflächen kann man "weiter" oder "zurück" gehen in den Fragen
-- Durch "Abgabe" (bei der letzten Frage) wird die erreichte Punktzahl errechnet.
-- Eine Highscoreliste am Ende jedes Spieldurchlaufes ist geplant. (Stichwort Datenbank SQL)
-- Einrichtung eines Interfaces, damit der Admin neue Fragen hinzufügen -und sie bearbeiten kann.
-- User können sich über die Fragen und Antwortmöglichkeiten austauschen, d.h. sie können Feedback abgeben. (User Forum)
-- Ticketsystem für den Admin ist geplant, zur Verwaltung von User-feedback.
-
-- Besonderheiten (Spielregeln): 
-	
-	- Der Spieler startet mit 3 "Leben".
-	
-	- Es besteht ein Zeitlimit für jede Frage, welche immer kürzer wird. (Maximal 15 Sekunden zum Anfang pro Frage)
-	
-	- Je schneller der Nutzer/Spieler die Fragen beantwortet, desto mehr "Punkte" erhält dieser. Es wird ein Zähler mitlaufen, der die benötige Zeit pro Frage abfängt.
-
-	- Ziel des Quiz: Möglichst hohe Punktzahl (Highscore), voraussetzung Schnelligkeit & richtige Antworten. (Zielbedingung)
-
-	- Bei 6 richtig beantworteten Fragen hintereinander, besteht die Möglichkeit ein "Leben" zurück zu erhalten.
-
-	- Das Spiel ist vorbei, sobald der Spieler alle "Leben" verloren hat, dies geschieht durch falsche Antworten. (Niederlagebedingung)
-	
-	- Geschafft hat man es, wenn man durch alle Fragen gekommen ist und man mindestens noch 1 "Leben" übrig hat. (Siegbedingung)
-
-
-
-=== Projektidee Seany1992, 2016-05-31 Version 3.0 ===
-
-Meine Projektidee: Es soll ein Quiz auf Basis von Html, PHP und SQL programmiert werden (verteilte Webanwendung)
-
-- Vier Multiple Choice Antwortmöglichkeiten, durch eine richtige Antwort gelangt man zur nächsten Frage.
-- LogIn: Die Spieler können sich einloggen und ein Konto einrichten, beinhaltet Nutzernamen und Passwort.
-- LogIn für den Admin mitsamt Nutzernamen und Passwort.
-- Nachdem Quizteil wird die erreichte Punktzahl errechnet (Highscore)
-- Es wird eine Highscoreliste am Ende jedes Spieldurchlaufes geben.(Datenbank SQL)
-- Der Admin hat die Möglichkeit neue Fragen hinzuzufügen und sie zu bearbeiten.
-- Nutzer werden sich über  Fragen und deren Antwortmöglichkeiten austauschen können d.h. Interaktion mit anderen Spielern (User Forum).
-- Ticketsystem für den Admin ist geplant, zur Verwaltung von User-feedbacks.
-- Es wird für Anfänger ein Trainingsmodus eingebaut.
-
-- Besonderheiten (Spielregeln): 
-
-	- Ziel des Quiz: Eine hohe Punktzahl (Highscore), durch Schnelligkeit & richtige Antworten. 
-	
-	- Spieler startet mit 3 "Leben/Versuchen".
-	
-	- Zeitlimit bei jeder Frage, welches immer kürzer wird. (Maximal 15 Sekunden zum Anfang pro Frage)
-	
-	- Höhere Punktzahl durch schnelle Beantwortung. Es wird ein Zähler mitlaufen, der die benötige Zeit pro Frage abfängt.
-
-	- 5 richtig beantworteten Fragen hintereinander, Spieler erhält ein "Leben/Versuch" zurück.
-
-	- Niederlagebedingung: Sobald der Spieler alle "Leben/Versuche" verloren hat, dies geschieht durch falsche Antworten.
-	
-	- Siegbedingung: 20 Richtige Antworten und mindestens 1 "Leben/Versuch" übrig.
-
-
-
-
+Wertung 2: Projektbeschreibung: gesamt: 5 / 10
+- Pro Interaktionsmöglichkeit: 0 
+- Knappe aber klare Beschreibung: 5
+- Werbeslogans u.ä.: 0 
+- Designaspekte: 0 
+- Voraussetzung bekannten Wissens: 0 

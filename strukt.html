@@ -1,127 +1,12 @@
-<!DOCTYPE html>
-
-<html>
-
-<head>
-
-<title> Projekt1 | Quiz </title> 
-
-</head>
-<body>
-<!--		Benennung der strukturellen Elemente meiner verteilten Anwendung (Projekt A)
-
-Log In Fenster für Nutzer:
-
-Textfeld zur Eingabe		: Eingabe des Nutzernamens (Pseudonym)
-Schaltfläche/ Buttons 2x 	: 1."Ok" Zur Bestätigung des Nutzernamens, per Mausklick bedienbar.
-				  2. "Start" Nutzer tätigt Eingabe, per Mausklick, zum starten des Quiz
-
-Generelle Quiz Struktur:
-
-Hintegrundbild: 		| Hier werden Themenspezifische (Fragenkatalog) Bilder angezeigt.
-
-Schaltflächen/ Buttons = 3x 	| Der Nutzer kann per Mausklick die Eingabe der Antwort bestätigen, nur 1 richtige Antwort
-	Radiobuttons   = 4X	| (4 Multiple Choice Antwortmöglichkeiten, "Radio Buttons") 
-				| Nach Auswahl der Antwort, folgt eine Abfrage zur Bestätigung der Eingabe mit "Submit"
-				| "Beenden" Schaltfläche zum Beenden des Quiz
-							  
-Tabellen = 3 größere Felder	| 1. Das Feld zeigt das aktuelle Zeitlimit -> Timer zählt runter
-				| 2. Zeigt die übrigen Versuche("Leben") anhand einer Ziffer an 
-				| 3. Punktzahl 
--->
-
-<!-- 
-
-=== Feedback Psynaic 24.04.2016 ===
-
-Allgemein sehr gelungen, doch musst du noch die Regeln und Sieg-/Niederlagebedingungen einarbeiten.
-Des Weiteren brauchst du nicht umbedingt eine Tabelle um die drei Zähler für Zeit, "Leben" und Punktestand darzustellen.
-
-Hinzufügen könnte man:
-
-Pausebutton
-Highscoretabelle
-
-=== Feedback SammyNB 25.04.2016 ===
-Klingt gut, und dem Feedback von Psyniac ist nicht mehr viel hinzuzufügen. 
-Es ist gut strukturiert und die Elemente scheinen bis jetzt gut durchdacht.
-Was ich mich nur frage ist: Kann man sich quasi ein Konto einrichten, oder setzt man sich in jeder Runde
-einen neuen Nutzernamen?
-
--->
-
-<!--
-=== Feedback Alpers, 2016-04-27 ===
-
-Leider sind es nicht nur relativ wenige strukturelle Elemente, sondern Sie haben Sie zum Teil auch nicht benannt. 
-Bsp.: "Tabellen = 3 größere Felder	| 1. Das Feld zeigt das ...
-Hier fehlt die Angabe, was 1., 2. und 3. für strukturelle Elemente sind.
-Leider sind auch schon diese wenigen Angaben sehr unübersichtlich, weil Sie nicht sinnvoll eingerückt (oder anderweitig strukturiert) haben.
-Vier Tabulatoren sind immer drei zu viel: Für jede Ebene einen.
-Die Beschreibungen zu jedem Element sind bei weitem zu umfangreich: Es geht hier vorrangig darum, hervorzuheben, welche Elemente es geben soll. Die Details kommen später.
-
-Beachten Sie bitte meine Anmerkungen in der Datei Projektidee.txt, bevor Sie weiterarbeiten.
-
-Und bearbeiten Sie bitte das Projekt so, wie in den Aufgaben beschrieben. (Dazu gehört beispielsweise, dass Sie a) kein CSS programmieren, b) keine HTML4.01-Techniken anwenden.)
-
-Um es in aller Deutlichkeit zu sagen: Gute Softwareentwicklung ist nicht die Fähigkeit, Quellcode zu produzieren, sondern die Fähigkeit, ein Softwareprojekt so solide zu konzipieren und zu strukturieren, dass Sie später Änderungen in sehr kurzer Zeit einpflegen können. Ihr HTML-Dokument ist auch in dieser Hinsicht mangelhaft.
-
-=== Feedback Ende ===
-
-<!-- Feedback Änderung  Version 2.0 10.05.2016 -->
-<!--
-STARTSEITE
-- Textfeld (Titel vom Projekt)
-- Log In Maske 
-	- Textfeld (Überschrift: "Registrierung") 
-	- Eingabefeld für Username 
-	- Eingabefeld für Passwort, das die Eingabe nicht anzeigt
-	- Button zum Absenden der Benutzereingaben (Anmeldung)
-- Schaltfläche zum Aufrufen der Hilfe (Regeln Textdatei)
-- Button zum Starten des Quiz (Link zur ersten Frage)
-- Interface für den Admin zum Verwalten des Userfeedbacks
-	- Textfeld (Adminseite: Userfeedback)
-	- Liste (Nach Eingang sortierte Liste: neuesten Userfeedbacks
-	- 3 Buttons (Userfeedback anzeigen|Userfeedback beantworten| Userfeedback löschen)
-- Interface für den Admin, um den Fragekatalog zu erweitern. 
-	- Textfeld (Frage erstellen)
-	- Eingabefeld (Frage formulieren)
-	- 4 Eingabefelder (Antworten formulieren)
-	- 4 Checkboxen (zur Markierung der richtigen Antwort)
-	- Button (Frage erstellen)
-- Interface für den Admin, um den bestehenden Fragekatalog zu bearbeiten. 
-	- Textfeld (Frage bearbeiten)
-	- Eingabefeld (Frage bearbeiten)
-	- 4 Eingabefelder (Antworten formulieren)
-	- 4 Checkboxen (zur Markierung der richtigen Antwort)
-	- Button (Frage bearbeiten)
-	
-HAUPTSEITE 
-- Textfeld (Titel vom Projekt)
-- Textfeld (fortlaufende Nummerierung der Fragen)
-- Textfeld für die Frage
-- 4 Textfelder für die Antworten
-- 4 Radio Buttons für Antwortmöglichkeit 
-- Hintergrundbild (Themespezifische Einblendung von Bildern)
-- 2 Schaltflächen für "weiter" und "zurück"
-- 3 Felder ("Leben", "Punktzahl", Zeitlimit) 
-
-AUSWERTUNG/ABRECHNUNG
-- Textfeld (Überschrift "Auswertung")
-- Textfeld (Anzahl der richtigen und falschen Antworten)
-- Tabelle mit Highscore-Liste
-	- Textfeld (Überschrift: Topspieler)
-	- Inhalt der Tabelle (Username|Erreichte Punktzahl)
-- User Forum (Feedback Formular)
-	- Textfelder für Userfeedback / Feedback zu einzelnen Fragen
-	- Button zum Absenden der einzelnen Feedbacks
-	- Tabelle mit Ausgaben des User Feedbacks (für alle einsehbar)
-- Button zum Neustart des Quizes
-
-
-
 <!-- Nummerierung Aufgabe 1.0 Version 3.0 25.05.2016 -->
 <!--
+=======================
+=== Dritter Entwurf ===
+=======================
+
+==========================================================================
+=== Feedback Alpers: Was für ein strukturelles Element ist Startseite? ===
+
 STARTSEITE
 -01- - Textfeld (Titel vom Projekt)
 -02- - Log In Maske 
@@ -152,7 +37,10 @@ STARTSEITE
 -27-	- 4 Eingabefelder (Antworten formulieren)
 -28-	- 4 Checkboxen (zur Markierung der richtigen Antwort)
 -29-	- Button (Frage bearbeiten)
-	
+
+==========================================================================
+=== Feedback Alpers: Was für ein strukturelles Element ist Hauptseite? ===	
+
 HAUPTSEITE 
 -30- - Textfeld (fortlaufende Nummerierung der Fragen)
 -31- - Textfeld für die Frage
@@ -162,6 +50,9 @@ HAUPTSEITE
 -35- - 2 Schaltflächen für "weiter" und "zurück"
 -36- - 3 Felder ("Leben", "Punktzahl", Zeitlimit)
  
+=====================================================================================
+=== Feedback Alpers: Was für ein strukturelles Element ist Auswertung/Abrechnung? ===	
+
 AUSWERTUNG/ABRECHNUNG
 -37- - Textfeld (Überschrift "Auswertung")
 -38- - Textfeld (Anzahl der richtigen und falschen Antworten)
@@ -174,9 +65,6 @@ AUSWERTUNG/ABRECHNUNG
 -45-	- Tabelle mit Ausgaben des User Feedbacks (für alle einsehbar)
 -46- - Button zum Neustart des Quizes
 -->
-
-
-
 
 <!-- Gruppen bilden Aufgabe 1.1  25.05.2016 -->
 <!--
@@ -245,10 +133,6 @@ Gruppen:
 -44- - Button zum Absenden der einzelnen Feedbacks
 -45- - Tabelle mit Ausgaben des User Feedbacks (für alle einsehbar)
 -->
-
-
-
-
 <!-- Ansichten bilden Aufgabe 1.2  25.05.2016 -->
 <!--
 
@@ -272,7 +156,6 @@ Gruppen:
 -12- - Schaltfläche zum Aufrufen der Hilfe (Regeln Textdatei)
 -13- - Button zum Starten des Quiz (Link zur ersten Frage)
 
-
 -----------------------
 ---view_userfeedback---
 -----------------------
@@ -280,7 +163,6 @@ Gruppen:
 -15- - Textfeld (Adminseite: Userfeedback)
 -16- - Liste (Nach Eingang sortierte Liste: neuesten Userfeedbacks
 -17- - 3 Buttons (Userfeedback anzeigen|Userfeedback beantworten| Userfeedback löschen)
-
 
 --------------------------
 ---view_fragenErstellen---
@@ -292,7 +174,6 @@ Gruppen:
 -22- - 4 Checkboxen (zur Markierung der richtigen Antwort)
 -23- - Button (Frage erstellen)
 
-
 ---------------------------
 ---view_fragenBearbeiten---
 ---------------------------
@@ -302,7 +183,6 @@ Gruppen:
 -27- - 4 Eingabefelder (Antworten formulieren)
 -28- - 4 Checkboxen (zur Markierung der richtigen Antwort)
 -29- - Button (Frage bearbeiten)
-
 
 -----------------------
 --- view_frageseite ---
@@ -315,7 +195,6 @@ Gruppen:
 -34- - Hintergrundbild (Themespezifische Einblendung von Bildern)
 -35- - 2 Schaltflächen für "weiter" und "zurück"
 -36- - 3 Felder ("Leben", "Punktzahl", Zeitlimit)
-
 
 -----------------------
 --- view_auswertung ---
@@ -332,7 +211,6 @@ Gruppen:
 -41- - Inhalt der Tabelle (Username|Erreichte Punktzahl)
 -04- - Eingabefeld für Username    // Kommentar: Anzeige des Usernamens
 
-
 ----------------------- 
 --- view_Userforum  ---
 -----------------------
@@ -343,13 +221,160 @@ Gruppen:
 -45- - Tabelle mit Ausgaben des User Feedbacks (für alle einsehbar)
 -->
 
+<!-- Feedback Änderung  Version 2.0 10.05.2016 
+=======================
+=== Zweiter Entwurf ===
+=======================
+
+STARTSEITE
+- Textfeld (Titel vom Projekt)
+- Log In Maske 
+	- Textfeld (Überschrift: "Registrierung") 
+	- Eingabefeld für Username 
+	- Eingabefeld für Passwort, das die Eingabe nicht anzeigt
+	- Button zum Absenden der Benutzereingaben (Anmeldung)
+- Schaltfläche zum Aufrufen der Hilfe (Regeln Textdatei)
+- Button zum Starten des Quiz (Link zur ersten Frage)
+- Interface für den Admin zum Verwalten des Userfeedbacks
+	- Textfeld (Adminseite: Userfeedback)
+	- Liste (Nach Eingang sortierte Liste: neuesten Userfeedbacks
+	- 3 Buttons (Userfeedback anzeigen|Userfeedback beantworten| Userfeedback löschen)
+- Interface für den Admin, um den Fragekatalog zu erweitern. 
+	- Textfeld (Frage erstellen)
+	- Eingabefeld (Frage formulieren)
+	- 4 Eingabefelder (Antworten formulieren)
+	- 4 Checkboxen (zur Markierung der richtigen Antwort)
+	- Button (Frage erstellen)
+- Interface für den Admin, um den bestehenden Fragekatalog zu bearbeiten. 
+	- Textfeld (Frage bearbeiten)
+	- Eingabefeld (Frage bearbeiten)
+	- 4 Eingabefelder (Antworten formulieren)
+	- 4 Checkboxen (zur Markierung der richtigen Antwort)
+	- Button (Frage bearbeiten)
+	
+HAUPTSEITE 
+- Textfeld (Titel vom Projekt)
+- Textfeld (fortlaufende Nummerierung der Fragen)
+- Textfeld für die Frage
+- 4 Textfelder für die Antworten
+- 4 Radio Buttons für Antwortmöglichkeit 
+- Hintergrundbild (Themespezifische Einblendung von Bildern)
+- 2 Schaltflächen für "weiter" und "zurück"
+- 3 Felder ("Leben", "Punktzahl", Zeitlimit) 
+
+AUSWERTUNG/ABRECHNUNG
+- Textfeld (Überschrift "Auswertung")
+- Textfeld (Anzahl der richtigen und falschen Antworten)
+- Tabelle mit Highscore-Liste
+	- Textfeld (Überschrift: Topspieler)
+	- Inhalt der Tabelle (Username|Erreichte Punktzahl)
+- User Forum (Feedback Formular)
+	- Textfelder für Userfeedback / Feedback zu einzelnen Fragen
+	- Button zum Absenden der einzelnen Feedbacks
+	- Tabelle mit Ausgaben des User Feedbacks (für alle einsehbar)
+- Button zum Neustart des Quizes
 
 
+<!-- Benennung der strukturellen Elemente meiner verteilten Anwendung (Projekt A)
+======================
+=== Erster Entwurf ===
+======================
 
+Log In Fenster für Nutzer:
 
-</body>
+Textfeld zur Eingabe		: Eingabe des Nutzernamens (Pseudonym)
+Schaltfläche/ Buttons 2x 	: 1."Ok" Zur Bestätigung des Nutzernamens, per Mausklick bedienbar.
+				  2. "Start" Nutzer tätigt Eingabe, per Mausklick, zum starten des Quiz
 
+Generelle Quiz Struktur:
 
-</html> 
+Hintegrundbild: 		| Hier werden Themenspezifische (Fragenkatalog) Bilder angezeigt.
 
+Schaltflächen/ Buttons = 3x 	| Der Nutzer kann per Mausklick die Eingabe der Antwort bestätigen, nur 1 richtige Antwort
+	Radiobuttons   = 4X	| (4 Multiple Choice Antwortmöglichkeiten, "Radio Buttons") 
+				| Nach Auswahl der Antwort, folgt eine Abfrage zur Bestätigung der Eingabe mit "Submit"
+				| "Beenden" Schaltfläche zum Beenden des Quiz
+							  
+Tabellen = 3 größere Felder	| 1. Das Feld zeigt das aktuelle Zeitlimit -> Timer zählt runter
+				| 2. Zeigt die übrigen Versuche("Leben") anhand einer Ziffer an 
+				| 3. Punktzahl 
+-->
 
+<!-- 
+
+=== Feedback Psynaic 24.04.2016 ===
+
+Allgemein sehr gelungen, doch musst du noch die Regeln und Sieg-/Niederlagebedingungen einarbeiten.
+Des Weiteren brauchst du nicht umbedingt eine Tabelle um die drei Zähler für Zeit, "Leben" und Punktestand darzustellen.
+
+Hinzufügen könnte man:
+
+Pausebutton
+Highscoretabelle
+
+=== Feedback SammyNB 25.04.2016 ===
+Klingt gut, und dem Feedback von Psyniac ist nicht mehr viel hinzuzufügen. 
+Es ist gut strukturiert und die Elemente scheinen bis jetzt gut durchdacht.
+Was ich mich nur frage ist: Kann man sich quasi ein Konto einrichten, oder setzt man sich in jeder Runde
+einen neuen Nutzernamen?
+
+-->
+
+<!--
+===================================
+=== Feedback Alpers, 2016-04-27 ===
+===================================
+
+Leider sind es nicht nur relativ wenige strukturelle Elemente, sondern Sie haben Sie zum Teil auch nicht benannt. 
+Bsp.: "Tabellen = 3 größere Felder	| 1. Das Feld zeigt das ...
+Hier fehlt die Angabe, was 1., 2. und 3. für strukturelle Elemente sind.
+Leider sind auch schon diese wenigen Angaben sehr unübersichtlich, weil Sie nicht sinnvoll eingerückt (oder anderweitig strukturiert) haben.
+Vier Tabulatoren sind immer drei zu viel: Für jede Ebene einen.
+Die Beschreibungen zu jedem Element sind bei weitem zu umfangreich: Es geht hier vorrangig darum, hervorzuheben, welche Elemente es geben soll. Die Details kommen später.
+
+Beachten Sie bitte meine Anmerkungen in der Datei Projektidee.txt, bevor Sie weiterarbeiten.
+
+Und bearbeiten Sie bitte das Projekt so, wie in den Aufgaben beschrieben. (Dazu gehört beispielsweise, dass Sie a) kein CSS programmieren, b) keine HTML4.01-Techniken anwenden.)
+
+Um es in aller Deutlichkeit zu sagen: Gute Softwareentwicklung ist nicht die Fähigkeit, Quellcode zu produzieren, sondern die Fähigkeit, ein Softwareprojekt so solide zu konzipieren und zu strukturieren, dass Sie später Änderungen in sehr kurzer Zeit einpflegen können. Ihr HTML-Dokument ist auch in dieser Hinsicht mangelhaft.
+
+-->
+
+<!--
+===================================
+=== Feedback Alpers, 2016-06-08 ===
+===================================
+
+== (1) ==
+Der Sinn und Zweck dieser Aufgabe besteht darin, dass Sie alle sturkturellen Elemente, die mehrfach programmiert werden sollen nur einmal entwerfen. Gleich am Anfang zeigt sich, dass Sie genau das nicht getan haben, denn die Elemente -02- bis -06- sind identisch mit den Elementen -07- bis -11-.
+
+-02- - Log In Maske 
+-03-	- Textfeld (Überschrift: "Registrierung") 
+-04-	- Eingabefeld (Username:)
+-05-	- Eingabefeld (Passwort: Die Eingabe wird nicht angezeigt)
+-06-	- Button zum Absenden der Benutzereingaben (Anmeldung)
+
+-07- - Log in Maske für Admin
+-08-	- Textfeld (Admin Login)
+-09- 	- Eingabefeld (Adminname:)
+-10-	- Eingabefeld (Passwort: Die Eingabe wird nicht angezeigt)
+-11-	- Button (Anmelden)
+
+So wie Sie die Aufstellung vorgenommen haben wirkt es, als wenn Sie die strukturellen Elemente erst nach der Programmierung in HTML entworfen hätten. Wenn das der Fall ist, dann können Sie diese Planung auch gleich ganz sein lassen. Die ist aber die Grundlage für jedes langfristig erfolgreiche Unternehmen im Bereich Softwareentwicklung.
+
+Das selbe gilt z.B. für die Gruppen [IV]Erweiterung des Fragenkataloges und [V]Bearbeitung des Fragenkataloges.
+
+== (2) ==
+Bitte löschen Sie die strukturellen Elemente aus der Aufstellung der Ansichten: Da diese aus Gruppen zusammen gesetzt werden und wir bei den Gruppen bereits alle zugehörigen strukturellen Elemente haben brauchen wir diese nicht nochmal bei den Ansichten.
+
+== (3) ===
+Wertung 3: Ausarbeitung der strukt. Elem.: gesamt: 0 / 10
+- Knappe Form: 3
+- Für je 5 unterschiedl. strukt. Elem (keine Gruppierungen): 2
+- Vermischung strukt. Elem., Gruppierung, Abläufe usw.: -5 (da Doppelungen nicht entfernt wurden)
+
+Wertung 4: Gruppierungen: 4 / 5 (Abzug, weil Doppelung nicht entfernt wurde)
+- für jede sinnvolle Gruppe: 1
+
+Wertung 5: Ansichten: 4 / 5 (Abzug, weil Doppelung nicht entfernt wurde)
+- für jede sinnvolle Ansicht: 1
