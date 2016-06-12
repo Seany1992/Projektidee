@@ -1,4 +1,46 @@
 ﻿=====================================================
+=== Projektidee Seany1992, 2016-06-09 Version 4.0 ===
+=====================================================
+
+Meine Projektidee: Es soll ein Quiz auf Basis von Html, PHP und SQL programmiert werden (Webanwendung)
+
+- Vier Multiple Choice Antwortmöglichkeiten, durch eine richtige Antwort gelangt man zur nächsten Frage.
+- LogIn: Für Nutzer und Admin, beide können sich einloggen oder ggf. ein Konto einrichten. (Nutzernamen und Passwort)
+- Nachdem Quizteil wird die erreichte Punktzahl errechnet (Highscore).
+- Es wird eine Highscoreliste am Ende jedes Spieldurchlaufes geben.(Datenbank SQL)
+- Der Admin hat die Möglichkeit neue Fragen hinzuzufügen und sie zu bearbeiten.
+- Nutzer werden sich über Fragen und deren Antwortmöglichkeiten austauschedsn können (User Forum).
+- Ticketsystem für den Admin ist geplant, zur Verwaltung von User-Feedbacks.
+- Es wird für Einsteiger einen Trainingsmodus geben.
+
+- Besonderheiten (Spielregeln): 
+
+	- Ziel des Quiz: Eine hohe Punktzahl (Highscore), durch Schnelligkeit & richtige Antworten. 
+	
+	- Spieler startet mit 3 "Leben/Versuchen".
+	
+	- Zeitlimit bei jeder Frage, welches immer kürzer wird. (Maximal 15 Sekunden zum Anfang pro Frage)
+	
+	- Höhere Punktzahl durch schnelle Beantwortung. Es wird ein Zähler mitlaufen, der die benötige Zeit pro Frage abfängt.
+
+	- 5 richtig beantworteten Fragen hintereinander, Spieler erhält ein "Leben/Versuch" zurück.
+
+	- Niederlagebedingung: Sobald der Spieler alle "Leben/Versuche" verloren hat, dies geschieht durch falsche Antworten.
+	
+	- Siegbedingung: 20 Richtige Antworten und mindestens 1 "Leben/Versuch" übrig.
+
+- Interaktionen zwischen Spieler und Spiel:
+	- Ein computergesteuerter Gegenspieler für den Trainingsmodus wird eingebaut. 
+	- Dieser adaptiert das Spielverhalten der registrierten Nutzerprofile.
+	- Dadurch wird es eine große Anzahl an verschiedenen Gegenspieler geben(unterschiedlicher Schwierigkeitsgrad).
+	
+- Interaktionen zwischen Spieler und Spieler:
+	- Es wird ein Duellmodus eingebaut.
+	- Nutzer werden andere Nutzer herausfordern können.
+	- Die Nutzer spielen gleichzeitig, beiden werden die gleichen Fragen gestellt. Derjenige mit der höheren Punktzahl gewinnt.
+	- Kommunikation in Chatform wird möglich sein.
+
+=====================================================
 === Projektidee Seany1992, 2016-05-31 Version 3.0 ===
 =====================================================
 
