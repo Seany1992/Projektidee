@@ -83,3 +83,4 @@ shayan2013:
 
 12.06.2016		
 - Projektidee um Interaktionen erweitert
+- strukt.html überarbeitet mithilfe vom Feedback
