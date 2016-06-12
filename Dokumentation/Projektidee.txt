@@ -31,7 +31,8 @@ Meine Projektidee: Es soll ein Quiz auf Basis von Html, PHP und SQL programmiert
 
 - Interaktionen zwischen Spieler und Spiel:
 	- Ein computergesteuerter Gegenspieler für den Trainingsmodus wird eingebaut. 
-	- Dieser adaptiert das Spielverhalten der registrierten Nutzerprofile.
+	- Spielverhalten von Nutzern wird abgespeichert.
+	- Das Spielverhalten der registrierten Nutzerprofile wird von dem computergesteuerten Gegenspieler adaptiert. 
 	- Dadurch wird es eine große Anzahl an verschiedenen Gegenspieler geben(unterschiedlicher Schwierigkeitsgrad).
 	
 - Interaktionen zwischen Spieler und Spieler:
