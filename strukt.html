@@ -1,10 +1,10 @@
-<!-- Aufgabe 1.0 Version 4.0 09.06.2016 -->
+<!-- Aufgabe 1.0 Version 4.0 14.06.2016 -->
 <!--
 =======================
 === Vierter Entwurf ===
 =======================
 
-
+Die Absätze in der Struktur dienen nur zur Übersicht und der besseren Lesbarkeit 
 ===================================
 == (1) Strukturierung von Ansichten
 ===================================
@@ -16,39 +16,44 @@
 -06- - Buttons (Button1:Trainingsmodus starten |Button2: Duellmodus starten |Button3: Quiz starten |Button4: Regelwerk aufrufen)
 -07- - Textfeld (Textfeld1:"Trainingsmodus" |Textfeld2:"Duellmodus" |Textfeld3: "Einzelspieler" |Textfeld4: "Regelwerk") 
 
--09- - Textfeld (fortlaufende Nummerierung der Fragen z.b. "1")
--10- - Textfeld (Fragestellung)
--11- - Textfelder (Textfeld1:Antwort |Textfeld2:Antwort |Textfeld3:Antwort |Textfeld4:Antwort)
--12- - Radio Buttons (Button1:Antwortmöglichkeit |Button2:Antwortmöglichkeit |Button3:Antwortmöglichkeit |Button4:Antwortmöglichkeit) 
--13- - Hintergrundbild (Themespezifische Einblendung von Bildern)
--14- - Buttons (Button1: Link zur nächsten Frage |Button2: Link zur vorherigen Frage)
--15- - Textfelder (Textfeld1:"Versuche" |Textfeld2:"Punktzahl" |Textfeld3:"Zeitlimit")
+-08- - Textfeld (fortlaufende Nummerierung der Fragen z.b. "1")
+-09- - Textfeld (Fragestellung)
+-10- - Textfelder (Textfeld1:Antwort |Textfeld2:Antwort |Textfeld3:Antwort |Textfeld4:Antwort)
+-11- - Radio Buttons (Button1:Antwortmöglichkeit |Button2:Antwortmöglichkeit |Button3:Antwortmöglichkeit |Button4:Antwortmöglichkeit) 
+-12- - Hintergrundbild (Themespezifische Einblendung von Bildern)
+-13- - Buttons (Button1: Link zur nächsten Frage |Button2: Link zur vorherigen Frage)
+-14- - Textfelder (Textfeld1:"Versuche" |Textfeld2:"Punktzahl Spieler1" |Textfeld3:"Zeitlimit" |Textfeld4:"Punktzahl Spieler2")
  
--16- - Textfeld ("Userfeedback" |Admin)
--17- - Liste (sortierte Liste: neuesten Userfeedbacks |Admin)
--18- - Buttons (Button1:Userfeedback anzeigen (Admin) |Button2:Userfeedback beantworten (Admin) |Button3:Userfeedback löschen (Admin))
+-15- - Textfeld ("Userfeedback" |Admin)
+-16- - Liste (sortierte Liste: neuesten Userfeedbacks |Admin)
+-17- - Buttons (Button1:Userfeedback anzeigen (Admin) |Button2:Userfeedback beantworten (Admin) |Button3:Userfeedback löschen (Admin))
+-18- - Textfeld ("Frage erstellen/bearbeiten" |Admin)
+-19- - Eingabefeld (Frage formulieren/bearbeiten |Admin)
+-20- - Eingabefelder (Eingabefeld1: Antwort1 formulieren/bearbeiten(Admin) |Eingabefeld2: Antwort2 formulieren/bearbeiten(Admin) |Eingabefeld3: Antwort3 		formulieren/bearbeiten(Admin) |Eingabefeld4: Antwort4 formulieren/bearbeiten(Admin))
+-21- - Checkboxen (Checkbox1:Antwort1 richtig (Admin) |Checkbox2:Antwort2 richtig (Admin) |Checkbox3:Antwort3 richtig (Admin) |Checkbox4:Antwort4 richtig (Admin))
+-22- - Button (Frage erstellen/bearbeiten |Admin)
 
--19- - Textfeld ("Frage erstellen/bearbeiten" |Admin)
--20- - Eingabefeld (Frage formulieren/bearbeiten |Admin)
--21- - Eingabefelder (Eingabefeld1: Antwort1 formulieren/bearbeiten(Admin) |Eingabefeld2: Antwort2 formulieren/bearbeiten(Admin) |Eingabefeld3: Antwort3 formulieren/bearbeiten(Admin) |Eingabefeld4: Antwort4 formulieren/bearbeiten(Admin))
--22- - Checkboxen (Checkbox1:Antwort1 richtig (Admin) |Checkbox2:Antwort2 richtig (Admin) |Checkbox3:Antwort3 richtig (Admin) |Checkbox4:Antwort4 richtig (Admin))
--23- - Button (Frage erstellen/bearbeiten |Admin)
+-23- - Textfelder ("Userfeedback" Feedback zu einzelnen Fragen)
+-24- - Eingabefeld (User Feedback erstellen)
+-25- - Button (Feedback absenden)
+-26- - Tabelle (User-Feedback wird angezeigt)
 
--24- - Textfelder ("Userfeedback" Feedback zu einzelnen Fragen)
--25- - Eingabefeld (User Feedback erstellen)
--26- - Button (Feedback absenden)
--27- - Tabelle (User-Feedback wird angezeigt)
+-27- - Textfeld ("Auswertung")
+-28- - Textfeld (Anzahl der richtigen & falschen Antworten)
+-29- - Tabelle  (Highscore-Liste)
+-30- - Textfelder (Textfeld1:"Username" |Textfeld2:"Platzierung" |Textfeld3:"Punktzahl")
+-31- - Button (Neustart des Quizes)
 
--28- - Textfeld ("Auswertung")
--29- - Textfeld (Anzahl der richtigen & falschen Antworten)
--30- - Tabelle  (Highscore-Liste)
--31- - Textfelder (Textfeld1:"Username" |Textfeld2:"Platzierung" |Textfeld3:"Punktzahl")
--32- - Button (Neustart des Quizes)
+-32- - Textfeld ("Schwierigkeitsgrad auswählen")
+-33- - Radio Buttons (Button1: Leicht |Button2: Mittel |Button3: Schwer)
+-34- - Tabelle (Liste mit registrierten Nutzerprofilen)
+-35- - Textfeld ("Gegner herausfordern!")
+-36- - Button (Ein Button um einen Spieler herauszufordern)
 -->
 
 
 
-<!-- Aufgabe 1.1  09.06.2016 -->
+<!-- Aufgabe 1.1  14.06.2016 -->
 <!--
 =======================
 == (1.1) Gruppen bilden
@@ -66,16 +71,16 @@
 -05- - Buttons (Benutzereingaben absenden Submit)
 
 [III] Verwaltung des Userfeedbacks
--16- - Textfeld ("Userfeedback" |Admin)
--17- - Liste (sortierte Liste: neuesten Userfeedbacks |Admin)
--18- - Buttons (Button1:Userfeedback anzeigen (Admin) |Button2:Userfeedback beantworten (Admin) |Button3:Userfeedback löschen (Admin))
+-15- - Textfeld ("Userfeedback" |Admin)
+-16- - Liste (sortierte Liste: neuesten Userfeedbacks |Admin)
+-17- - Buttons (Button1:Userfeedback anzeigen (Admin) |Button2:Userfeedback beantworten (Admin) |Button3:Userfeedback löschen (Admin))
 
 [IV] Erweiterung/Bearbeitung des Fragenkataloges
--19- - Textfeld ("Frage erstellen/bearbeiten" |Admin)
--20- - Eingabefeld (Frage formulieren/bearbeiten |Admin)
--21- - Eingabefelder (Eingabefeld1: Antwort1 formulieren/bearbeiten(Admin) |Eingabefeld2: Antwort2 formulieren/bearbeiten(Admin) |Eingabefeld3: Antwort3 formulieren/bearbeiten(Admin) |Eingabefeld4: Antwort4 formulieren/bearbeiten(Admin))
--22- - Checkboxen (Checkbox1:Antwort1 richtig (Admin) |Checkbox2:Antwort2 richtig (Admin) |Checkbox3:Antwort3 richtig (Admin) |Checkbox4:Antwort4 richtig (Admin))
--23- - Button (Frage erstellen/bearbeiten |Admin)
+-18- - Textfeld ("Frage erstellen/bearbeiten" |Admin)
+-19- - Eingabefeld (Frage formulieren/bearbeiten |Admin)
+-20- - Eingabefelder (Eingabefeld1: Antwort1 formulieren/bearbeiten(Admin) |Eingabefeld2: Antwort2 formulieren/bearbeiten(Admin) |Eingabefeld3: Antwort3 formulieren/bearbeiten(Admin) |Eingabefeld4: Antwort4 formulieren/bearbeiten(Admin))
+-21- - Checkboxen (Checkbox1:Antwort1 richtig (Admin) |Checkbox2:Antwort2 richtig (Admin) |Checkbox3:Antwort3 richtig (Admin) |Checkbox4:Antwort4 richtig (Admin))
+-22- - Button (Frage erstellen/bearbeiten |Admin)
 
 [V] Trainingmodus
 -01- - Textfeld (Titel vom Projekt)
@@ -83,13 +88,15 @@
 -06- - Buttons (Button1:Trainingsmodus starten)
 -07- - Textfeld (|Textfeld4: "Regelwerk")
 -06- - Buttons (|Button4: Regelwerk aufrufen)
--09- - Textfeld (fortlaufende Nummerierung der Fragen z.b. "1")
--10- - Textfeld (Fragestellung)
--11- - Textfelder (Textfeld1:Antwort |Textfeld2:Antwort |Textfeld3:Antwort |Textfeld4:Antwort)
--12- - Radio Buttons (Button1:Antwortmöglichkeit |Button2:Antwortmöglichkeit |Button3:Antwortmöglichkeit |Button4:Antwortmöglichkeit) 
--13- - Hintergrundbild (Themespezifische Einblendung von Bildern)
--14- - Buttons (Button1: Link zur nächsten Frage |Button2: Link zur vorherigen Frage)
--15- - Textfelder (Textfeld1:"Versuche" |Textfeld2:"Punktzahl" |Textfeld3:"Zeitlimit")
+-32- - Textfeld ("Schwierigkeitsgrad auswählen")
+-33- - Radio Buttons (Button1: Leicht |Button2: Mittel |Button3: Schwer)
+-08- - Textfeld (fortlaufende Nummerierung der Fragen z.b. "1")
+-09- - Textfeld (Fragestellung)
+-10- - Textfelder (Textfeld1:Antwort |Textfeld2:Antwort |Textfeld3:Antwort |Textfeld4:Antwort)
+-11- - Radio Buttons (Button1:Antwortmöglichkeit |Button2:Antwortmöglichkeit |Button3:Antwortmöglichkeit |Button4:Antwortmöglichkeit) 
+-12- - Hintergrundbild (Themespezifische Einblendung von Bildern)
+-13- - Buttons (Button1: Link zur nächsten Frage |Button2: Link zur vorherigen Frage)
+-14- - Textfelder (Textfeld1:"Versuche" |Textfeld2:"Punktzahl Spieler1" |Textfeld3:"Zeitlimit")
 
 [VI] Duellmodus
 -01- - Textfeld (Titel vom Projekt)
@@ -97,13 +104,16 @@
 -06- - Buttons (|Button2: Duellmodus starten)
 -07- - Textfeld (|Textfeld4: "Regelwerk")
 -06- - Buttons (|Button4: Regelwerk aufrufen)
--09- - Textfeld (fortlaufende Nummerierung der Fragen z.b. "1")
--10- - Textfeld (Fragestellung)
--11- - Textfelder (Textfeld1:Antwort |Textfeld2:Antwort |Textfeld3:Antwort |Textfeld4:Antwort)
--12- - Radio Buttons (Button1:Antwortmöglichkeit |Button2:Antwortmöglichkeit |Button3:Antwortmöglichkeit |Button4:Antwortmöglichkeit) 
--13- - Hintergrundbild (Themespezifische Einblendung von Bildern)
--14- - Buttons (Button1: Link zur nächsten Frage |Button2: Link zur vorherigen Frage)
--15- - Textfelder (Textfeld1:"Versuche" |Textfeld2:"Punktzahl" |Textfeld3:"Zeitlimit")
+-34- - Tabelle (Liste mit registrierten Nutzerprofilen)
+-35- - Textfeld ("Gegner herausfordern!")
+-36- - Button (Ein Button um einen Spieler herauszufordern)
+-08- - Textfeld (fortlaufende Nummerierung der Fragen z.b. "1")
+-09- - Textfeld (Fragestellung)
+-10- - Textfelder (Textfeld1:Antwort |Textfeld2:Antwort |Textfeld3:Antwort |Textfeld4:Antwort)
+-11- - Radio Buttons (Button1:Antwortmöglichkeit |Button2:Antwortmöglichkeit |Button3:Antwortmöglichkeit |Button4:Antwortmöglichkeit) 
+-12- - Hintergrundbild (Themespezifische Einblendung von Bildern)
+-13- - Buttons (Button1: Link zur nächsten Frage |Button2: Link zur vorherigen Frage)
+-14- - Textfelder (Textfeld1:"Versuche" |Textfeld2:"Punktzahl Spieler1" |Textfeld3:"Zeitlimit" |Textfeld4:"Punktzahl Spieler2")
 
 [VII] Quizmodus
 -01- - Textfeld (Titel vom Projekt)
@@ -111,30 +121,30 @@
 -06- - Buttons (|Button3: Quiz starten)
 -07- - Textfeld (|Textfeld4: "Regelwerk")
 -06- - Buttons (|Button4: Regelwerk aufrufen)
--09- - Textfeld (fortlaufende Nummerierung der Fragen z.b. "1")
--10- - Textfeld (Fragestellung)
--11- - Textfelder (Textfeld1:Antwort |Textfeld2:Antwort |Textfeld3:Antwort |Textfeld4:Antwort)
--12- - Radio Buttons (Button1:Antwortmöglichkeit |Button2:Antwortmöglichkeit |Button3:Antwortmöglichkeit |Button4:Antwortmöglichkeit) 
--13- - Hintergrundbild (Themespezifische Einblendung von Bildern)
--14- - Buttons (Button1: Link zur nächsten Frage |Button2: Link zur vorherigen Frage)
--15- - Textfelder (Textfeld1:"Versuche" |Textfeld2:"Punktzahl" |Textfeld3:"Zeitlimit")
+-08- - Textfeld (fortlaufende Nummerierung der Fragen z.b. "1")
+-09- - Textfeld (Fragestellung)
+-10- - Textfelder (Textfeld1:Antwort |Textfeld2:Antwort |Textfeld3:Antwort |Textfeld4:Antwort)
+-11- - Radio Buttons (Button1:Antwortmöglichkeit |Button2:Antwortmöglichkeit |Button3:Antwortmöglichkeit |Button4:Antwortmöglichkeit) 
+-12- - Hintergrundbild (Themespezifische Einblendung von Bildern)
+-13- - Buttons (Button1: Link zur nächsten Frage |Button2: Link zur vorherigen Frage)
+-14- - Textfelder (Textfeld1:"Versuche" |Textfeld2:"Punktzahl Spieler1" |Textfeld3:"Zeitlimit")
 
  
 [VIII] Auswertung und Highscoretabelle 
--28- - Textfeld ("Auswertung")
--29- - Textfeld (Anzahl der richtigen & falschen Antworten)
--30- - Tabelle  (Highscore-Liste)
--31- - Textfelder (Textfeld1:"Username" |Textfeld2:"Platzierung" |Textfeld3:"Punktzahl")
--32- - Button (Neustart des Quizes)
+-27- - Textfeld ("Auswertung")
+-28- - Textfeld (Anzahl der richtigen & falschen Antworten)
+-29- - Tabelle  (Highscore-Liste)
+-30- - Textfelder (Textfeld1:"Username" |Textfeld2:"Platzierung" |Textfeld3:"Punktzahl")
+-31- - Button (Neustart des Quizes)
 
 [IX] Userforum
--24- - Textfelder ("Userfeedback" Feedback zu einzelnen Fragen)
--25- - Eingabefeld (User Feedback erstellen)
--26- - Button (Feedback absenden)
--27- - Tabelle (User-Feedback wird angezeigt)
+-23- - Textfelder ("Userfeedback" Feedback zu einzelnen Fragen)
+-24- - Eingabefeld (User Feedback erstellen)
+-25- - Button (Feedback absenden)
+-26- - Tabelle (User-Feedback wird angezeigt)
 -->
 
-<!-- Aufgabe 1.2  25.05.2016 -->
+<!-- Aufgabe 1.2  14.06.2016 -->
 <!--
 =========================
 == (1.2) Ansichten bilden
@@ -174,7 +184,7 @@
 -------------------------
 --- view_Auswertung---
 -------------------------
-[IX] Auswertung und Highscoretabelle 
+[VIII] Auswertung und Highscoretabelle 
 
 
 ----------------------- 
