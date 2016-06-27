@@ -583,3 +583,43 @@ Wertung 4: Gruppierungen: 4 / 5 (Abzug, weil Doppelung nicht entfernt wurde)
 
 Wertung 5: Ansichten: 4 / 5 (Abzug, weil Doppelung nicht entfernt wurde)
 - für jede sinnvolle Ansicht: 1
+
+===================================
+=== Feedback Alpers, 2016-06-27 ===
+===================================
+
+(1) Sie haben bei den strukturellen Elementen daran gearbeitet, effizient zu sein, aber dadurch ist die Aufstellung leider zum Teil unübersichtlich oder auch missverständlich geworden:
+
+(1.1) -06- - Buttons (Button1:Trainingsmodus starten |Button2: Duellmodus starten |Button3: Quiz starten |Button4: Regelwerk aufrufen)
+Wenn das hier vier unterschiedliche Schaltflächen sind, an die später unterschiedliche Funktionalitäten angebunden werden sollen, dann notieren Sie sie bitte einzelne. Denn wenn sich später herausstellt, dass einzelne wegfallen sollten oder neue hinzukommen, wird das in der Aufstellung nur schwer erkennbar sein. (Nicht vergessen: Dies ist ein Planungswerkzeug, der Inhalt wird sich also kontinuierlich ändern.)
+
+(1.2) -07- - Textfeld (Textfeld1:"Trainingsmodus" |Textfeld2:"Duellmodus" |Textfeld3: "Einzelspieler" |Textfeld4: "Regelwerk") 
+Wenn es hier lediglich darum geht, die Beschriftung der einzelnen Schaltflächen zu klären, dann handelt es sich um Labels. Textfelder sind einzelne Texte, die direkt in der Webanwendung angezeigt werden und keinerlei Funktionalität haben.
+
+Ähnliches gilt z.B. für -10- und -11-.
+
+(2) Zum Teil sollten Sie versuchen etwas genauer zu differenzieren, um was für eine Art strukturelles Element es sich handelt:
+
+(2.1) -32- - Textfeld ("Schwierigkeitsgrad auswählen")
+Überlegen Sie, ob das nicht eher als eine Überschrift sinnvoll wäre, bzw. ob es sich um den Titel eines Formulars handelt.
+
+(3) Leider haben Sie noch immer Doubletten in der Aufstellung:
+
+(3.1) So sind z.B. [I] LogIn Spieler und [II] LogIn Admin gleich. 
+
+(3.2) -20- - Eingabefelder (Eingabefeld1: Antwort1 formulieren/bearbeiten(Admin) |Eingabefeld2: Antwort2 formulieren/bearbeiten(Admin) |Eingabefeld3: Antwort3 		formulieren/bearbeiten(Admin) |Eingabefeld4: Antwort4 formulieren/bearbeiten(Admin))
+
+Anm.: Wenn Sie Doubletten löschen, dann tragen Sie am besten einen Kommentar ein, wie "-..- gelöscht, da doppelt.
+
+Wertung 3: Ausarbeitung der strukt. Elem.: gesamt: 2 / 10
+- Knappe Form: 5
+- Für je 5 unterschiedl. strukt. Elem (keine Gruppierungen): 2
+- Vermischung strukt. Elem., Gruppierung, Abläufe usw.: -5 (da Doppelungen nicht entfernt wurden)
+
+Wertung 4: Gruppierungen: 4 / 5 (Abzug, weil Doppelung nicht entfernt wurde)
+- für jede sinnvolle Gruppe: 1
+
+Wertung 5: Ansichten: 4 / 5 (Abzug, weil Doppelung nicht entfernt wurde)
+- für jede sinnvolle Ansicht: 1
+
+P.S. Auch wenn hier noch einiges an Arbeit nötig ist, sollten Sie schon einmal mit den nächsten Aufgaben beginnen. Denn Sie werden dann zwar das ein oder andere später löschen müssen, aber so können Sie sehen, wie die Planung in die Implementierung übergeht.
