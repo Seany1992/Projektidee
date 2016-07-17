@@ -1,3 +1,263 @@
+<!-- Aufgabe 1.0 Version 5.0 16.07.2016 -->
+<!--
+=======================
+=== Fünfter Entwurf ===
+=======================
+
+Die Absätze in der Struktur dienen nur zur Übersicht und besseren Lesbarkeit.
+Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersichtlicher ist und nicht zu Missverständen führt.
+(Doubletten entfernt und strukturelle Elemente einzeln aufgelistet, statt sie zusammenzufassen)
+===================================
+== (1) Strukturierung von Ansichten
+===================================
+-01- - Textfeld (Titel vom Projekt)
+-02- - Textfeld (Überschrift: Log-In) 
+-03- - Eingabefeld (Funtkion: Eingabe Username)
+-04- - Eingabefeld (Funktion: Eingabe Passwort)
+	//Kommentar: Eingabe des Passwort Verschlüsselt
+-05- - Schaltfläche (Label: Submit)
+-06- - Schaltfläche (Label: Trainingsmodus)
+-07- - Schaltfläche (Label: Duellmodus)
+-08- - Schaltfläche (Label: Einzelspieler)
+-09- - Schaltfläche (Label: Regelwerk)
+
+-10- - Textfeld (Inhalt: fortlaufende Nummerierung der Fragen z.b. "1")
+-11- - Liste (Inhalt: Fortschritt innherhalb des Quiz)
+	//Kommentar: Orientierungsleiste für die Spielrunde. Anzahl der der noch offenen- und bereits richtig beantworteten Fragen.  
+-12- - Textfeld (Inhalt: Fragestellung)
+-13- - Textfeld (Inhalt: Antwort)
+	//Kommentar: Doubletten entfernt, statt vier Antwort nurnoch eine.
+-14- - Radio Button (Antwortmöglichkeit)
+	//Kommentar: Doubletten entfernt, statt vier Antwortmöglichkeiten nurnoch eine.
+-15- - Hintergrundbild (Themespezifische Einblendung von Bildern)
+-16- - Schaltfläche (Label: nächste Frage)
+-17- - Schaltfläche (Label: vorherige Frage) 
+-18- - Textfeld (Inhalt: Versuche/Lebensanzahl) 
+	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Funktion in PHP inkl. Datenbankanbindung in MySQL
+-19- - Textfeld (Inhalt: Punktzahl Spieler)
+	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Funktion in PHP inkl. Datenbankanbindung in MySQL
+-20- - Textfeld (Inhalt: Zeitlimit)
+	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Funktion in PHP inkl. Datenbankanbindung in MySQL
+
+-21- - Textfelder (Überschrift: Userfeedback zu einzelnen Quizfragen)
+-22- - Eingabefeld (Funktion: Feedback formulieren)
+-23- - Schaltfläche (Label: Feedback absenden)
+ 
+-24- - Textfeld (Überschrift: Userfeedback)
+-25- - Tabelle (Inhalt: neueste Feedbacks werden angezeigt)
+-26- - Schaltflächen (Label: Feedback anzeigen)
+-27- - Schaltflächen (Label: Feedback beantworten)
+-28- - Schaltflächen (Label: Feedback löschen)
+-29- - Textfeld (Überschrift: Quizfrage erstellen/bearbeiten)
+-30- - Eingabefeld (Funktion: Quizfrage erstellen oder bearbeiten)
+-31- - Eingabefeld (Funktion: Quizantwort formulieren oder bearbeiten)
+	//Kommentar: Doubletten entfernt 
+-32- - Checkbox (Funktion: Angabe der richtigen Antwort)	
+	//Kommentar: Nutzer markiert die richtige Antwort zu der formulierten Quizfrage.
+-33- - Schaltfläche (Label: Frage speichern)
+
+-34- - Textfeld (Überschrift: Auswertung)
+-35- - Textfeld (Inhalt: Anzahl der richtigen & falschen Antworten)
+	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Funktion in PHP inkl. Datenbankanbindung in MySQL
+-36- - Tabelle  (Inhalt: Highscore-Liste)
+	//Kommentar: ausführliche Tabelle mit Usernamen, Platzierungen und Punktzahlen der Nutzer
+-37- - Schatlfläche (Label: Neustart des Quizes)
+
+-38- - Textfeld (Überschrift: Schwierigkeitsgrad auswählen)
+-39- - Radio Button (Label: Leicht)
+-40- - Radio Button (Label: Mittel)
+-41- - Radio Button (Label: Schwer)
+-42- - Tabelle (Inhalt: Registrierten Nutzerprofilen)
+-43- - Textfeld (Überschrift: Gegner herausfordern!)
+-44- - Schaltfläche (Funktion: Einen Spieler herauszufordern)
+-->
+
+
+<!-- Aufgabe 1.1  16.07.2016 -->
+<!--
+=======================
+== (1.1) Gruppen bilden
+=======================
+[I] LogIn Spieler
+-02- - Textfeld (Überschrift: Log-In) 
+-03- - Eingabefeld (Funtkion: Eingabe Username)
+-04- - Eingabefeld (Funktion: Eingabe Passwort)
+	//Kommentar: Eingabe des Passwort Verschlüsselt
+-05- - Schaltfläche (Label: Submit)
+
+([II] LogIn Admin "-gelöscht da doppelt-")
+
+[II] Userforum
+-25- - Tabelle (Inhalt: neueste Feedbacks werden angezeigt)
+-21- - Textfelder (Überschrift: Userfeedback zu einzelnen Quizfragen)
+-22- - Eingabefeld (Funktion: Feedback formulieren)
+-23- - Schaltfläche (Label: Feedback absenden)
+
+[III] Verwaltung des Userfeedbacks
+-24- - Textfeld (Überschrift: Userfeedback)
+-25- - Tabelle (Inhalt: neueste Feedbacks werden angezeigt)
+-26- - Schaltflächen (Label: Feedback anzeigen)
+-27- - Schaltflächen (Label: Feedback beantworten)
+-28- - Schaltflächen (Label: Feedback löschen)
+
+[IV] Erweiterung/Bearbeitung des Fragenkataloges
+-29- - Textfeld (Überschrift: Quizfrage erstellen/bearbeiten)
+-30- - Eingabefeld (Funktion: Quizfrage erstellen oder bearbeiten)
+-31- - Eingabefeld (Funktion: Quizantwort formulieren oder bearbeiten)
+	//Kommentar: Doubletten entfernt 
+-32- - Checkbox (Funktion: Angabe der richtigen Antwort)	
+	//Kommentar: Nutzer markiert die richtige Antwort zu der formulierten Quizfrage.
+-33- - Schaltfläche (Label: Frage speichern)
+
+[V] Einzelspieler
+-01- - Textfeld (Titel vom Projekt)
+-08- - Schaltfläche (Label: Einzelspieler)
+-09- - Schaltfläche (Label: Regelwerk)
+-10- - Textfeld (Inhalt: fortlaufende Nummerierung der Fragen z.b. "1")
+-11- - Liste (Inhalt: Fortschritt innherhalb des Quiz)
+-12- - Textfeld (Inhalt: Fragestellung)
+-13- - Textfeld (Inhalt: Antwort)
+	//Kommentar: Textfelder mit Antworten 4x notwendig
+-14- - Radio Button (Antwortmöglichkeit)
+	//Kommentar: Radio Buttons mit Antwortmöglichkeiten 4x notwendig
+-15- - Hintergrundbild (Themespezifische Einblendung von Bildern)
+-16- - Schaltfläche (Label: nächste Frage)
+-17- - Schaltfläche (Label: vorherige Frage) 
+-18- - Textfeld (Inhalt: Versuche/Lebensanzahl) 
+-19- - Textfeld (Inhalt: Punktzahl Spieler)
+-20- - Textfeld (Inhalt: Zeitlimit)
+	
+	
+[VI] Trainingsmodus
+-01- - Textfeld (Titel vom Projekt)
+-06- - Schaltfläche (Label: Trainingsmodus)
+-09- - Schaltfläche (Label: Regelwerk)
+-38- - Textfeld (Überschrift: Schwierigkeitsgrad auswählen)
+-39- - Radio Button (Label: Leicht)
+-40- - Radio Button (Label: Mittel)
+-41- - Radio Button (Label: Schwer)
+-10- - Textfeld (Inhalt: fortlaufende Nummerierung der Fragen z.b. "1")
+-11- - Liste (Inhalt: Fortschritt innherhalb des Quiz)
+-12- - Textfeld (Inhalt: Fragestellung)
+-13- - Textfeld (Inhalt: Antwort)
+	//Kommentar: Textfelder mit Antworten 4x notwendig
+-14- - Radio Button (Antwortmöglichkeit)
+	//Kommentar: Radio Buttons mit Antwortmöglichkeiten 4x notwendig
+-15- - Hintergrundbild (Themespezifische Einblendung von Bildern)
+-16- - Schaltfläche (Label: nächste Frage)
+-17- - Schaltfläche (Label: vorherige Frage) 
+-18- - Textfeld (Inhalt: Versuche/Lebensanzahl) 
+-19- - Textfeld (Inhalt: Punktzahl Spieler)
+-20- - Textfeld (Inhalt: Zeitlimit)
+
+
+[VII] Duellmodus
+-01- - Textfeld (Titel vom Projekt)
+-07- - Schaltfläche (Label: Duellmodus)
+-09- - Schaltfläche (Label: Regelwerk)
+-42- - Tabelle (Inhalt: Registrierten Nutzerprofilen)
+-43- - Textfeld (Überschrift: Gegner herausfordern!)
+-44- - Schaltfläche (Funktion: Einen Spieler herauszufordern)
+-10- - Textfeld (Inhalt: fortlaufende Nummerierung der Fragen z.b. "1")
+-11- - Liste (Inhalt: Fortschritt innherhalb des Quiz)
+-12- - Textfeld (Inhalt: Fragestellung)
+-13- - Textfeld (Inhalt: Antwort)
+	//Kommentar: Textfelder mit Antworten 4x notwendig
+-14- - Radio Button (Antwortmöglichkeit)
+	//Kommentar: Radio Buttons mit Antwortmöglichkeiten 4x notwendig
+-15- - Hintergrundbild (Themespezifische Einblendung von Bildern)
+-16- - Schaltfläche (Label: nächste Frage)
+-17- - Schaltfläche (Label: vorherige Frage) 
+-18- - Textfeld (Inhalt: Versuche/Lebensanzahl) 
+-19- - Textfeld (Inhalt: Punktzahl Spieler)
+-20- - Textfeld (Inhalt: Zeitlimit)
+
+[VIII] Auswertung und Highscoretabelle 
+-34- - Textfeld (Überschrift: Auswertung)
+-35- - Textfeld (Inhalt: Anzahl der richtigen & falschen Antworten)
+	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Funktion in PHP inkl. Datenbankanbindung in MySQL
+-36- - Tabelle  (Inhalt: Highscore-Liste)
+	//Kommentar: ausführliche Tabelle mit Usernamen, Platzierungen und Punktzahlen der Nutzer
+-37- - Schatlfläche (Label: Neustart des Quizes)
+
+
+
+-->
+
+<!-- Aufgabe 1.2  16.07.2016 -->
+<!--
+=========================
+== (1.2) Ansichten bilden
+=========================
+-----------------------
+---    view_index   ---
+-----------------------
+[I]LogIn Spieler
+
+
+----------------------- 
+--- view_Userforum  ---
+-----------------------
+[II] Userforum
+
+
+-----------------------
+---view_Adminbereich---
+-----------------------
+[III] Verwaltung des Userfeedbacks
+[IV] Erweiterung/Bearbeitung des Fragenkataloges
+
+
+-------------------------
+--- view_Einzelspieler---
+-------------------------
+[V] Einzelspieler
+
+
+--------------------------
+--- view_Trainingsmodus---
+--------------------------
+[VI] Trainingmodus
+
+
+----------------------
+--- view_Duellmodus---
+----------------------
+[VII] Duellmodus
+
+
+-------------------------
+--- view_Auswertung---
+-------------------------
+[VIII] Auswertung und Highscoretabelle 
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- Aufgabe 1.0 Version 4.0 14.06.2016 -->
 <!--
 =======================
