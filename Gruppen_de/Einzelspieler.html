@@ -12,10 +12,26 @@
 	</header>
 		
 	<form>
+		<button type="button" id="berechnen">Regelwerk aufrufen</button>
+		<!-- Schaltfläche zum Aufrufen des Regelwerkes -->
+		<p>Frage 1 von X</p> <!-- fortlaufende Nummerierung der Fragen z.b. "1"-->
+		<p><b>Wie heißt der ...</b></p> <!-- Die Fragestellung als "bold Text" (fettgedruckt) -->
 	
-	
+		<fieldset>
+				<legend>Quizfrage</legend> <!-- Überschrift vom Formular --> 
+				
+				<p>A: Antwort</p> <!-- Textfeld mit Antwortmöglichkeit 1 --> 
+				<input type="radio" id="answer1" name="answer" value="answer" required><!-- Radiobutton mit Antwort1 --> 
+				<p>B: Antwort</p> <!-- Textfeld mit Antwortmöglichkeit 2 --> 
+				<input type="radio" id="answer2" name="answer" value="answer" required><!-- Radiobutton mit Antwort2 -->
+				<p>C: Antwort</p> <!-- Textfeld mit Antwortmöglichkeit 3 --> 
+				<input type="radio" id="answer3" name="answer" value="answer" required><!-- Radiobutton mit Antwort3 -->
+				<p>D: Antwort</p> <!-- Textfeld mit Antwortmöglichkeit 4 --> 
+				<input type="radio" id="answer4" name="answer" value="answer" required><!-- Radiobutton mit Antwort4 -->		
+		</fieldset>
 	</form>
 
+	
 </body>
 
 </html>
