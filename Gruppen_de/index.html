@@ -13,19 +13,29 @@
 		</header>
 		
 		<main>
-			<form>
-				<p>Nutzername:<input name=username required></p> 
-				<!-- Eingabe des Nutzernamens -->
+			<form id=registrierung>
+			<!-- Hier werden einzelne Eingabemöglichkeiten zur Registrierung von Nutzern einprogrammiert -->
 			
-				<p>Passwort:<input name=passwort required></p> 
-				<!-- Eingabe des Passwort -->
+				<fieldset> <!-- Gruppierung und Zuordnung von Eingabeelementen in einem <fieldset>-Container -->
+					<legend>Bitte geben Sie Ihre persönlichen Daten zur Registrierung  ein:</legend> 
+					<!-- Überschrift vom Fieldset Container --> 
+					
+					<p>Nutzername:<input name=username required></p> 
+					<!-- Eingabe des Nutzernamens -->
 				
-				<p>E-Mail: <input type=email name=email required></p> 
-				<!-- Eingabe der E-Mail -->
-			
-				<p><input type=submit name=submit></p> 
-				<!-- Submit Schaltfläche zum bestätigen der Eingaben, verlinkt zum Hauptmenü -->
+					<p>Passwort:<input name=passwort required></p> 
+					<!-- Eingabe des Passwort -->
+					
+					<p>E-Mail: <input type=email name=email required></p> 
+					<!-- Eingabe der E-Mail -->
 				
+					<p><input type=submit name=submit></p> 
+					<!-- Submit Schaltfläche zum bestätigen der Eingaben, verlinkt zum Hauptmenü -->
+					
+					<button form=registrierung type=reset>Eingaben zurücksetzen</button>
+					<!-- Schaltfläche um Benutzereingaben zurückzusetzen (Vereinfachung der Bedienung) --> 
+					
+				</fieldset>
 			</form>
 		</main>
 	<footer><!-- Später Verweis auf kontaktformular (Link Impressum) --></footer>

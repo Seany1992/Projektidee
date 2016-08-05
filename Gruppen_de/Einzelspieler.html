@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang=de> <!-- Internationalisierung der Datei -->
-<head>
-	<meta charset=utf-8>  <!-- Lokalisierung der Datei -->
-	<title>Quizprojekt</title> <!--Titel des Quizes (Endgültiger Name steht noch nicht fest) -->
-</head>
+	<head>
+		<meta charset=utf-8>  <!-- Lokalisierung der Datei -->
+		<title>Quizprojekt</title> <!--Titel des Quizes (Endgültiger Name steht noch nicht fest) -->
+	</head>
 
-<body>
-	<header>
-		<img><!-- Hier das Logo des Quizes --></img>
-		<h1>Einzelspieler</h1>	<!-- Überschrift der Seite --> 
-	</header>
+	<body>
+		<header>
+			<img><!-- Hier das Logo des Quizes --></img>
+			<h1>Einzelspieler</h1>	<!-- Überschrift der Seite --> 
+		</header>
+			
+		<form>
+			<button type=button id=regelwerk>Regelwerk aufrufen</button>
+			<!-- Schaltfläche zum Aufrufen des Regelwerkes -->
+			<p>Frage 1 von X</p> <!-- fortlaufende Nummerierung der Fragen z.b. "1"-->
+			<p><b>Fragestellung</b></p> <!-- Die Fragestellung der Seite als "bold Text" (fettgedruckt) -->
 		
-	<form>
-		<button type="button" id="berechnen">Regelwerk aufrufen</button>
-		<!-- Schaltfläche zum Aufrufen des Regelwerkes -->
-		<p>Frage 1 von X</p> <!-- fortlaufende Nummerierung der Fragen z.b. "1"-->
-		<p><b>Wie heißt der ...</b></p> <!-- Die Fragestellung als "bold Text" (fettgedruckt) -->
-	
-		<fieldset>
-				<legend>Quizfrage</legend> <!-- Überschrift vom Formular --> 
-				
-				<p>A: Antwort</p> <!-- Textfeld mit Antwortmöglichkeit 1 --> 
-				<input type="radio" id="answer1" name="answer" value="answer" required><!-- Radiobutton mit Antwort1 --> 
-				<p>B: Antwort</p> <!-- Textfeld mit Antwortmöglichkeit 2 --> 
-				<input type="radio" id="answer2" name="answer" value="answer" required><!-- Radiobutton mit Antwort2 -->
-				<p>C: Antwort</p> <!-- Textfeld mit Antwortmöglichkeit 3 --> 
-				<input type="radio" id="answer3" name="answer" value="answer" required><!-- Radiobutton mit Antwort3 -->
-				<p>D: Antwort</p> <!-- Textfeld mit Antwortmöglichkeit 4 --> 
-				<input type="radio" id="answer4" name="answer" value="answer" required><!-- Radiobutton mit Antwort4 -->		
-		</fieldset>
-	</form>
-
-	
-</body>
+			<fieldset>
+					<legend>Quizfrage</legend> <!-- Überschrift vom Formular --> 
+					
+					<p>A: Antwort</p> <!-- Textfeld mit Antwortmöglichkeit 1 --> 
+					<input type=radio id=antwort1 name=antwort value=antwort required><!-- Radiobutton mit Antwort1 --> 
+					<p>B: Antwort</p> <!-- Textfeld mit Antwortmöglichkeit 2 --> 
+					<input type=radio id=antwort2 name=antwort value=antwort required><!-- Radiobutton mit Antwort2 -->
+					<p>C: Antwort</p> <!-- Textfeld mit Antwortmöglichkeit 3 --> 
+					<input type=radio id=antwort3 name=antwort value=antwort required><!-- Radiobutton mit Antwort3 -->
+					<p>D: Antwort</p> <!-- Textfeld mit Antwortmöglichkeit 4 --> 
+					<input type=radio id=antwort4 name=antwort value=antwort required><!-- Radiobutton mit Antwort4 -->		
+			</fieldset>	
+			
+			<button type=button id=previous>Vorherige Frage</button> 
+			<!-- Bei Betätigung gelangt man zu letzten Frage --> 
+			<button type=button id=skip>Nächste Frage</button>
+			<!-- Bei Betätigung überspringt man die aktuelle Frage und gelangt zu nächsten --> 
+		</form>
+		
+		<ul>
+		<!-- Hier folgt eine Liste mit dem Fortschritt innerhalb des Quizes Orientierungsliste für die Spielrunde, die Anzahl der noch offenen- und bereits richtig beantworteten Fragen.  -->
+			<li> Frage 1 </li> 
+			<li> Frage 2 </li>
+			<li> Frage 3 </li>
+		</ul>
+	</body>
 
 </html>
