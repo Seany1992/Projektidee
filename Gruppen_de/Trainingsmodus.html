@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang=de> <!-- Internationalisierung der Datei -->
-<head>
-	<meta charset=utf-8> <!-- Lokalisierung der Datei -->
-	<title>Quizprojekt</title> <!--Titel des Quizes (Endgültiger Name steht noch nicht fest) -->
-</head>
+	<head>
+		<meta charset=utf-8> <!-- Lokalisierung der Datei -->
+		<title>Quizprojekt</title> <!--Titel des Quizes (Endgültiger Name steht noch nicht fest) -->
+	</head>
 
-<body>
+	<body>
+		<header>
+			<img><!-- Hier das Logo des Quizes --></img>
+			<h1>Trainingsmodus</h1>	<!-- Überschrift der Seite --> 
+		</header>
+			
+		<form>
+			<button type=button id=regelwerk>Regelwerk aufrufen</button>
+			<!-- Schaltfläche zum Aufrufen des Regelwerkes -->
+			<br>
+			
+			<label for=schwierigkeitsgrad>Schwierigkeitsgrad: </label>
+			<select>
+				<option>Leicht</option>
+				<option>Mittel</option>
+				<option>Schwer</option>
+			</select>
+			<!-- Der Schwierigkeitsgrad für den CPU Gegner kann bestimmt werden, der NPC adaptiert das Verhalten eines registrierten Nutzerprofiles -->
+			<br>
+			
+			<label for=start>Start: </label>
+			<button type=button id=start>Quizstart</button>
+			<!-- Durch Betätigung der Schaltfläche startet das Quiz. Link zum Quiz.html -->
 		
+		</form>
 			
 	
-</body>
+	</body>
 
 </html>

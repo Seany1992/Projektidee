@@ -78,11 +78,11 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -48- - Schaltfläche (Label: Verwaltung des Userfeedbacks)
 -49- - Schatlfläche (Label: Quizfrage erstellen/bearbeiten)
 -50- - Schaltfläche (Label: Eingaben zurücksetzen) 
-	//Kommentar: Vereinfachung der Bedienung
 -51- - Schaltfläche (Label: Hauptmenü) 
 -52- - Formular Container (Funktion: form Container)
 -53- - fieldset Container (Funktion: Gruppierung von Kontrollelementen)
 -55- - Textfeld (Überschrift: h2)
+-56- - Schaltfläche (Label: Quizstart)
 -->
 
 
@@ -136,15 +136,15 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 	//Kommentar: Nutzer markiert die richtige Antwort zu der formulierten Quizfrage.
 -33- - Schaltfläche (Label: Frage speichern)
 
-[V] Einzelspieler
+[V] Quiz
 -01- - Textfeld (<title> Titel vom Projekt)
 -45- - Bildbereich "Image" (Inhalt: Das Logo des Quizes)
 -02- - Textfeld (Überschrift: h1) 
+-52- - Formular Container (Funktion: form Container)
+-53- - fieldset Container (Funktion: Gruppierung von Kontrollelementen)
 -09- - Schaltfläche (Label: Regelwerk)
 -10- - Textfeld (Inhalt: fortlaufende Nummerierung der Fragen z.b. "1")
 -11- - Liste (Inhalt: Fortschritt innherhalb des Quiz)
--52- - Formular Container (Funktion: form Container)
--53- - fieldset Container (Funktion: Gruppierung von Kontrollelementen)
 -12- - Textfeld (Inhalt: Fragestellung)
 -13- - Textfeld (Inhalt: Antwort)
 	//Kommentar: Textfelder mit Antworten 4x notwendig
@@ -162,51 +162,25 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -01- - Textfeld (<title> Titel vom Projekt)
 -45- - Bildbereich "Image" (Inhalt: Das Logo des Quizes)
 -02- - Textfeld (Überschrift: h1) 
+-52- - Formular Container (Funktion: form Container)
 -09- - Schaltfläche (Label: Regelwerk)
 -38- - Textfeld (Überschrift: Schwierigkeitsgrad auswählen)
 -39- - Radio Button (Label: Leicht)
 -40- - Radio Button (Label: Mittel)
 -41- - Radio Button (Label: Schwer)
--10- - Textfeld (Inhalt: fortlaufende Nummerierung der Fragen z.b. "1")
--11- - Liste (Inhalt: Fortschritt innherhalb des Quiz)
--52- - Formular Container (Funktion: form Container)
--53- - fieldset Container (Funktion: Gruppierung von Kontrollelementen)
--12- - Textfeld (Inhalt: Fragestellung)
--13- - Textfeld (Inhalt: Antwort)
-	//Kommentar: Textfelder mit Antworten 4x notwendig
--14- - Radio Button (Antwortmöglichkeit)
-	//Kommentar: Radio Buttons mit Antwortmöglichkeiten 4x notwendig
--15- - Hintergrundbild (Themespezifische Einblendung von Bildern)
--16- - Schaltfläche (Label: nächste Frage)
--17- - Schaltfläche (Label: vorherige Frage) 
--18- - Textfeld (<canvas> Inhalt: Versuche/Lebensanzahl) 
--19- - Textfeld (<canvas> Inhalt: Punktzahl Spieler)
--20- - Textfeld (<canvas> Inhalt: Zeitlimit)
-
+-56- - Schaltfläche (Label: Quizstart)
 
 [VII] Duellmodus
 -01- - Textfeld (<title> Titel vom Projekt)
 -45- - Bildbereich "Image" (Inhalt: Das Logo des Quizes)
 -02- - Textfeld (Überschrift: h1) 
+-52- - Formular Container (Funktion: form Container)
+-53- - fieldset Container (Funktion: Gruppierung von Kontrollelementen)
 -09- - Schaltfläche (Label: Regelwerk)
 -42- - Tabelle (Inhalt: Registrierten Nutzerprofilen)
 -43- - Textfeld (Überschrift: Gegner herausfordern!)
 -44- - Schaltfläche (Funktion: Einen Spieler herauszufordern)
--10- - Textfeld (Inhalt: fortlaufende Nummerierung der Fragen z.b. "1")
--11- - Liste (Inhalt: Fortschritt innherhalb des Quiz)
--52- - Formular Container (Funktion: form Container)
--53- - fieldset Container (Funktion: Gruppierung von Kontrollelementen)
--12- - Textfeld (Inhalt: Fragestellung)
--13- - Textfeld (Inhalt: Antwort)
-	//Kommentar: Textfelder mit Antworten 4x notwendig
--14- - Radio Button (Antwortmöglichkeit)
-	//Kommentar: Radio Buttons mit Antwortmöglichkeiten 4x notwendig
--15- - Hintergrundbild (Themespezifische Einblendung von Bildern)
--16- - Schaltfläche (Label: nächste Frage)
--17- - Schaltfläche (Label: vorherige Frage) 
--18- - Textfeld (<canvas> Inhalt: Versuche/Lebensanzahl) 
--19- - Textfeld (<canvas> Inhalt: Punktzahl Spieler)
--20- - Textfeld (<canvas> Inhalt: Zeitlimit)
+-56- - Schaltfläche (Label: Quizstart)
 
 [VIII] Auswertung und Highscoretabelle 
 -01- - Textfeld (<title> Titel vom Projekt)
@@ -255,9 +229,9 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 
 
 -------------------------
---- view_Einzelspieler---
+--- view_Quiz---
 -------------------------
-[V] Einzelspieler
+[V] Quiz
 
 
 --------------------------
