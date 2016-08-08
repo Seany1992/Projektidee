@@ -30,8 +30,11 @@
 					<input type=radio id=antwort4 name=antwort value=antwort required><!-- Radiobutton mit Antwort4 -->		
 			</fieldset>	
 			
+			<label for=previous>zurück: </label>
 			<button type=button id=previous>Vorherige Frage</button> 
 			<!-- Bei Betätigung gelangt man zu letzten Frage --> 
+			
+			<label for=skip>weiter: </label>
 			<button type=button id=skip>Nächste Frage</button>
 			<!-- Bei Betätigung überspringt man die aktuelle Frage und gelangt zu nächsten --> 
 		</form>
@@ -41,7 +44,10 @@
 			<li> Frage 1 </li> 
 			<li> Frage 2 </li>
 			<li> Frage 3 </li>
+		<!-- Die aktuelle Frage, bei der man sich befindet, wird gekennzeichnet Frage an Herrn Alpers: Gibt es noch eine bessere Möglichkeiten so etwas, eventuell mit anderen html Containern, zu implementieren? Stichwort: <progress> ? -->
 		</ul>
+		
+		<canvas> <!-- Bitmap-Bereich, um die Lebensanzeige, das Zeitlimit und die erreichte Punktzahl dynamisch darzustellen, mithilfe von Skripts/Funktionen in PHP bzw. MySQL--> </canvas> 
 	</body>
 
 </html>

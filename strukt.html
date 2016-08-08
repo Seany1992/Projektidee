@@ -10,8 +10,8 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 ===================================
 == (1) Strukturierung von Ansichten
 ===================================
--01- - Textfeld (Titel vom Projekt)
--02- - Textfeld (Überschrift: Log-In) 
+-01- - Textfeld (<title> Titel vom Projekt)
+-02- - Textfeld (Überschrift: h1) 
 -03- - Eingabefeld (Funtkion: Eingabe Username)
 -04- - Eingabefeld (Funktion: Eingabe Passwort)
 	//Kommentar: Eingabe des Passwort Verschlüsselt
@@ -32,11 +32,11 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -15- - Hintergrundbild (Themespezifische Einblendung von Bildern)
 -16- - Schaltfläche (Label: nächste Frage)
 -17- - Schaltfläche (Label: vorherige Frage) 
--18- - Textfeld (Inhalt: Versuche/Lebensanzahl) 
+-18- - Textfeld (<canvas> Inhalt: Versuche/Lebensanzahl) 
 	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Funktion in PHP inkl. Datenbankanbindung in MySQL
--19- - Textfeld (Inhalt: Punktzahl Spieler)
+-19- - Textfeld (<canvas> Inhalt: Punktzahl Spieler)
 	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Funktion in PHP inkl. Datenbankanbindung in MySQL
--20- - Textfeld (Inhalt: Zeitlimit)
+-20- - Textfeld (<canvas> Inhalt: Zeitlimit)
 	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Funktion in PHP inkl. Datenbankanbindung in MySQL
 
 -21- - Textfelder (Überschrift: Userfeedback zu einzelnen Quizfragen)
@@ -44,7 +44,7 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -23- - Schaltfläche (Label: Feedback absenden)
  
 -24- - Textfeld (Überschrift: Userfeedback)
--25- - Tabelle (Inhalt: neueste Feedbacks werden angezeigt)
+-25- - Tabelle (<table> Inhalt: neueste Feedbacks werden angezeigt)
 -26- - Schaltflächen (Label: Feedback anzeigen)
 -27- - Schaltflächen (Label: Feedback beantworten)
 -28- - Schaltflächen (Label: Feedback löschen)
@@ -70,6 +70,8 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -42- - Tabelle (Inhalt: Registrierten Nutzerprofilen)
 -43- - Textfeld (Überschrift: Gegner herausfordern!)
 -44- - Schaltfläche (Funktion: Einen Spieler herauszufordern)
+
+	//Kommentar: Seit dem letzten Feedback neu hinzugefüge Struktur Elemente: 
 -45- - Bildbereich "Image" (Inhalt: Das Logo des Quizes)
 -46- - Eingabefeld (Funktion: Eingabe der E-Mail)
 -47- - Schaltfläche (Label: Userforum)
@@ -77,6 +79,10 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -49- - Schatlfläche (Label: Quizfrage erstellen/bearbeiten)
 -50- - Schaltfläche (Label: Eingaben zurücksetzen) 
 	//Kommentar: Vereinfachung der Bedienung
+-51- - Schaltfläche (Label: Hauptmenü) 
+-52- - Formular Container (Funktion: form Container)
+-53- - fieldset Container (Funktion: Gruppierung von Kontrollelementen)
+-55- - Textfeld (Überschrift: h2)
 -->
 
 
@@ -86,33 +92,42 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 == (1.1) Gruppen bilden
 =======================
 [I] LogIn Spieler
--01- - Textfeld (Titel vom Projekt)
+-01- - Textfeld (<title> Titel vom Projekt)
 -45- - Bildbereich "Image" (Inhalt: Das Logo des Quizes)
--02- - Textfeld (Überschrift: Log-In) 
+-02- - Textfeld (Überschrift: h1) 
+-55- - Textfeld (Überschrift: h2)
+-52- - Formular Container (Funktion: form Container)
+-53- - fieldset Container (Funktion: Gruppierung von Kontrollelementen)
 -03- - Eingabefeld (Funtkion: Eingabe Username)
 -04- - Eingabefeld (Funktion: Eingabe Passwort)
 	//Kommentar: Eingabe des Passwort Verschlüsselt
 -46- - Eingabefeld (Funktion: Eingabe der E-Mail)
 -05- - Schaltfläche (Label: Submit)
--50- - Schaltfläche (Label: Eingaben zurücksetzen) 
+-50- - Schaltfläche (Label: Eingaben zurücksetzen)
+-51- - Schaltfläche (Label: Hauptmenü) 
 
 ([II] LogIn Admin "-gelöscht da doppelt-")
 
 [II] Userforum
--25- - Tabelle (Inhalt: neueste Feedbacks werden angezeigt)
+-01- - Textfeld (<title> Titel vom Projekt)
+-02- - Textfeld (Überschrift: h1) 
+-25- - Tabelle (<table> Inhalt: neueste Feedbacks werden angezeigt)
 -21- - Textfelder (Überschrift: Userfeedback zu einzelnen Quizfragen)
+-52- - Formular Container (Funktion: form Container)
 -22- - Eingabefeld (Funktion: Feedback formulieren, in Form einer Textarea)
 -23- - Schaltfläche (Label: Feedback absenden)
--48- - Schaltfläche (Verwaltung des Userfeedbacks)
+-48- - Schaltfläche (Label: Verwaltung des Userfeedbacks)
 
 [III] Verwaltung des Userfeedbacks
+-01- - Textfeld (<title> Titel vom Projekt)
 -24- - Textfeld (Überschrift: Userfeedback)
--25- - Tabelle (Inhalt: neueste Feedbacks werden angezeigt)
+-25- - Tabelle (<table> Inhalt: neueste Feedbacks werden angezeigt)
 -26- - Schaltflächen (Label: Feedback anzeigen)
 -27- - Schaltflächen (Label: Feedback beantworten)
 -28- - Schaltflächen (Label: Feedback löschen)
 
 [IV] Erweiterung/Bearbeitung des Fragenkataloges
+-01- - Textfeld (<title> Titel vom Projekt)
 -29- - Textfeld (Überschrift: Quizfrage erstellen/bearbeiten)
 -30- - Eingabefeld (Funktion: Quizfrage erstellen oder bearbeiten)
 -31- - Eingabefeld (Funktion: Quizantwort formulieren oder bearbeiten)
@@ -122,11 +137,14 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -33- - Schaltfläche (Label: Frage speichern)
 
 [V] Einzelspieler
+-01- - Textfeld (<title> Titel vom Projekt)
 -45- - Bildbereich "Image" (Inhalt: Das Logo des Quizes)
--01- - Textfeld (Titel vom Projekt)
+-02- - Textfeld (Überschrift: h1) 
 -09- - Schaltfläche (Label: Regelwerk)
 -10- - Textfeld (Inhalt: fortlaufende Nummerierung der Fragen z.b. "1")
 -11- - Liste (Inhalt: Fortschritt innherhalb des Quiz)
+-52- - Formular Container (Funktion: form Container)
+-53- - fieldset Container (Funktion: Gruppierung von Kontrollelementen)
 -12- - Textfeld (Inhalt: Fragestellung)
 -13- - Textfeld (Inhalt: Antwort)
 	//Kommentar: Textfelder mit Antworten 4x notwendig
@@ -135,14 +153,15 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -15- - Hintergrundbild (Themespezifische Einblendung von Bildern)
 -16- - Schaltfläche (Label: nächste Frage)
 -17- - Schaltfläche (Label: vorherige Frage) 
--18- - Textfeld (Inhalt: Versuche/Lebensanzahl) 
--19- - Textfeld (Inhalt: Punktzahl Spieler)
--20- - Textfeld (Inhalt: Zeitlimit)
+-18- - Textfeld (<canvas> Inhalt: Versuche/Lebensanzahl) 
+-19- - Textfeld (<canvas> Inhalt: Punktzahl Spieler)
+-20- - Textfeld (<canvas> Inhalt: Zeitlimit)
 	
 	
 [VI] Trainingsmodus
+-01- - Textfeld (<title> Titel vom Projekt)
 -45- - Bildbereich "Image" (Inhalt: Das Logo des Quizes)
--01- - Textfeld (Titel vom Projekt)
+-02- - Textfeld (Überschrift: h1) 
 -09- - Schaltfläche (Label: Regelwerk)
 -38- - Textfeld (Überschrift: Schwierigkeitsgrad auswählen)
 -39- - Radio Button (Label: Leicht)
@@ -150,6 +169,8 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -41- - Radio Button (Label: Schwer)
 -10- - Textfeld (Inhalt: fortlaufende Nummerierung der Fragen z.b. "1")
 -11- - Liste (Inhalt: Fortschritt innherhalb des Quiz)
+-52- - Formular Container (Funktion: form Container)
+-53- - fieldset Container (Funktion: Gruppierung von Kontrollelementen)
 -12- - Textfeld (Inhalt: Fragestellung)
 -13- - Textfeld (Inhalt: Antwort)
 	//Kommentar: Textfelder mit Antworten 4x notwendig
@@ -158,20 +179,23 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -15- - Hintergrundbild (Themespezifische Einblendung von Bildern)
 -16- - Schaltfläche (Label: nächste Frage)
 -17- - Schaltfläche (Label: vorherige Frage) 
--18- - Textfeld (Inhalt: Versuche/Lebensanzahl) 
--19- - Textfeld (Inhalt: Punktzahl Spieler)
--20- - Textfeld (Inhalt: Zeitlimit)
+-18- - Textfeld (<canvas> Inhalt: Versuche/Lebensanzahl) 
+-19- - Textfeld (<canvas> Inhalt: Punktzahl Spieler)
+-20- - Textfeld (<canvas> Inhalt: Zeitlimit)
 
 
 [VII] Duellmodus
+-01- - Textfeld (<title> Titel vom Projekt)
 -45- - Bildbereich "Image" (Inhalt: Das Logo des Quizes)
--01- - Textfeld (Titel vom Projekt)
+-02- - Textfeld (Überschrift: h1) 
 -09- - Schaltfläche (Label: Regelwerk)
 -42- - Tabelle (Inhalt: Registrierten Nutzerprofilen)
 -43- - Textfeld (Überschrift: Gegner herausfordern!)
 -44- - Schaltfläche (Funktion: Einen Spieler herauszufordern)
 -10- - Textfeld (Inhalt: fortlaufende Nummerierung der Fragen z.b. "1")
 -11- - Liste (Inhalt: Fortschritt innherhalb des Quiz)
+-52- - Formular Container (Funktion: form Container)
+-53- - fieldset Container (Funktion: Gruppierung von Kontrollelementen)
 -12- - Textfeld (Inhalt: Fragestellung)
 -13- - Textfeld (Inhalt: Antwort)
 	//Kommentar: Textfelder mit Antworten 4x notwendig
@@ -180,11 +204,12 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -15- - Hintergrundbild (Themespezifische Einblendung von Bildern)
 -16- - Schaltfläche (Label: nächste Frage)
 -17- - Schaltfläche (Label: vorherige Frage) 
--18- - Textfeld (Inhalt: Versuche/Lebensanzahl) 
--19- - Textfeld (Inhalt: Punktzahl Spieler)
--20- - Textfeld (Inhalt: Zeitlimit)
+-18- - Textfeld (<canvas> Inhalt: Versuche/Lebensanzahl) 
+-19- - Textfeld (<canvas> Inhalt: Punktzahl Spieler)
+-20- - Textfeld (<canvas> Inhalt: Zeitlimit)
 
 [VIII] Auswertung und Highscoretabelle 
+-01- - Textfeld (<title> Titel vom Projekt)
 -34- - Textfeld (Überschrift: Auswertung)
 -35- - Textfeld (Inhalt: Anzahl der richtigen & falschen Antworten)
 	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Funktion in PHP inkl. Datenbankanbindung in MySQL
@@ -192,9 +217,12 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 	//Kommentar: ausführliche Tabelle mit Usernamen, Platzierungen und Punktzahlen der Nutzer
 -37- - Schatlfläche (Label: Neustart des Quizes)
 
-[IX] Hauptmenü
--01- - Textfeld (Titel vom Projekt)
+[IX] Hauptmenue
+-01- - Textfeld (<title> Titel vom Projekt)
+-02- - Textfeld (Überschrift: h1)
 -45- - Bildbereich "Image" (Inhalt: Das Logo des Quizes)
+-52- - Formular Container (Funktion: form Container)
+-53- - fieldset Container (Funktion: Gruppierung von Kontrollelementen)
 -08- - Schaltfläche (Label: Einzelspieler)
 -06- - Schaltfläche (Label: Trainingsmodus)
 -07- - Schaltfläche (Label: Duellmodus)
@@ -250,9 +278,9 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 [VIII] Auswertung und Highscoretabelle 
 
 -------------------------
---- view_Hauptmenü---
+--- view_Hauptmenue---
 -------------------------
-[IX] Hauptmenü
+[IX] Hauptmenue
 -->
 
 

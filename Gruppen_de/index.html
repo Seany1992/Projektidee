@@ -20,25 +20,38 @@
 					<legend>Bitte geben Sie Ihre persönlichen Daten zur Registrierung  ein:</legend> 
 					<!-- Überschrift vom Fieldset Container --> 
 					
-					<p>Nutzername:<input name=username required></p> 
+					<!-- Die vom Nutzer eingegebenen Daten werden an ein Programm geschickt, dass prüft, ob der Nutzername vorhanden ist, und ob das Passwort dazu passt.-->
+					<label for=username>Nutzername:</label>
+					<input name=username required>
 					<!-- Eingabe des Nutzernamens -->
-				
-					<p>Passwort:<input name=passwort required></p> 
-					<!-- Eingabe des Passwort -->
+					<br>
 					
-					<p>E-Mail: <input type=email name=email required></p> 
+					<label for=passwort>Passwort:</label>
+					<input name=passwort required type=password> 
+					<!-- Eingabe des Passwort (verschlüsselt) -->
+					<br>
+					
+					<label for=email>E-Mail:</label>
+					<input type=email name=email required> 
 					<!-- Eingabe der E-Mail -->
-				
-					<p><input type=submit name=submit></p> 
-					<!-- Submit Schaltfläche zum bestätigen der Eingaben, verlinkt zum Hauptmenü -->
+					<br>
 					
+					<input type=submit name=submit>
+					<!-- Submit Schaltfläche zum bestätigen der Eingaben -->
+					<br>
+					
+					<label> Reset:</label>
 					<button form=registrierung type=reset>Eingaben zurücksetzen</button>
 					<!-- Schaltfläche um Benutzereingaben zurückzusetzen (Vereinfachung der Bedienung) --> 
+					
+					<label> Hauptmenü: </label>
+					<button type=button id=hauptmenue>Hauptmenü</button>
+					<!-- Schaltfläche verlinkt zum Hauptmenü.html -->				
 					
 				</fieldset>
 			</form>
 		</main>
-	<footer><!-- Später Verweis auf kontaktformular (Link Impressum) --></footer>
+	
 </body>
 
 </html>
