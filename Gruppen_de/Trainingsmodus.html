@@ -8,7 +8,7 @@
 	<body>
 		<header>
 			<img><!-- Hier das Logo des Quizes --></img>
-			<h1>Trainingsmodus</h1>	<!-- Überschrift der Seite --> 
+			<h1>Trainingsmodus</h1>	<!-- Überschrift der Ansicht --> 
 		</header>
 			
 		<form>
@@ -16,16 +16,16 @@
 			<!-- Schaltfläche zum Aufrufen des Regelwerkes -->
 			<br>
 			
-			<label for=schwierigkeitsgrad>Schwierigkeitsgrad: </label>
+			<p>Schwierigkeitsgrad auswählen: </p>
 			<select>
-				<option>Leicht</option>
-				<option>Mittel</option>
-				<option>Schwer</option>
+				<option value=leicht>Leicht</option>
+				<option value=mittel>Mittel</option>
+				<option value=schwer>Schwer</option>
 			</select>
-			<!-- Der Schwierigkeitsgrad für den CPU Gegner kann bestimmt werden, der NPC adaptiert das Verhalten eines registrierten Nutzerprofiles -->
+			<!-- Drop Down Menü. Der Schwierigkeitsgrad für den CPU Gegner kann bestimmt werden, der NPC adaptiert das Verhalten eines registrierten Nutzerprofiles -->
 			<br>
+
 			
-			<label for=start>Start: </label>
 			<button type=button id=start>Quizstart</button>
 			<!-- Durch Betätigung der Schaltfläche startet das Quiz. Link zum Quiz.html -->
 		

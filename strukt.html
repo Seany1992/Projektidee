@@ -1,4 +1,4 @@
-<!-- Aufgabe 1.0 Version 5.2 08.08.2016 -->
+<!-- Aufgabe 1.0 Version 5.03 10.08.2016 -->
 <!--
 =======================
 === Fünfter Entwurf ===
@@ -64,11 +64,11 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -37- - Schatlfläche (Label: Neustart des Quizes)
 
 -38- - Textfeld (Überschrift: Schwierigkeitsgrad auswählen)
--39- - Radio Button (Label: Leicht)
--40- - Radio Button (Label: Mittel)
--41- - Radio Button (Label: Schwer)
--42- - Tabelle (Inhalt: Registrierten Nutzerprofilen)
--43- - Textfeld (Überschrift: Gegner herausfordern!)
+-39- - Drop Down Menü (Auswahlmöglichkeit: <option> Leicht)
+-40- - Drop Down Menü (Auswahlmöglichkeit: <option> Mittel)
+-41- - Drop Down Menü (Auswahlmöglichkeit: <option> Schwer)
+-42- - Tabelle (Inhalt: Registrierte Nutzerprofile)
+-43- - Textfeld (Überschrift: Registrierte Nutzer)
 -44- - Schaltfläche (Funktion: Einen Spieler herauszufordern)
 
 	//Kommentar: Seit dem letzten Feedback neu hinzugefüge Struktur Elemente: 
@@ -83,10 +83,11 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -53- - fieldset Container (Funktion: Gruppierung von Kontrollelementen)
 -55- - Textfeld (Überschrift: h2)
 -56- - Schaltfläche (Label: Quizstart)
+-57- - Drop Down Menü (<Select>)
 -->
 
 
-<!-- Aufgabe 1.1 Version 5.2 08.08.2016  -->
+<!-- Aufgabe 1.1 Version 5.03 10.08.2016  -->
 <!--
 =======================
 == (1.1) Gruppen bilden
@@ -126,7 +127,7 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -27- - Schaltflächen (Label: Feedback beantworten)
 -28- - Schaltflächen (Label: Feedback löschen)
 
-[IV] Erweiterung/Bearbeitung des Fragenkataloges
+[IV] Quizfragen erstellen/bearbeiten
 -01- - Textfeld (<title> Titel vom Projekt)
 -29- - Textfeld (Überschrift: Quizfrage erstellen/bearbeiten)
 -30- - Eingabefeld (Funktion: Quizfrage erstellen oder bearbeiten)
@@ -164,10 +165,11 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -02- - Textfeld (Überschrift: h1) 
 -52- - Formular Container (Funktion: form Container)
 -09- - Schaltfläche (Label: Regelwerk)
--38- - Textfeld (Überschrift: Schwierigkeitsgrad auswählen)
--39- - Radio Button (Label: Leicht)
--40- - Radio Button (Label: Mittel)
--41- - Radio Button (Label: Schwer)
+-38- - Textfeld (Label: Schwierigkeitsgrad auswählen)
+-57- - Drop Down Menü (<Select>)
+-39- - Drop Down Menü (Auswahlmöglichkeit: <option> Leicht)
+-40- - Drop Down Menü (Auswahlmöglichkeit: <option> Mittel)
+-41- - Drop Down Menü (Auswahlmöglichkeit: <option> Schwer)
 -56- - Schaltfläche (Label: Quizstart)
 
 [VII] Duellmodus
@@ -175,10 +177,9 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -45- - Bildbereich "Image" (Inhalt: Das Logo des Quizes)
 -02- - Textfeld (Überschrift: h1) 
 -52- - Formular Container (Funktion: form Container)
--53- - fieldset Container (Funktion: Gruppierung von Kontrollelementen)
 -09- - Schaltfläche (Label: Regelwerk)
--42- - Tabelle (Inhalt: Registrierten Nutzerprofilen)
--43- - Textfeld (Überschrift: Gegner herausfordern!)
+-43- - Textfeld (Überschrift: Registrierte Nutzer)
+-42- - Tabelle (Inhalt: Registrierte Nutzerprofile)
 -44- - Schaltfläche (Funktion: Einen Spieler herauszufordern)
 -56- - Schaltfläche (Label: Quizstart)
 
@@ -187,6 +188,7 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -34- - Textfeld (Überschrift: Auswertung)
 -35- - Textfeld (Inhalt: Anzahl der richtigen & falschen Antworten)
 	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Funktion in PHP inkl. Datenbankanbindung in MySQL
+-52- - Formular Container (Funktion: form Container)
 -36- - Tabelle  (Inhalt: Highscore-Liste)
 	//Kommentar: ausführliche Tabelle mit Usernamen, Platzierungen und Punktzahlen der Nutzer
 -37- - Schatlfläche (Label: Neustart des Quizes)
@@ -201,10 +203,10 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -06- - Schaltfläche (Label: Trainingsmodus)
 -07- - Schaltfläche (Label: Duellmodus)
 -47- - Schaltfläche (Label: Userforum)
--49- - Schatlfläche (Label: Quizfrage erstellen/bearbeiten)
+-49- - Schatlfläche (Label: Quizfragen erstellen/bearbeiten)
 -->
 
-<!-- Aufgabe 1.2 Version 5.2 08.08.2016 -->
+<!-- Aufgabe 1.2 Version 5.03 10.08.2016 -->
 <!--
 =========================
 == (1.2) Ansichten bilden
@@ -225,7 +227,7 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 ---view_Adminbereich---
 -----------------------
 [III] Verwaltung des Userfeedbacks
-[IV] Erweiterung/Bearbeitung des Fragenkataloges
+[IV] Quizfragen erstellen/bearbeiten
 
 
 -------------------------

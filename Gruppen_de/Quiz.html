@@ -8,33 +8,37 @@
 	<body>
 		<header>
 			<img><!-- Hier das Logo des Quizes --></img>
-			<h1>Einzelspieler</h1>	<!-- Überschrift der Seite --> 
+			<h1>Quiz</h1>	<!-- Überschrift der Ansicht --> 
 		</header>
 			
 		<form>
 			<button type=button id=regelwerk>Regelwerk aufrufen</button>
 			<!-- Schaltfläche zum Aufrufen des Regelwerkes -->
-			<p>Frage 1 von X</p> <!-- fortlaufende Nummerierung der Fragen z.b. "1"-->
-			<p><b>Fragestellung</b></p> <!-- Die Fragestellung der Seite als "bold Text" (fettgedruckt) -->
+			<p>Frage 1 von X</p> 
+			<!-- fortlaufende Nummerierung der Fragen z.b. "1"-->
+			<p><b>Fragestellung</b></p> 
+			<!-- Die Fragestellung der Seite als "bold Text" (fettgedruckt) -->
 		
 			<fieldset>
 					<legend>Quizfrage</legend> <!-- Überschrift vom Formular --> 
 					
-					<p>A: Antwort</p> <!-- Textfeld mit Antwortmöglichkeit 1 --> 
+					<label for=antwort1> A: Antwort</label> <!-- Label mit Antwortmöglichkeit 1 --> 
 					<input type=radio id=antwort1 name=antwort value=antwort required><!-- Radiobutton mit Antwort1 --> 
-					<p>B: Antwort</p> <!-- Textfeld mit Antwortmöglichkeit 2 --> 
+					<br>
+					<label for=antwort2> B: Antwort</label> <!-- Label mit Antwortmöglichkeit 2 --> 
 					<input type=radio id=antwort2 name=antwort value=antwort required><!-- Radiobutton mit Antwort2 -->
-					<p>C: Antwort</p> <!-- Textfeld mit Antwortmöglichkeit 3 --> 
+					<br>
+					<label for=antwort3> C: Antwort</label> <!-- Label mit Antwortmöglichkeit 3 --> 
 					<input type=radio id=antwort3 name=antwort value=antwort required><!-- Radiobutton mit Antwort3 -->
-					<p>D: Antwort</p> <!-- Textfeld mit Antwortmöglichkeit 4 --> 
+					<br>
+					<label for=antwort4> D: Antwort</label> <!-- Label mit Antwortmöglichkeit 4 --> 
 					<input type=radio id=antwort4 name=antwort value=antwort required><!-- Radiobutton mit Antwort4 -->		
 			</fieldset>	
 			
-			<label for=previous>zurück: </label>
+			
 			<button type=button id=previous>Vorherige Frage</button> 
 			<!-- Bei Betätigung gelangt man zu letzten Frage --> 
 			
-			<label for=skip>weiter: </label>
 			<button type=button id=skip>Nächste Frage</button>
 			<!-- Bei Betätigung überspringt man die aktuelle Frage und gelangt zu nächsten --> 
 		</form>
@@ -47,7 +51,8 @@
 		<!-- Die aktuelle Frage, bei der man sich befindet, wird gekennzeichnet. Frage an Herrn Alpers: Gibt es noch eine bessere Möglichkeiten so etwas, eventuell mit anderen html Containern, zu implementieren? Stichwort: <progress> ? -->
 		</ul>
 		
-		<canvas> <!-- Bitmap-Bereich, um die Lebensanzeige, das Zeitlimit und die erreichte Punktzahl dynamisch darzustellen, mithilfe von Skripen/Funktionen in PHP bzw. MySQL--> </canvas> 
+		<canvas> <!-- Bitmap-Bereich, um die Lebensanzeige, das Zeitlimit und die erreichte Punktzahl dynamisch darzustellen, mithilfe von Skripen/Funktionen in PHP bzw. MySQL
+		Frage an Herrn Alpers: Gibt es alternativ noch andere HTML 5 tags womit ich die genannten Punkte realisieren kann?--> </canvas> 
 	</body>
 
 </html>
