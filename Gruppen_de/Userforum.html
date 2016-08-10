@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang=de> <!-- Internationalisierung der Datei -->
-<head>
-	<meta charset=utf-8> <!-- Lokalisierung der Datei -->
-	<title>Quizprojekt</title> <!--Titel des Quizes (Endgültiger Name steht noch nicht fest) -->
-</head>
+	<head>
+		<meta charset=utf-8> <!-- Lokalisierung der Datei -->
+		<title>Quizprojekt</title> <!--Titel des Quizes (Endgültiger Name steht noch nicht fest) -->
+	</head>
 
-<body>
+	<body>
 
 		<header>
 			<img><!-- Hier das Logo des Quizes --></img>
@@ -14,10 +14,35 @@
 		
 		<main>
 			<table>
-				<tr>
-					<td><!-- Inhalt der Tabelle soll sein, die neuesten Feedbacks anzuzeigen) --></td>
-				</tr>
-			</table>
+			<caption> Userfeedbacks </caption>
+			  <tr>
+				<td>
+				  Spielername: 
+				</td>
+				<td>
+				  Userfeedback: 
+				</td>
+			  </tr>
+			  
+			  <tr>
+				<td>
+				  Spieler 1
+				</td>
+				<td>
+				  Userfeedback 1
+				</td>
+			  </tr>
+			  
+			  <tr>
+				<td>
+				  Spieler 2
+				</td>
+				<td>
+				  Userfeedback 2
+				</td>
+			  </tr>
+		</table>
+			<!-- Inhalt der Tabelle soll sein, die neuesten Feedbacks anzuzeigen. Diese werden in der Datenbank abgespeichert und später in den Ansichten Adminbereich.html, sowie Userforum.html in Form von Tabellen einsehbar sein. -->
 		
 			<form>
 			<!-- Hier werden einzelne Eingabemöglichkeiten von Nutzern einprogrammiert -->
@@ -28,12 +53,7 @@
 				<!-- Nutzer kann hiermit sein Feedback absenden --> 
 				<br>
 				
-				<button type=button id=verwaltung>Verwaltung des Feedbacks </button>
-				<!-- Durch Betätigung gelangt man zur "Verwaltung des Userfeedbacks", link zu Verwaltung.html--> 
-				
 			</form>
 		</main>
-	
-</body>
-
+	</body>
 </html>
