@@ -11,30 +11,63 @@
 	</header>
 	
 	<body>
-		<table>
-			<caption> Userfeedbacks </caption>
-			  <tr>
-				<td> Spielername: </td>
-				<td> Userfeedback:</td>
-			  </tr>
-			  
-			  <tr>
-				<td> Spieler 1 </td>
-				<td> Userfeedback 1 </td>
-			  </tr>
-			  
-			  <tr>
-				<td> Spieler 2 </td>
-				<td> Userfeedback 2 </td>
-			  </tr>
-		</table>
-		<!-- Die Tabelle ist nicht vollständig (es handelt sich bei den Bezeichnern noch um Platzhalter). Die Tabelle soll die eingegangenen Userfeedbacks anzeigen. Die Userfeedbacks werden in der Datenbank gespeichert und hier aufgerufen  -->
+		<section>
+			<form>
+				<table>
+					<caption> Userfeedbacks </caption>
+					  <tr>
+						<td> Spielername: </td>
+						<td> Userfeedback:</td>
+					  </tr>
+					  
+					  <tr>
+						<td> Spieler 1 </td>
+						<td> Userfeedback 1 </td>
+					  </tr>
+					  
+					  <tr>
+						<td> Spieler 2 </td>
+						<td> Userfeedback 2 </td>
+					  </tr>
+				</table>
+				<!-- Die Tabelle ist nicht vollständig (es handelt sich bei den Bezeichnern noch um Platzhalter). Die Tabelle soll die eingegangenen Userfeedbacks anzeigen. Die Userfeedbacks werden in der Datenbank gespeichert und hier aufgerufen  -->
+				
+				<button type=button id=feedback >Feedback beantworten</button> 
+				<!-- Durch Betätigung kann der Admin auf ausgewählte Feedbacks antworten. --> 
+				<br>
+								
+				<button type=button id=löschen>Feedback löschen</button> 
+				<!-- Durch Betätigung kann der Admin ausgewählte Feedbacks löschen. --> 
+			</form>
+		</section>	
 		
-		<button type=button id=feedback >Feedback beantworten</button> 
-		<!-- Durch Betätigung kann der Admin auf ausgewählte Feedbacks antworten. --> 
-		<br>
-						
-		<button type=button id=löschen>Feedback löschen</button> 
-		<!-- Durch Betätigung kann der Admin ausgewählte Feedbacks löschen. --> 
+		<section>
+			<form>
+				<h2> Quizfrage erstellen/bearbeiten </h2>
+				
+				<textarea><!-- Hier formuliert der Admin eine neue Frage --> </textarea>
+		
+				<textarea><!-- Hier formuliert der Admin die Antworten zur Fragestellung --> </textarea>
+		
+				<label>
+				<input type=checkbox name=antwort1 value=antwort1>
+				Antwort1
+				</label>
+				<label>
+				<input type=checkbox name=antwort2 value=antwort2>
+				Antwort2
+				</label>
+				<label>
+				<input type=checkbox name=antwort3 value=antwort3>
+				Antwort3
+				</label>
+				<label>
+				<input type=checkbox name=antwort4 value=antwort4>
+				Antwort4
+				</label>
+				<!-- Der Admin kann mit den Checkboxen bestimmen, welche der Antwortmöglichkeiten bezüglich der Fragestellung richtig sein soll. -->
+				<button type=button id=erstellen>Frage erstellen</button> 
+				<!-- Durch Betätigung kann der Admin die Frage erstellen. --> 
+		</form>
 	</body>
 </html>
