@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang=de> <!-- Internationalisierung der Datei -->
+<html lang=de> 
 	<head>
-		<meta charset=utf-8> <!-- Lokalisierung der Datei -->
-		<title>Quizprojekt</title> <!--Titel des Quizes (Endgültiger Name steht noch nicht fest) -->
+		<meta charset=utf-8> 
+		<title>Quizprojekt</title> 
 	</head>
 
 	<header>
-			<img><!-- Hier das Logo des Quizes --></img>
-			<h1>Adminbereich</h1> <!-- Überschrift der Ansicht -->
+			<img><!-- Hier wird das Logo des Quizes eingefügt --></img>
+			<h1>Adminbereich</h1> 
 	</header>
 	
 	<body>
@@ -30,14 +30,14 @@
 						<td> Userfeedback 2 </td>
 					  </tr>
 				</table>
-				<!-- Die Tabelle ist nicht vollständig (es handelt sich bei den Bezeichnern noch um Platzhalter). Die Tabelle soll die eingegangenen Userfeedbacks anzeigen. Die Userfeedbacks werden in der Datenbank gespeichert und hier aufgerufen  -->
+				<!-- Info: Die Tabelle ist nicht vollständig (es handelt sich bei den Bezeichnern noch um Platzhalter). Die Tabelle soll die eingegangenen Userfeedbacks anzeigen. Die Userfeedbacks werden in der Datenbank gespeichert und hier aufgerufen  -->
 				
 				<button type=button id=feedback >Feedback beantworten</button> 
-				<!-- Durch Betätigung kann der Admin auf ausgewählte Feedbacks antworten. --> 
+				<!-- Funktion: Der Admin wird bei Betätigung auf ausgewählte Feedbacks antworten können. --> 
 				<br>
 								
 				<button type=button id=löschen>Feedback löschen</button> 
-				<!-- Durch Betätigung kann der Admin ausgewählte Feedbacks löschen. --> 
+				<!-- Funktion: Der Admin wird bei Betätigung ausgewählte Feedbacks löschen können. -->
 			</form>
 		</section>	
 		
@@ -45,9 +45,9 @@
 			<form>
 				<h2> Quizfrage erstellen/bearbeiten </h2>
 				
-				<textarea><!-- Hier formuliert der Admin eine neue Frage --> </textarea>
+				<textarea><!-- Funktion: Hier wird der Admin eine neue Frage formulieren können --> </textarea>
 		
-				<textarea><!-- Hier formuliert der Admin die Antworten zur Fragestellung --> </textarea>
+				<textarea><!-- Funktion: Hier wird der Admin die Antworten zur Fragestellung formulieren können --> </textarea>
 		
 				<label>
 				<input type=checkbox name=antwort1 value=antwort1>
@@ -65,9 +65,8 @@
 				<input type=checkbox name=antwort4 value=antwort4>
 				Antwort4
 				</label>
-				<!-- Der Admin kann mit den Checkboxen bestimmen, welche der Antwortmöglichkeiten bezüglich der Fragestellung richtig sein soll. -->
-				<button type=button id=erstellen>Frage erstellen</button> 
-				<!-- Durch Betätigung kann der Admin die Frage erstellen. --> 
+				<!-- Info: Der Admin kann mit den Checkboxen bestimmen, welche der Antwortmöglichkeiten bezüglich der Fragestellung richtig sein soll. -->
+				<button type=button id=erstellen>Frage erstellen</button>  
 		</form>
 	</body>
 </html>

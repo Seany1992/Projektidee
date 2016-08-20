@@ -1,52 +1,43 @@
 <!DOCTYPE html>
-<html lang=de> <!-- Internationalisierung der Datei -->
-<head>
-	<meta charset=utf-8> <!-- Lokalisierung der Datei -->
-	<title>Quizprojekt</title> <!--Titel des Quizes (Endgültiger Name steht noch nicht fest) -->
-</head>
+<html lang=de> 
+	<head>
+		<meta charset=utf-8> 
+		<title>Quizprojekt</title> 
+	</head>
 
-<body>
+	<body>
 		<header>
-			<img><!-- Hier das Logo des Quizes --></img>
-			<h1>Willkommen zum Quiz</h1> <!-- Überschrift 1 -->
-			<h2>Log In </h2> <!-- Überschrift 2 -->
+			<img><!-- Hier wird das Logo des Quizes eingefügt --></img>
+			<h1>Willkommen zum Quiz</h1> 
+			<h2>Log In </h2> 
 		</header>
-		
+			
 		<main>
 			<form id=registrierung>
-			<!-- Hier werden einzelne Eingabemöglichkeiten zur Registrierung von Nutzern einprogrammiert -->
-			
-				<fieldset> <!-- Gruppierung und Zuordnung von Eingabeelementen in einem <fieldset>-Container -->
+				<fieldset> 
 					<legend>Bitte geben Sie Ihre persönlichen Daten zur Registrierung  ein:</legend> 
-					<!-- Überschrift vom Fieldset Container --> 
-					
-					<!-- Die vom Nutzer eingegebenen Daten werden an ein Programm geschickt, dass prüft, ob der Nutzername vorhanden ist, und ob das Passwort dazu passt.-->
+						
+					<!-- Info: Die vom Nutzer eingegebenen Daten werden an ein Programm geschickt, dass prüft, ob der Nutzername vorhanden ist, und ob das Passwort dazu passt.-->
 					<label for=username>Nutzername:</label>
 					<input name=username required>
-					<!-- Eingabe des Nutzernamens -->
 					<br>
-					
+						
 					<label for=passwort>Passwort:</label>
 					<input name=passwort required type=password> 
-					<!-- Eingabe des Passwort (verschlüsselt) -->
 					<br>
-					
+						
 					<label for=email>E-Mail:</label>
 					<input type=email name=email required> 
-					<!-- Eingabe der E-Mail -->
 					<br>
-					
+						
 					<input type=submit name=submit>
-					<!-- Submit Schaltfläche zum bestätigen der Eingaben -->
 					<br>
-					
+						
 					<button form=registrierung type=reset>Eingaben zurücksetzen</button>
-					<!-- Schaltfläche um Benutzereingaben zurückzusetzen (Vereinfachung der Bedienung) --> 
-					
-					<a href=Hauptmenue.html> <button type=button id=hauptmenue>Hauptmenü</button>
-					<!-- Schaltfläche verlinkt zum Hauptmenü.html -->				
+						
+					<a href=Hauptmenue.html> <button type=button id=hauptmenue>Hauptmenü</button>				
 				</fieldset>
 			</form>
 		</main>	
-</body>
+	</body>
 </html>

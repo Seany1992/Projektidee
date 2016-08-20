@@ -1,44 +1,35 @@
 <!DOCTYPE html>
-<html lang=de> <!-- Internationalisierung der Datei -->
-<head>
-	<meta charset=utf-8> <!-- Lokalisierung der Datei -->
-	<title>Quizprojekt</title> <!--Titel des Quizes (Endgültiger Name steht noch nicht fest) -->
-</head>
+<html lang=de> 
+	<head>
+		<meta charset=utf-8> 
+		<title>Quizprojekt</title>
+	</head>
 
-<body>
-<!-- Diese Datei dient als Hauptmenü für die Webanwendung, von hier aus gelangt man in die jeweiligen Bereiche der Anwendung --> 
-	<header>
-		<img><!-- Hier das Logo des Quizes --></img>
-		<h1>Hauptmenü</h1> <!-- Überschrift der Ansicht -->
+	<body>
+		<header>
+			<img><!-- Hier wird das Logo des Quizes eingefügt --></img>
+			<h1>Hauptmenü</h1> 
 
-	</header>
-		
-		<main>
-			<form>
-			<!-- Hier werden einzelne Eingabemöglichkeiten von Nutzern einprogrammiert -->
+		</header>
 			
-				<fieldset> <!-- Gruppierung und Zuordnung von Eingabeelementen in einem <fieldset>-Container -->
-					
-						<a href=Quiz.html> <button type=button id=einzelspieler>Einzelspieler</button> 
-						<!-- Nutzer gelangt durch Betätigung in den Einzelspieler, Link zu Quiz.html --> 
-						<br>
-						
-						<a href=Trainingsmodus.html> <button type=button id=trainingsmodus>Trainingsmodus</button> 
-						<!-- Nutzer gelangt durch Betätigung in den Trainingsmodus, Link zu Trainingsmodus.html --> 
-						<br>
-						
-						<a href=Duellmodus.html> <button type=button id=duellmodus>Duellmodus</button>
-						<!-- Nutzer gelangt durch Betätigung in den Duellmodus, Link zu Duellmodus.html --> 
-						<br>
-						
-						<a href=Userforum.html> <button type=button id=userforum>Userforum</button> 
-						<!-- Nutzer gelangt durch Betätigung in den Userforum Bereich, Link zu Userforum.html --> 
-						<br>
-						
-						<a href=Adminbereich.html> <button type=button id=quizfragen>Quizfragen bearbeiten</button> 
-						<!-- Admin gelangt durch Betätigung in den Adminbereich, Link zu Admindbereich.html (nur für Admins) --> 		
-				</fieldset>
-			</form>
-		</main>
-</body>
+			<main>
+				<form>
+					<fieldset> 
+							<a href=Quiz.html> <button type=button id=einzelspieler>Einzelspieler</button>  
+							<br>
+							
+							<a href=Trainingsmodus.html> <button type=button id=trainingsmodus>Trainingsmodus</button> 
+							<br>
+							
+							<a href=Duellmodus.html> <button type=button id=duellmodus>Duellmodus</button>
+							<br>
+							
+							<a href=Userforum.html> <button type=button id=userforum>Userforum</button> 
+							<br>
+							
+							<a href=Adminbereich.html> <button type=button id=quizfragen>Quizfragen bearbeiten</button> 		
+					</fieldset>
+				</form>
+			</main>
+	</body>
 </html>
