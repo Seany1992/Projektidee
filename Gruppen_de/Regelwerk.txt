@@ -4,18 +4,17 @@ Regelwerk
 
 Das Quiz:
 
-In diesem besonderen Quiz steht die Schnelligkeit und das Fachwissen in den Bereichen: Film, Fernsehen und Videospiele im Vordergrund. 
-Der Spieler hat die Aufgabe in einer vorgegebenen Zeit, das Quiz, bestehend aus 20 Fragen, zu durchlaufen.
-
-
-Je schneller  der Spieler  eine Frage beantwortet, desto höher ist die erhaltende Punktzahl, der Highscore. 
+In diesem Quiz steht die Schnelligkeit und das richtige Beantworten von Fragen in den Bereichen: Film, Fernsehen und Videospiele im Vordergrund. 
+Der Spieler hat die Aufgabe das Quiz, bestehend aus 20 Fragen, zu durchlaufen. Dabei hat jede Frage ein Zeitlimit, welches nach und nach kürzer wird, je weiter der Spieler im Quiz voranschreitet.
+Je schneller  der Spieler  eine Frage beantwortet, desto höher ist die erhaltende Punktzahl (Highscore). 
 
 Jeder Spieler  beginnt mit 3 Versuchen sogenannte "Leben", bei falscher Beantwortung oder bei Ablauf des Zeitlimits einer Frage, verliert man ein solches. 
+
 Sinkt die Anzeige der Versuche/Leben auf null, so gilt das Quiz für den Spieler als Verloren.
 
+Bei 5 richtig beantwortenden Fragen hintereinander, erhält der Spieler ein Versuch/Leben zurück.
+Am Ende jeder Spielrunde gibt es eine Auswertung samt Highscoreliste und Aufzählung der richtig und falsch beantworteten Fragen innerhalb der Spielrunde.
 
-Am Ende  jeder Spielrunde gibt es eine Auswertung samt Highscoreliste und Aufzählung der richtig und falsch beantworteten Fragen.
-[
 
 Einzelspieler:
 
@@ -28,10 +27,8 @@ Trainingsmodus:
 
 Der Trainingsmodus eignet sich perfekt für Neulinge, die sich erst einmal mit der Spielmechanik vertraut machen wollen.
 
-Hier steht einem ein computergesteuerter Gegenspieler gegenüber der sich in 3 verschieden Schwierigkeitsstufen einstellen lässt. 
+Hier steht einem ein computergesteuerter Gegenspieler gegenüber der sich in 3 verschieden Schwierigkeitsstufen einstellen lässt(Leicht, Mittel, Schwer). 
 Es ist perfekt ist die perfekte Vorbereitung auf den Duellmodus.
-
-
 
 Duellmodus:
 
@@ -41,5 +38,4 @@ Der Duellmodus ist das Herzstück vom Quiz. Der Spieler sucht sich seinen gewünsc
 Forum:
 
 
-Die Spieler können  in diesem Userforum Ideen und Meinungen, bezüglich der Quizfragen, austauschen.  
-Anregungen und Verbesserungsvorschläge  sind erwünscht.
+Die Spieler können in diesem Userforum Ideen und Meinungen, bezüglich der Quizfragen, austauschen. Anregungen und Verbesserungsvorschläge zur Anwendung sind erwünscht.
