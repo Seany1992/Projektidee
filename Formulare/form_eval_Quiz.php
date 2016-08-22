@@ -1,1 +1,0 @@
-<!-- Hier werden die Eingaben des quiz.php verarbeitet -->

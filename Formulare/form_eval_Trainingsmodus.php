@@ -1,1 +1,0 @@
-<!-- Hier werden Eingaben aus trainingsmodus.php verarbeitet -->
