@@ -1,0 +1,1 @@
+<!-- Hier werden Eingaben aus adminbereich.php verarbeitet -->
