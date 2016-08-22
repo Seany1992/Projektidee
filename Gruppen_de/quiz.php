@@ -42,10 +42,20 @@
 		<aside>
 			<ul>
 			<!-- Info: Hier soll eine Liste mit dem Fortschritt innerhalb des Quizes folgen. Es dient als Orientierungsliste für die Spielrunde. Angezeigt wird die Anzahl der noch offenen- und bereits richtig beantworteten Fragen. Die aktuelle Frage, bei der man sich befindet, wird gekennzeichnet.  -->
-				<li> Frage 1 </li> 
-				<li> Frage 2 </li>
-				<li> Frage 3 </li>
-			<!-- Frage an Herrn Alpers: Gibt es noch eine bessere Möglichkeiten so etwas, eventuell mit anderen html Containern, zu implementieren? Stichwort: <progress> ? -->
+				<?php
+				echo "<table border=1>\n";
+				for ($i = 1; $i <= 20; $i++) 
+				{ 
+					echo "<td>$i</td>\n";
+					for ($j=1; $j <= 1; $j++)
+					{
+						echo "<tr>\n";
+					}
+				}
+				echo "</table>\n";
+				/* Fortschrittsleiste mithilfe von PHP realisiert, es wird eine Tabelle mit den Fragen von 1-20 angezeigt.
+				*/
+				?>
 			</ul>
 		</aside>
 		
