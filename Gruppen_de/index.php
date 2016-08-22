@@ -13,7 +13,7 @@
 		</header>
 			
 		<main>
-			<form id=registrierung>
+			<form id=registrierung action=form_eval_index.php method=POST>
 				<fieldset> 
 					<legend>Bitte geben Sie Ihre persönlichen Daten zur Registrierung  ein:</legend> 
 						

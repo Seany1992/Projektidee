@@ -11,7 +11,7 @@
 			<h1>Hauptmenü</h1> 
 		</header>
 		<main>
-			<form>
+			<form action=form_eval_hauptmenue.php method=POST>
 				<fieldset> 
 						<a href=quiz.html> <button type=button id=einzelspieler>Einzelspieler</button>  
 						<br>
