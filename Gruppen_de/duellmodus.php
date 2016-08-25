@@ -10,9 +10,6 @@
 		</header>
 		
 		<form action=form_eval_duellmodus.php method=POST>
-			<a href=regelwerk.txt> <button type=button id=regelwerk>Regelwerk aufrufen</button>
-			<br>
-			
 			<table>
 			<caption> Registrierte Nutzer </caption>
 			  <tr>
@@ -35,7 +32,9 @@
 			<button type=button id=start>Herausforderung absenden</button>
 			<!-- Funktion: Der Spieler sucht sich einen Gegenspieler aus der Tabelle aus und fordert ihn mit der Betätigung des Buttons zu einem Multiplayerspiel heraus -->
 			
-			<a href=quiz.html> <button type=button id=start>Quizstart</button>
+			<a href=regelwerk.txt> <button type=button id=regelwerk>Regelwerk aufrufen</button>
+			
+			<a href=quiz.php> <button type=button id=start>Quizstart</button>
 		</form>
 	</body>
 </html>

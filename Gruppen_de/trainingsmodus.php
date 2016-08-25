@@ -12,9 +12,6 @@
 		</header>
 			
 		<form action=form_eval_trainingsmodus.php method=POST>
-			<a href=regelwerk.txt> <button type=button id=regelwerk>Regelwerk aufrufen</button>
-			<br>
-			
 			<p>Schwierigkeitsgrad auswählen: </p>
 			<select>
 				<option value=leicht>Leicht</option>
@@ -23,6 +20,8 @@
 			</select>
 			<!-- Info: Der Schwierigkeitsgrad für den CPU Gegner kann bestimmt werden, der NPC adaptiert das Verhalten eines registrierten Nutzerprofiles -->
 			<br>
+			
+			<a href=regelwerk.txt> <button type=button id=regelwerk>Regelwerk aufrufen</button>
 
 			<a href=quiz.php> <button type=button id=start>Quizstart</button>
 		</form>

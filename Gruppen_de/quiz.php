@@ -13,10 +13,12 @@
 		
 		<p>Frage 1 von X</p> 
 		<!--Funktion: Wird eine fortlaufende Nummerierung der Fragen z.b. "1"-->
+		
 		<p><b>Fragestellung</b></p> 
 		<!-- Funktion: Momentan noch Platzhalter. Hier wird die Frage eingefügt -->
 		<form action=form_eval_quiz.php method=POST>
-			<a href=regelwerk.txt> <button type=button id=regelwerk>Regelwerk aufrufen</button>
+			
+			
 			<fieldset>
 					<legend>Quizfrage</legend> 
 					
@@ -33,11 +35,13 @@
 					<input type=radio id=antwort4 name=antwort value=antwort required>	
 			</fieldset>	
 			
-			<a href=quiz.html> <button type=button id=previous>Vorherige Frage</button> 
+			<a href=quiz.php> <button type=button id=previous>Vorherige Frage</button> 
 			
-			<a href=quiz.html> <button type=button id=skip>Nächste Frage</button>
+			<a href=quiz.php> <button type=button id=skip>Nächste Frage</button>
 			
-			<a href=auswertung.html> <button type=button id=auswertung>Zur Auswertung</button>
+			<a href=auswertung.php> <button type=button id=auswertung>Zur Auswertung</button>
+			
+			<a href=regelwerk.txt> <button type=button id=regelwerk>Regelwerk aufrufen</button>
 		</form>
 		<aside>
 			<ul>
