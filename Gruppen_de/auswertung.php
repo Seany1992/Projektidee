@@ -12,7 +12,7 @@
 		<main>
 			<p> Anzahl der richtig beantworteten Fragen: X von X <p>
 			<!-- Info: Die Anzahl der richtig beantworteten Fragen soll hier dynamisch angezeigt werden (Bezeichner "x" sind momentan noch Platzhalter)-->
-			<form>
+			<form action=form_eval_auswertung.php method=POST>
 				<table>
 					<caption> Highscore Liste </caption>
 					<tr>
@@ -35,7 +35,8 @@
 				</table>
 				<!-- Info: Die Tabelle ist nicht vollständig (es handelt sich bei den Bezeichnern noch um Platzhalter), sie wird nach und nach mit Nutzern aus der Datenbank gefüllt. Es handelt sich um die Highscore Liste, dort aufgelistet werden alle gespeicherten Nutzerprofile mitsamt ihrem Highscore -->
 				
-				<a href=quiz.html> <button type=button id=start>Neustart</button>
+				<a href=quiz.php> <button type=button id=start>Neustart</button>
+				<a href=hauptmenue.php> <button type=button id=hauptmenue>Hauptmenü</button>	
 			</form>
 		</main>	
 	</body>

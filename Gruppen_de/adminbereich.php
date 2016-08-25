@@ -12,7 +12,7 @@
 	
 	<body>
 		<section>
-			<form>
+			<form action=form_eval_verwaltung.php method=POST>
 				<table>
 					<caption> Userfeedbacks </caption>
 					  <tr>
@@ -42,7 +42,7 @@
 		</section>	
 		
 		<section>
-			<form>
+			<form action=form_eval_quizfragen.php method=POST>
 				<h2> Quizfrage erstellen/bearbeiten </h2>
 				
 				<textarea><!-- Funktion: Hier wird der Admin eine neue Frage formulieren können --> </textarea>
@@ -66,7 +66,9 @@
 				Antwort4
 				</label>
 				<!-- Info: Der Admin kann mit den Checkboxen bestimmen, welche der Antwortmöglichkeiten bezüglich der Fragestellung richtig sein soll. -->
-				<button type=button id=erstellen>Frage erstellen</button>  
+				<button type=button id=erstellen>Frage erstellen</button> 
+				
+				<a href=hauptmenue.php> <button type=button id=hauptmenue>Hauptmenü</button>					
 		</form>
 	</body>
 </html>

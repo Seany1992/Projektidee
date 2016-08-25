@@ -32,11 +32,13 @@
 		</table>
 			<!-- Info: Inhalt der Tabelle soll sein, die neuesten Feedbacks anzuzeigen. Diese werden in der Datenbank abgespeichert und später in den Ansichten Adminbereich.html, sowie Userforum.html in Form von Tabellen einsehbar sein. -->
 		
-			<form>
+			<form action=form_eval_login.php method=POST>
 				<textarea><!--Funktion: Hier wird der der Nutzer sein gewünschtes Feedback eingeben können --> </textarea>
 				<br>
 				
 				<button type=button id=feedback>Feedback senden </button>
+				
+				<a href=hauptmenue.php> <button type=button id=hauptmenue>Hauptmenü</button>	
 				<br>
 			</form>
 		</main>

@@ -15,7 +15,7 @@
 		<!--Funktion: Wird eine fortlaufende Nummerierung der Fragen z.b. "1"-->
 		<p><b>Fragestellung</b></p> 
 		<!-- Funktion: Momentan noch Platzhalter. Hier wird die Frage eingefügt -->
-		<form>
+		<form action=form_eval_quiz.php method=POST>
 			<a href=regelwerk.txt> <button type=button id=regelwerk>Regelwerk aufrufen</button>
 			<fieldset>
 					<legend>Quizfrage</legend> 

@@ -11,7 +11,7 @@
 			<h1>Trainingsmodus</h1>	
 		</header>
 			
-		<form>
+		<form action=form_eval_trainingsmodus.php method=POST>
 			<a href=regelwerk.txt> <button type=button id=regelwerk>Regelwerk aufrufen</button>
 			<br>
 			
@@ -24,7 +24,7 @@
 			<!-- Info: Der Schwierigkeitsgrad für den CPU Gegner kann bestimmt werden, der NPC adaptiert das Verhalten eines registrierten Nutzerprofiles -->
 			<br>
 
-			<a href=quiz.html> <button type=button id=start>Quizstart</button>
+			<a href=quiz.php> <button type=button id=start>Quizstart</button>
 		</form>
 	</body>
 </html>

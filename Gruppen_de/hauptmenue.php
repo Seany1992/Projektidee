@@ -13,19 +13,19 @@
 		<main>
 			<form action=form_eval_hauptmenue.php method=POST>
 				<fieldset> 
-						<a href=quiz.html> <button type=button id=einzelspieler>Einzelspieler</button>  
+						<a href=quiz.php> <button type=button id=einzelspieler>Einzelspieler</button>  
 						<br>
 							
-						<a href=trainingsmodus.html> <button type=button id=trainingsmodus>Trainingsmodus</button> 
+						<a href=trainingsmodus.php> <button type=button id=trainingsmodus>Trainingsmodus</button> 
 						<br>
 							
-						<a href=duellmodus.html> <button type=button id=duellmodus>Duellmodus</button>
+						<a href=duellmodus.php> <button type=button id=duellmodus>Duellmodus</button>
 						<br>
 							
-						<a href=userforum.html> <button type=button id=userforum>Userforum</button> 
+						<a href=userforum.php> <button type=button id=userforum>Userforum</button> 
 						<br>
 							
-						<a href=adminbereich.html> <button type=button id=quizfragen>Quizfragen bearbeiten</button> 		
+						<a href=adminbereich.php> <button type=button id=quizfragen>Quizfragen bearbeiten</button> 		
 				</fieldset>
 			</form>
 		</main>

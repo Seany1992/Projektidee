@@ -9,7 +9,7 @@
 			<h1>Duellmodus</h1>	
 		</header>
 		
-		<form>
+		<form action=form_eval_duellmodus.php method=POST>
 			<a href=regelwerk.txt> <button type=button id=regelwerk>Regelwerk aufrufen</button>
 			<br>
 			

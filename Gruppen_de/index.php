@@ -35,7 +35,7 @@
 						
 					<button form=registrierung type=reset>Eingaben zurücksetzen</button>
 						
-					<a href=hauptmenue.html> <button type=button id=hauptmenue>Hauptmenü</button>				
+					<a href=hauptmenue.php> <button type=button id=hauptmenue>Hauptmenü</button>				
 				</fieldset>
 			</form>
 		</main>	
