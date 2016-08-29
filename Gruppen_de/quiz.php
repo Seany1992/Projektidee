@@ -23,25 +23,25 @@
 					<legend>Quizfrage</legend> 
 					
 					<label for=antwort1> A: Antwort</label> 
-					<input type=radio id=antwort1 name=antwort value=antwort required> 
+					<input type=radio id=antwort1 name=antwort value=antwort1 required> 
 					<br>
 					<label for=antwort2> B: Antwort</label> 
-					<input type=radio id=antwort2 name=antwort value=antwort required>
+					<input type=radio id=antwort2 name=antwort value=antwort2 required>
 					<br>
 					<label for=antwort3> C: Antwort</label> 
-					<input type=radio id=antwort3 name=antwort value=antwort required>
+					<input type=radio id=antwort3 name=antwort value=antwort3 required>
 					<br>
 					<label for=antwort4> D: Antwort</label>
-					<input type=radio id=antwort4 name=antwort value=antwort required>	
+					<input type=radio id=antwort4 name=antwort value=antwort4 required>	
 			</fieldset>	
 			
-			<a href=quiz.php> <button type=button id=previous>Vorherige Frage</button> 
+			<a href=quiz.php> <button type=button id=previous>Vorherige Frage</button> </a>
 			
-			<a href=quiz.php> <button type=button id=skip>Nächste Frage</button>
+			<a href=quiz.php> <button type=button id=skip>Nächste Frage</button></a>
 			
-			<a href=auswertung.html> <button type=button id=auswertung>Zur Auswertung</button>
+			<a href=auswertung.html> <button type=button id=auswertung>Zur Auswertung</button></a>
 			
-			<a href=regelwerk.txt> <button type=button id=regelwerk>Regelwerk aufrufen</button>
+			<a href=regelwerk.txt> <button type=button id=regelwerk>Regelwerk aufrufen</button></a>
 		</form>
 		<aside>
 			<ul>

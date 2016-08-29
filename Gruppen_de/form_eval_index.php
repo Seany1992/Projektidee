@@ -9,12 +9,13 @@
 	<body>
 	 
 	<?php
+	// Aufgrund der PHP Einbindung befindet sich index.html mit dieser Datei im selben Verzeichnis.
 	echo "Vielen Dank für die Registrierung: ";
 	echo htmlspecialchars ($_GET["username"]);
 	echo "<br>";
 	echo "Ihre E-Mail lautet: ";
 	echo htmlspecialchars ($_GET["email"]);
-	echo "<a href=hauptmenue.html> <button type=button id=hauptmenue>Hauptmenü</button>";
+	echo "<a href=hauptmenue.html> <button type=button id=hauptmenue>Hauptmenü</button></a>";
 	?>
 	</body>
 </html>
