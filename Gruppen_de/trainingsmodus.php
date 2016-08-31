@@ -24,8 +24,6 @@
 			<br>
 			
 			<a href=regelwerk.txt> <button type=button id=regelwerk>Regelwerk aufrufen</button> </a>
-
-			<p><a href=quiz.php> <button type=button id=start>Quizstart</button></p></a>
 		</form>
 		
 		<?php
