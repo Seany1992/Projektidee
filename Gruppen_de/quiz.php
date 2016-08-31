@@ -50,7 +50,7 @@
 				echo "<table border=1>\n";
 				for ($i = 1; $i <= 20; $i++) 
 				{ 
-					echo "<td>$i</td>\n";
+					echo "<td>Frage: $i</td>\n";
 					for ($j=1; $j <= 1; $j++)
 					{
 						echo "<tr>\n";
