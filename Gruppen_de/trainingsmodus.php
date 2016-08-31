@@ -11,7 +11,7 @@
 			<h1>Trainingsmodus</h1>	
 		</header>
 			
-		<form method=get action="<?php echo $_SERVER["PHP_SELF"]; ?>" >
+		<form method=post action="<?php echo $_SERVER["PHP_SELF"]; ?>" >
 			<p>Schwierigkeitsgrad auswählen: </p>
 			<select name=schwierigkeitsgrad>
 				<option value=leicht>Leicht</option>
@@ -28,9 +28,9 @@
 		
 		<?php
 		// Das formular <select> wird übermittelt und mittels PHP verarbeitet.
-			if (isset($_GET["schwierigkeitsgrad"])){
+			if (isset($_POST["schwierigkeitsgrad"])){
 			echo "Der gewählte Schwierigkeitsgrad ist:  ";
-			echo htmlspecialchars ($_GET["schwierigkeitsgrad"]);
+			echo htmlspecialchars ($_POST["schwierigkeitsgrad"]);
 			echo "<br>";
 			echo "Viel Spaß beim Quiz " ;
 			echo "<br>";
