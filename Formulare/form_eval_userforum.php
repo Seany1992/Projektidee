@@ -1,1 +1,1 @@
-<!-- Hier werden Eingaben aus userforum.php verarbeitet -->
+<!-- Hier werden Eingaben aus userforum.html verarbeitet -->

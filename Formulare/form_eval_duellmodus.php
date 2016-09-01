@@ -1,1 +1,1 @@
-<!-- Hier werden Eingaben aus duellmodus.php verarbeitet -->
+<!-- Hier werden Eingaben aus duellmodus.html verarbeitet -->

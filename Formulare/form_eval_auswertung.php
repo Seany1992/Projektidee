@@ -1,1 +1,1 @@
-<!-- Hier werden Eingaben aus auswertung.php verarbeitet -->
+<!-- Hier werden Eingaben aus auswertung.html verarbeitet -->

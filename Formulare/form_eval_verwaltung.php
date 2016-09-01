@@ -1,1 +1,1 @@
-<!-- Hier werden Eingaben aus adminbereich.php verarbeitet -->
+<!-- Hier werden Eingaben aus adminbereich.html verarbeitet -->
