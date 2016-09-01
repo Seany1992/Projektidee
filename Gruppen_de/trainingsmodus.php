@@ -20,7 +20,7 @@
 			</select>
 			<!-- Info: Der Schwierigkeitsgrad für den CPU Gegner kann bestimmt werden, der NPC adaptiert das Verhalten eines registrierten Nutzerprofiles -->
 			<br>
-			<input type=submit name=submit>
+			<input type=submit value=akzeptieren>
 			<br>
 			
 			<a href=regelwerk.txt> <button type=button id=regelwerk>Regelwerk aufrufen</button> </a>
