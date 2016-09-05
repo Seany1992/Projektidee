@@ -10,15 +10,25 @@
 			<h1>Auswertung</h1>	
 		</header>	
 		<main>
-			<?php
-			echo "<p> Anzahl der richtig beantworteten Fragen: X von 20 <p>";
+		<?php
 			//Info: Die Anzahl der richtig beantworteten Fragen und die Erfolgsquote beim Quiz soll hier angezeigt werden (Bezeichner "x" sind momentan noch Platzhalter)"
-			function berechnen ($richtig, $fragen)
+			$richtigeAntworten = 15;
+			function ausgabeRichtig ($ok)
+			{
+				return $ok;
+			}
+			$richtig= ausgabeRichtig ($richtigeAntworten);
+			
+			function erfolgsquote ($richtig, $fragen)
 			{
 				$erg = $richtig / $fragen*100;
 				return $erg;
+				return $richtig;
 			}
-			$ergebnis = berechnen (15,20);
+			$ergebnis = erfolgsquote ($richtigeAntworten,20);
+			
+			echo "<p> Anzahl der richtig beantworteten Fragen: $richtig von 20 <p>";
+			
 			echo "Ihre Erfolgsquote liegt bei: $ergebnis %" ;
 			// In diesem Beispiel wurden 15 von 20 möglichen Fragen richtig beantwortet. im fertigen Quiz, wird die Variable für die richtigen Antworten vom Quizteil übergeben. 
 			?>
