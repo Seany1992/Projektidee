@@ -10,10 +10,17 @@
 			<h1>Auswertung</h1>	
 		</header>	
 		<main>
-			<p> Anzahl der richtig beantworteten Fragen: X von X <p>
-			<!-- Info: Die Anzahl der richtig beantworteten Fragen soll hier dynamisch angezeigt werden (Bezeichner "x" sind momentan noch Platzhalter)-->
 			<?php
-			// Die Verarbeitung der richtig beantworteten Fragen, soll als Funktion in PHP stattfinden.
+			echo "<p> Anzahl der richtig beantworteten Fragen: X von 20 <p>";
+			//Info: Die Anzahl der richtig beantworteten Fragen und die Erfolgsquote beim Quiz soll hier angezeigt werden (Bezeichner "x" sind momentan noch Platzhalter)"
+			function berechnen ($richtig, $fragen)
+			{
+				$erg = $richtig / $fragen*100;
+				return $erg;
+			}
+			$ergebnis = berechnen (15,20);
+			echo "Ihre Erfolgsquote liegt bei: $ergebnis %" ;
+			// In diesem Beispiel wurden 15 von 20 möglichen Fragen richtig beantwortet. im fertigen Quiz, wird die Variable für die richtigen Antworten vom Quizteil übergeben. 
 			?>
 			<form action=form_eval_auswertung.php method=POST>
 				<table>
