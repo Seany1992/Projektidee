@@ -63,9 +63,9 @@
 			</ul>
 		</aside>
 		
-		<canvas> <!-- Info: Bitmap-Bereich, um die Lebensanzeige, das Zeitlimit und die erreichte Punktzahl dynamisch darzustellen, mithilfe von Skripen/Funktionen in PHP bzw. MySQL -->
+		 <!-- Info: Bereich, um die Lebensanzeige, das Zeitlimit und die erreichte Punktzahl dynamisch darzustellen, mithilfe von Skripten/Funktionen in PHP -->
 		
-		<!-- Frage an Herrn Alpers: Gibt es alternativ noch andere HTML 5 tags womit ich die genannten Punkte realisieren kann? --> 
-		</canvas> 
+		<!-- Frage an Herrn Alpers: Welche HTML 5 tags bzw. PHP Funktionen sind sinnvoll, womit ich die genannten Punkte realisieren kann? --> 
+		
 	</body>
 </html>
