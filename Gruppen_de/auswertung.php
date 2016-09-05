@@ -12,6 +12,9 @@
 		<main>
 			<p> Anzahl der richtig beantworteten Fragen: X von X <p>
 			<!-- Info: Die Anzahl der richtig beantworteten Fragen soll hier dynamisch angezeigt werden (Bezeichner "x" sind momentan noch Platzhalter)-->
+			<?php
+			// Die Verarbeitung der richtig beantworteten Fragen, soll als Funktion in PHP stattfinden.
+			?>
 			<form action=form_eval_auswertung.php method=POST>
 				<table>
 					<caption> Highscore Liste </caption>
