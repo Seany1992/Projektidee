@@ -39,7 +39,7 @@
 			
 			<a href=quiz.php> <button type=button id=skip>Nächste Frage</button></a>
 			
-			<a href=auswertung.html> <button type=button id=auswertung>Zur Auswertung</button></a>
+			<a href=auswertung.php> <button type=button id=auswertung>Zur Auswertung</button></a>
 			
 			<a href=regelwerk.txt> <button type=button id=regelwerk>Regelwerk aufrufen</button></a>
 		</form>
