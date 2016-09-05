@@ -29,7 +29,7 @@
 			
 			echo "<p> Anzahl der richtig beantworteten Fragen: $richtig von 20 <p>";
 			
-			echo "Ihre Erfolgsquote liegt bei: $ergebnis %" ;
+			echo "<p> Ihre Erfolgsquote liegt bei: $ergebnis % <p>" ;
 			// In diesem Beispiel wurden 15 von 20 möglichen Fragen richtig beantwortet. im fertigen Quiz, wird die Variable für die richtigen Antworten vom Quizteil übergeben. 
 			?>
 			<form action=form_eval_auswertung.php method=POST>
