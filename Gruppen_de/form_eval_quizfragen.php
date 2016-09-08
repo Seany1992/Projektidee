@@ -30,7 +30,7 @@
 			}
 		}
 		echo "<br>";
-		echo "<a href=adminbereich.html> <button type=button id=hauptmenue>zurück</button></a>";	
+		echo "<a href=adminbereich.php> <button type=button id=admin>zurück</button></a>";	
 		// Info: Quizfrage wird hiermit erstellt, der Admin erstellt die Antworten und wählt anhand von Checkboxen die richtige Antwortmöglichkeit aus.
 	?>
 	</body>
