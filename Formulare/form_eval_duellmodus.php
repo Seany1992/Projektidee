@@ -1,1 +1,0 @@
-<!-- Hier werden Eingaben aus duellmodus.html verarbeitet -->
