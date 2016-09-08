@@ -1,1 +1,0 @@
-<!-- Hier werden Eingaben aus auswertung.html verarbeitet -->
