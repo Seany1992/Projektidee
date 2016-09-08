@@ -11,25 +11,19 @@
 		
 		<form method=post action="<?php echo $_SERVER["PHP_SELF"]; ?>" >
 		<?php
+			$array[] = array("Spielername: ", "Highscore: ");
+			$array[] = array("Spieler1", "Zahlenwert1");
+			$array[] = array("Spieler2", "Zahlenwert2");
 			echo "<table>";
-			echo "<caption> Registrierte Nutzer </caption>";
-			echo  "<tr>";
-			echo	"<td> Spielername: </td>";
-			echo	"<td> Highscore: </td>";
-			echo  "</tr>";
-			  
-			echo  "<tr>";
-			echo	"<td> Spieler 1 </td>";
-			echo	"<td> Zahlenwert 1 </td>";
-			echo  "</tr>";
-			  
-			echo  "<tr>";
-			echo	"<td> Spieler 2 </td>";
-			echo	"<td> Zahlenwert 2 </td>";
-			echo  "</tr>";
-			echo "</table>";
+			foreach($array as $row) 
+			{
+				echo "<tr>";
+				echo "<td>" . implode("</td><td>", $row) . "</td>";
+				echo "</tr>";
+			}
+				echo "</table>";
 			// Info: Die Tabelle ist nicht vollständig (es handelt sich bei den Bezeichnern noch um Platzhalter), sie wird nach und nach mit Nutzern aus der Datenbank gefüllt, d.h. Die registrierten Nutzer werden aufgelistet und der Spieler kann sich einen Gegenspieler aussuchen und ihn herausfordern 
-			// Vorbereitung auf MySQL, deshalb soll die Tabelle in PHP umgesetzt werden
+			
 		?>
 			
 			<button type=button id=start>Herausforderung absenden</button>
