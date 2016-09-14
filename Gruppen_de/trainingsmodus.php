@@ -22,9 +22,8 @@
 			<br>
 			<input type=submit value=akzeptieren>
 			<br>
-			
-			<a href=regelwerk.txt> <button type=button id=regelwerk>Regelwerk aufrufen</button> </a>
 		</form>
+			<a href=regelwerk.txt> <button type=button id=regelwerk>Regelwerk aufrufen</button> </a>
 		
 		<?php
 		// Das formular <select> wird übermittelt und mittels PHP verarbeitet.

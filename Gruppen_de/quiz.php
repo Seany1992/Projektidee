@@ -17,8 +17,6 @@
 		<p><b>Fragestellung</b></p> 
 		<!-- Funktion: Momentan noch Platzhalter. Hier wird die Frage eingefügt -->
 		<form action=form_eval_quiz.php method=POST>
-			
-			
 			<fieldset>
 					<legend>Quizfrage</legend> 
 					
@@ -34,7 +32,7 @@
 					<label for=antwort4> D: Antwort</label>
 					<input type=radio id=antwort4 name=antwort value=antwort4 required>	
 			</fieldset>	
-			
+		</form>
 			<a href=quiz.php> <button type=button id=previous>Vorherige Frage</button> </a>
 			
 			<a href=quiz.php> <button type=button id=skip>Nächste Frage</button></a>
@@ -42,7 +40,6 @@
 			<a href=auswertung.php> <button type=button id=auswertung>Zur Auswertung</button></a>
 			
 			<a href=regelwerk.txt> <button type=button id=regelwerk>Regelwerk aufrufen</button></a>
-		</form>
 		<aside>
 			<ul>
 			<!-- Info: Hier soll eine Liste mit dem Fortschritt innerhalb des Quizes folgen. Es dient als Orientierungsliste für die Spielrunde. Angezeigt wird die Anzahl der noch offenen- und bereits richtig beantworteten Fragen. Die aktuelle Frage, bei der man sich befindet, wird gekennzeichnet.  -->
@@ -62,10 +59,8 @@
 				?>
 			</ul>
 		</aside>
-		
 		 <!-- Info: Bereich, um die Lebensanzeige, das Zeitlimit und die erreichte Punktzahl dynamisch darzustellen, mithilfe von Skripten/Funktionen in PHP -->
 		
 		<!-- Frage an Herrn Alpers: Welche HTML 5 tags bzw. PHP Funktionen sind sinnvoll, womit ich die genannten Punkte realisieren kann? --> 
-		
 	</body>
 </html>

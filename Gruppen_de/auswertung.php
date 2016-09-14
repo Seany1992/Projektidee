@@ -48,9 +48,9 @@
 				
 				//Info: Die erzeugte Tabelle mithilfe von PHP ist nicht vollständig (es handelt sich bei den Bezeichnern noch um Platzhalter), sie wird nach und nach mit Nutzern aus der Datenbank gefüllt. Es handelt sich um die Highscore Liste, dort aufgelistet werden alle gespeicherten Nutzerprofile mitsamt ihrem Highscore 
 			?>
+			</form>
 				<a href=quiz.php> <button type=button id=start>Neustart</button></a>
 				<a href=hauptmenue.html> <button type=button id=hauptmenue>Hauptmenü</button></a>
-			</form>
 		</main>	
 	</body>
 </html>

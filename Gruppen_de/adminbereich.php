@@ -27,14 +27,14 @@
 					echo "</table>";
 				?>	
 				<!-- Info: Die erzeugteTabelle in PHP, ist nicht vollständig (es handelt sich bei den Bezeichnern noch um Platzhalter). Die Tabelle soll die eingegangenen Userfeedbacks anzeigen. Die Userfeedbacks werden in der Datenbank gespeichert und hier aufgerufen  -->
-				
+			</form>
 				<button type=button id=feedback >Feedback beantworten</button> 
 				<!-- Funktion: Der Admin wird bei Betätigung auf ausgewählte Feedbacks antworten können. --> 
 				<br>
 								
 				<button type=button id=löschen>Feedback löschen</button> 
 				<!-- Funktion: Der Admin wird bei Betätigung ausgewählte Feedbacks löschen können. -->
-			</form>
+			
 		</section>	
 		
 		<section>
@@ -73,9 +73,8 @@
 				</label>
 				<!-- Info: Der Admin kann mit den Checkboxen bestimmen, welche der Antwortmöglichkeiten bezüglich der Fragestellung richtig sein soll. -->
 				<br>
-				<button type=submit value=erstellen>Frage erstellen</button> 
-				
+				<input type=submit value=speichern>
+			</form>
 				<a href=hauptmenue.html> <button type=button id=hauptmenue>Hauptmenü</button></a>					
-		</form>
 	</body>
 </html>
