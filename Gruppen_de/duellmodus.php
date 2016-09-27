@@ -9,6 +9,7 @@
 			<h1>Duellmodus</h1>	
 		</header>
 		
+		<caption> Registrierte Nutzer: </caption> 
 		<form method=post action="<?php echo $_SERVER["PHP_SELF"]; ?>" >
 		<?php
 			$array[] = array("Spielername: ", "Highscore: ");
