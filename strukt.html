@@ -1,4 +1,4 @@
-<!-- Aufgabe 1.0 Version 5.07 28.09.2016 -->
+<!-- Aufgabe 1.0 Version 6.0 04.10.2016 -->
 <!--
 =======================
 === Fünfter Entwurf ===
@@ -9,16 +9,15 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 ===================================
 == (1) Strukturierung von Ansichten
 ===================================
--01- - Textfeld (<title> Titel vom Projekt)
--02- - Textfeld (Überschrift: h1) 
+-02- - Überschrift 
 -03- - Eingabefeld (Funtkion: Eingabe Username)
 -04- - Eingabefeld (Funktion: Eingabe Passwort)
 	//Kommentar: Eingabe des Passwort Verschlüsselt
--05- - Schaltfläche (Label: Submit)
--06- - Schaltfläche (Label: Trainingsmodus)
--07- - Schaltfläche (Label: Duellmodus)
--08- - Schaltfläche (Label: Einzelspieler)
--09- - Schaltfläche (Label: Regelwerk)
+-05- - Schaltfläche (Funktion:: Submit)
+-06- - Schaltfläche (Funktion:: Trainingsmodus)
+-07- - Schaltfläche (Funktion:: Duellmodus)
+-08- - Schaltfläche (Funktion:: Einzelspieler)
+-09- - Schaltfläche (Funktion:: Regelwerk)
 
 -10- - Textfeld (Inhalt: fortlaufende Nummerierung der Fragen z.b. "1")
 -11- - Liste (Inhalt: Fortschritt innherhalb des Quiz)
@@ -29,8 +28,8 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -14- - Radio Button (Antwortmöglichkeit)
 	//Kommentar: Doubletten entfernt. Radio Buttons mit Antwortmöglichkeiten 4x notwendig
 -15- - Hintergrundbild (Themespezifische Einblendung von Bildern)
--16- - Schaltfläche (Label: nächste Frage)
--17- - Schaltfläche (Label: vorherige Frage) 
+-16- - Schaltfläche (Funktion:: nächste Frage)
+-17- - Schaltfläche (Funktion:: vorherige Frage) 
 -18- - Textfeld (Inhalt: Versuche/Lebensanzahl) 
 	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Funktion in PHP inkl. Datenbankanbindung in MySQL
 -19- - Textfeld (Inhalt: Punktzahl Spieler)
@@ -39,26 +38,26 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Funktion in PHP inkl. Datenbankanbindung in MySQL
 
 -22- - Eingabefeld (Funktion: Feedback formulieren)
--23- - Schaltfläche (Label: Feedback absenden)
+-23- - Schaltfläche (Funktion:: Feedback absenden)
  
 -24- - Textfeld (Überschrift: Userfeedback)
 -25- - Tabelle (<table> Inhalt: neueste Feedbacks werden angezeigt)
--26- - Schaltflächen (Label: Feedback beantworten)
--27- - Schaltflächen (Label: Feedback löschen)
+-26- - Schaltflächen (Funktion:: Feedback beantworten)
+-27- - Schaltflächen (Funktion:: Feedback löschen)
 -28- - Textfeld (Überschrift: Quizfrage erstellen/bearbeiten)
 -29- - Eingabefeld (Funktion: Quizfrage erstellen oder bearbeiten)
 -30- - Eingabefeld (Funktion: Quizantwort formulieren oder bearbeiten)
 	//Kommentar: Doubletten entfernt 
 -31- - Checkbox (Funktion: Angabe der richtigen Antwort)	
 	//Kommentar: Nutzer markiert die richtige Antwort zu der formulierten Quizfrage.
--32- - Schaltfläche (Label: Frage speichern)
+-32- - Schaltfläche (Funktion:: Frage speichern)
 
 -33- - Textfeld (Überschrift: Auswertung)
 -34- - Textfeld (Inhalt: Anzahl der richtigen & falschen Antworten)
 	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Funktion in PHP inkl. Datenbankanbindung in MySQL
 -35- - Tabelle  (Inhalt: Highscore-Liste)
 	//Kommentar: ausführliche Tabelle mit Usernamen, Platzierungen und Punktzahlen der Nutzer
--36- - Schatlfläche (Label: Neustart des Quizes)
+-36- - Schatlfläche (Funktion:: Neustart des Quizes)
 
 -37- - Textfeld (Überschrift: Schwierigkeitsgrad auswählen)
 -38- - Drop Down Menü (Auswahlmöglichkeit: <option> Leicht)
@@ -69,61 +68,55 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -43- - Schaltfläche (Funktion: Einen Spieler herauszufordern)
 
 	//Kommentar: Seit dem letzten Feedback neu hinzugefüge Struktur Elemente: 
--44- - Bildbereich "Image" (Inhalt: Das Logo des Quizes)
 -45- - Eingabefeld (Funktion: Eingabe der E-Mail)
--46- - Schaltfläche (Label: Userforum)
--47- - Schatlfläche (Label: Quizfrage erstellen/bearbeiten)
--48- - Schaltfläche (Label: Eingaben zurücksetzen) 
--49- - Schaltfläche (Label: Hauptmenü) 
+-46- - Schaltfläche (Funktion:: Userforum)
+-47- - Schatlfläche (Funktion:: Quizfrage erstellen/bearbeiten)
+-48- - Schaltfläche (Funktion:: Eingaben zurücksetzen) 
+-49- - Schaltfläche (Funktion:: Hauptmenü) 
 -50- - Formular Container (Funktion: form Container)
 -51- - fieldset Container (Funktion: Gruppierung von Kontrollelementen)
--52- - Textfeld (Überschrift: h2)
--53- - Schaltfläche (Label: Quizstart)
+
+-53- - Schaltfläche (Funktion:: Quizstart)
 -54- - Drop Down Menü (<Select>)
--55- - Schaltfläche (Label: Zur Auswertung)
+-55- - Schaltfläche (Funktion:: Zur Auswertung)
 -56- - Textfeld (Inhalt: Erfolgquote)
 	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Funktion in PHP inkl. Datenbankanbindung in MySQL
 -->
 
 <!-- Bei den Gruppen habe ich versucht, im Vergleich zur alten Version, die Code Redundanz zu minimieren. D.h. es gibt nurnoch eine Gruppe die das Quiz anzeigt([V] Quiz). Der Trainingsmodus und Duellmodus haben ihre eigenen strukturellen Elemente und verlinken weiter auf das Quiz. -->
-<!-- Aufgabe 1.1 Version 5.07 28.09.2016  -->
+<!-- Aufgabe 1.1 Version 6.0 04.10.2016  -->
 <!--
 =======================
 == (1.1) Gruppen bilden
 =======================
 [I] LogIn 
--01- - Textfeld (<title> Titel vom Projekt)
--44- - Bildbereich "Image" (Inhalt: Das Logo des Quizes)
--02- - Textfeld (Überschrift: h1) 
--52- - Textfeld (Überschrift: h2)
 -50- - Formular Container (Funktion: form Container)
 -51- - fieldset Container (Funktion: Gruppierung von Kontrollelementen)
--03- - Eingabefeld (Funtkion: Eingabe Username)
+-02- - Überschrift 
+-03- - Eingabefeld (Funtkion: Eingabe Nutzername)
 -04- - Eingabefeld (Funktion: Eingabe Passwort)
 	//Kommentar: Eingabe des Passwort Verschlüsselt
 -45- - Eingabefeld (Funktion: Eingabe der E-Mail)
--05- - Schaltfläche (Label: Submit)
--48- - Schaltfläche (Label: Eingaben zurücksetzen)
--49- - Schaltfläche (Label: Hauptmenü) 
+-05- - Schaltfläche (Funktion: Submit)
+-48- - Schaltfläche (Funktion: Eingaben zurücksetzen)
+-49- - !Schaltfläche (Funktion: Hauptmenü)!
 
 ([II] LogIn Admin "-gelöscht da doppelt-")
 
 [II] Userforum
--01- - Textfeld (<title> Titel vom Projekt)
--02- - Textfeld (Überschrift: h1) 
+-02- - Überschrift 
 -25- - Tabelle (<table> Inhalt: neueste Feedbacks werden angezeigt)
 -50- - Formular Container (Funktion: form Container)
 -22- - Eingabefeld (Funktion: Feedback formulieren, in Form einer Textarea)
--23- - Schaltfläche (Label: Feedback absenden)
--49- - Schaltfläche (Label: Hauptmenü) 
+-23- - Schaltfläche (Funktion:: Feedback absenden)
+-49- - Schaltfläche (Funktion:: Hauptmenü) 
 
 [III] Verwaltung des Userfeedbacks
--01- - Textfeld (<title> Titel vom Projekt)
 -24- - Textfeld (Überschrift: Userfeedback)
 -50- - Formular Container (Funktion: form Container)
 -25- - Tabelle (<table> Inhalt: neueste Feedbacks werden angezeigt)
--26- - Schaltflächen (Label: Feedback beantworten)
--27- - Schaltflächen (Label: Feedback löschen)
+-26- - Schaltflächen (Funktion:: Feedback beantworten)
+-27- - Schaltflächen (Funktion:: Feedback löschen)
 
 [IV] Quizfragen erstellen/bearbeiten
 -50- - Formular Container (Funktion: form Container)
@@ -133,129 +126,121 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 	//Kommentar: Doubletten entfernt 
 -31- - Checkbox (Funktion: Angabe der richtigen Antwort)	
 	//Kommentar: Nutzer markiert die richtige Antwort zu der formulierten Quizfrage.
--32- - Schaltfläche (Label: Frage erstellen)
--49- - Schaltfläche (Label: Hauptmenü)
+-32- - Schaltfläche (Funktion:: Frage erstellen)
+-49- - Schaltfläche (Funktion:: Hauptmenü)
 
 [V] Quiz
--01- - Textfeld (<title> Titel vom Projekt)
--44- - Bildbereich "Image" (Inhalt: Das Logo des Quizes)
--02- - Textfeld (Überschrift: h1) 
+-02- - Überschrift 
 -50- - Formular Container (Funktion: form Container)
 -51- - fieldset Container (Funktion: Gruppierung von Kontrollelementen)
--09- - Schaltfläche (Label: Regelwerk)
+-09- - Schaltfläche (Funktion:: Regelwerk)
 -10- - Textfeld (Inhalt: fortlaufende Nummerierung der Fragen z.b. "1")
 -11- - Liste (Inhalt: Fortschritt innherhalb des Quiz)
 -12- - Textfeld (Inhalt: Fragestellung)
 -13- - Textfeld (Inhalt: Antwort)
 -14- - Radio Button (Antwortmöglichkeit)
 -15- - Hintergrundbild (Themespezifische Einblendung von Bildern)
--16- - Schaltfläche (Label: nächste Frage)
--17- - Schaltfläche (Label: vorherige Frage) 
+-16- - Schaltfläche (Funktion:: nächste Frage)
+-17- - Schaltfläche (Funktion:: vorherige Frage) 
 -18- - Textfeld (Inhalt: Versuche/Lebensanzahl) 
 -19- - Textfeld (Inhalt: Punktzahl Spieler)
 -20- - Textfeld (Inhalt: Zeitlimit)
--55- - Schaltfläche (Label: Zur Auswertung)
+-55- - Schaltfläche (Funktion:: Zur Auswertung)
 		
 [VI] Trainingsmodus
--01- - Textfeld (<title> Titel vom Projekt)
--44- - Bildbereich "Image" (Inhalt: Das Logo des Quizes)
--02- - Textfeld (Überschrift: h1) 
+-02- - Überschrift 
 -50- - Formular Container (Funktion: form Container)
--09- - Schaltfläche (Label: Regelwerk)
--37- - Textfeld (Label: Schwierigkeitsgrad auswählen)
+-09- - Schaltfläche (Funktion:: Regelwerk)
+-37- - Textfeld (Funktion:: Schwierigkeitsgrad auswählen)
 -54- - Drop Down Menü (<Select>)
 -38- - Drop Down Menü (Auswahlmöglichkeit: <option> Leicht)
 -39- - Drop Down Menü (Auswahlmöglichkeit: <option> Mittel)
 -40- - Drop Down Menü (Auswahlmöglichkeit: <option> Schwer)
 
 [VII] Duellmodus
--01- - Textfeld (<title> Titel vom Projekt)
--44- - Bildbereich "Image" (Inhalt: Das Logo des Quizes)
--02- - Textfeld (Überschrift: h1) 
+-02- - Überschrift
 -50- - Formular Container (Funktion: form Container)
--09- - Schaltfläche (Label: Regelwerk)
+-09- - Schaltfläche (Funktion:: Regelwerk)
 -42- - Textfeld (Überschrift: Registrierte Nutzer)
 -41- - Tabelle (Inhalt: Registrierte Nutzerprofile)
 -43- - Schaltfläche (Funktion: Einen Spieler herauszufordern)
--53- - Schaltfläche (Label: Quizstart)
--05- - Schaltfläche (Label: Submit)
+-53- - Schaltfläche (Funktion:: Quizstart)
+-05- - Schaltfläche (Funktion:: Submit)
 
 [VIII] Auswertung und Highscoretabelle 
--01- - Textfeld (<title> Titel vom Projekt)
 -33- - Textfeld (Überschrift: Auswertung)
 -34- - Textfeld (Inhalt: Anzahl der richtigen & falschen Antworten)
 -56- - Textfeld (Inhalt: Erfolgquote)
 -50- - Formular Container (Funktion: form Container)
 -35- - Tabelle  (Inhalt: Highscore-Liste)
--36- - Schatlfläche (Label: Neustart des Quizes)
--49- - Schaltfläche (Label: Hauptmenü) 
+-36- - Schatlfläche (Funktion:: Neustart des Quizes)
+-49- - Schaltfläche (Funktion:: Hauptmenü) 
 
 [IX] Hauptmenue
--01- - Textfeld (<title> Titel vom Projekt)
--02- - Textfeld (Überschrift: h1)
--44- - Bildbereich "Image" (Inhalt: Das Logo des Quizes)
--08- - Schaltfläche (Label: Einzelspieler)
--06- - Schaltfläche (Label: Trainingsmodus)
--07- - Schaltfläche (Label: Duellmodus)
--46- - Schaltfläche (Label: Userforum)
--47- - Schatlfläche (Label: Quizfragen erstellen/bearbeiten)
+-02- - Überschrift
+-08- - Schaltfläche (Funktion:: Einzelspieler)
+-06- - Schaltfläche (Funktion:: Trainingsmodus)
+-07- - Schaltfläche (Funktion:: Duellmodus)
+-46- - Schaltfläche (Funktion:: Userforum)
+-47- - Schatlfläche (Funktion:: Quizfragen erstellen/bearbeiten)
 -->
-
+<!-- Die mit dem !...! "eingeklammerten" strukt. Elemente befinden sich nicht direkt in der Gruppe, sondern sind ausgelagert in einer PHP Datei, vorzufinden. -->
 
 <!-- Für die Bessere Bedienbarkeit und Struktur habe ich die Ansicht und die Gruppe hauptmenue eingeführt. Sie dient, wie der Name bereits verrät, als zentraler Orientierungspunkt, von wo aus man zu jedem Bereich der Anwendung gelangt.  -->
-<!-- Aufgabe 1.2 Version 5.07 28.09.2016 -->
+<!-- Aufgabe 1.2 Version 6.0 04.10.2016 -->
 <!--
 =========================
 == (1.2) Ansichten bilden
 =========================
------------------------
----    view_index   ---
------------------------
+------------------------
+--- view_startseite  ---
+------------------------
 [I]LogIn 
 
 
 ----------------------- 
---- view_Userforum  ---
+--- view_userforum  ---
 -----------------------
 [II] Userforum
 
 
 -----------------------
----view_Adminbereich---
+---view_adminbereich---
 -----------------------
 [III] Verwaltung des Userfeedbacks
 [IV] Quizfragen erstellen/bearbeiten
 
 
 -------------------------
---- view_Quiz---
+--- view_quiz---
 -------------------------
 [V] Quiz
 
 
 --------------------------
---- view_Trainingsmodus---
+--- view_trainingsmodus---
 --------------------------
 [VI] Trainingmodus
 
 
 ----------------------
---- view_Duellmodus---
+--- view_duellmodus---
 ----------------------
 [VII] Duellmodus
 
 
 -------------------------
---- view_Auswertung---
+--- view_auswertung---
 -------------------------
 [VIII] Auswertung und Highscoretabelle 
 
 
 -------------------------
---- view_Hauptmenue---
+--- view_hauptmenue---
 -------------------------
 [IX] Hauptmenue
 -->
+
 
 
 
@@ -858,7 +843,7 @@ Wertung 5: Ansichten: 4 / 5 (Abzug, weil Doppelung nicht entfernt wurde)
 Wenn das hier vier unterschiedliche Schaltflächen sind, an die später unterschiedliche Funktionalitäten angebunden werden sollen, dann notieren Sie sie bitte einzelne. Denn wenn sich später herausstellt, dass einzelne wegfallen sollten oder neue hinzukommen, wird das in der Aufstellung nur schwer erkennbar sein. (Nicht vergessen: Dies ist ein Planungswerkzeug, der Inhalt wird sich also kontinuierlich ändern.)
 
 (1.2) -07- - Textfeld (Textfeld1:"Trainingsmodus" |Textfeld2:"Duellmodus" |Textfeld3: "Einzelspieler" |Textfeld4: "Regelwerk") 
-Wenn es hier lediglich darum geht, die Beschriftung der einzelnen Schaltflächen zu klären, dann handelt es sich um Labels. Textfelder sind einzelne Texte, die direkt in der Webanwendung angezeigt werden und keinerlei Funktionalität haben.
+Wenn es hier lediglich darum geht, die Beschriftung der einzelnen Schaltflächen zu klären, dann handelt es sich um Funktion:s. Textfelder sind einzelne Texte, die direkt in der Webanwendung angezeigt werden und keinerlei Funktionalität haben.
 
 Ähnliches gilt z.B. für -10- und -11-.
 
@@ -933,8 +918,8 @@ haben leider schlecht gewählte Bezeichnungen. Bitte ändern Sie die Namen in di
 = -02- - Textfeld (Überschrift: h1) 
 Richtig wäre: -02- Überschrift
 
-= -09- - Schaltfläche (Label: Regelwerk)
-Benutzen Sie hier besser einen anderen Begriff als "Label", denn in HTML haben wir den <label>-Container, der für andere Aufgaben verwendet wird.
+= -09- - Schaltfläche (Funktion:: Regelwerk)
+Benutzen Sie hier besser einen anderen Begriff als "Funktion:", denn in HTML haben wir den <Funktion:>-Container, der für andere Aufgaben verwendet wird.
 
 = -10- - Textfeld (Inhalt: fortlaufende Nummerierung der Fragen z.b. "1")
 Für fortlaufende Nummerierungen benutzen wir in HTML geordnete Listen.
