@@ -20,3 +20,10 @@
 	?>
 	</body>
 </html>
+
+// ===================================
+// === Feedback Alpers, 2016-10-04 ===
+// ===================================
+//
+// Diese Datei ist eine PHP-Datei zur Auswertung eines Formulars, kein HTML-Dokument.
+// Umgesetzt haben Sie dagegen ein HTML-Formular.
