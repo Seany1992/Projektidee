@@ -349,8 +349,7 @@ Die Absätze in der Struktur dienen nur zur Übersicht und der besseren Lesbarke
 
 [V] Trainingmodus
 -01- - Textfeld (Titel vom Projekt)
--07- - Textfeld (Textfeld1:"Trainingsmodus")
--06- - Buttons (Button1:Trainingsmodus starten)
+-07- - Textfeld (Textfeld1:"Trainingsmodus")-06- - Buttons (Button1:Trainingsmodus starten)
 -07- - Textfeld (|Textfeld4: "Regelwerk")
 -06- - Buttons (|Button4: Regelwerk aufrufen)
 -32- - Textfeld ("Schwierigkeitsgrad auswählen")
@@ -908,4 +907,45 @@ Wertung 4: Gruppierungen: 5 / 5
 - für jede sinnvolle Gruppe: 1
 
 Wertung 5: Ansichten: 5 / 5 
+- für jede sinnvolle Ansicht: 1
+
+===================================
+=== Feedback Alpers, 2016-10-04 ===
+===================================
+
+Bitte gehen Sie parallel zu diesem Feedback die Umsetzung der Gruppen durch; ich habe das Feedback dort in der Reihenfolge erstellt, in der Sie die Gruppen definiert haben.
+
+== [I] LogIn ==
+
+haben Sie leider noch nicht in HTML umgesetzt.
+
+== Zu [II] Userforum ==
+-01- - Textfeld (<title> Titel vom Projekt)
+
+Der <title>-Container beinhaltet den Titel einer ganzen Seite, keine Überschriften. Den sollten Sie nur in den views definieren. Wahrscheinlich meinen Sie hier eine Überschrift. Für die gibt es z.B. den <legend>-Container oder den <summary>-Container.
+
+== Die Gruppen [III] bis [IV] und [VIII] ===
+
+haben leider schlecht gewählte Bezeichnungen. Bitte ändern Sie die Namen in die Bezeichnungen ab, die dem entsprechenden HTML/PHP-Dokument entsprechen.
+
+== [V] Quiz ==
+
+= -02- - Textfeld (Überschrift: h1) 
+Richtig wäre: -02- Überschrift
+
+= -09- - Schaltfläche (Label: Regelwerk)
+Benutzen Sie hier besser einen anderen Begriff als "Label", denn in HTML haben wir den <label>-Container, der für andere Aufgaben verwendet wird.
+
+= -10- - Textfeld (Inhalt: fortlaufende Nummerierung der Fragen z.b. "1")
+Für fortlaufende Nummerierungen benutzen wir in HTML geordnete Listen.
+
+= -15- - Hintergrundbild (Themespezifische Einblendung von Bildern)
+Wenn Sie ein Bild meinen, dass in der gesamten Ansicht im Hintergrund angezeigt wird, dann gehört das in die Definition des View. (Eine der wenigen Ausnahmen, bei denen ein einzelnes strukturelles Element in einem View sinnvoll ist.)
+
+=== Anpassung der Wertung ===
+Leider habe ich beim letzten Mal bei den Ansichten einen Fehler übersehen: Sie haben nahezu alle Gruppen direkt als Ansichten verwendet und das ist schlecht. Ansichten sollen Sie aus Gruppen kombinieren bzw. prüfen, in welchen Ansichten Sie eine Gruppe verwenden können.
+
+Da Sie das nur in einer Ansicht getan haben muss ich leider abwerten:
+
+Wertung 5: Ansichten: 1 / 5 
 - für jede sinnvolle Ansicht: 1
