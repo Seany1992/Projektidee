@@ -19,7 +19,7 @@
 		<input type=radio id=antwort4 name=antwort value=antwort4 required>	
 	</fieldset>	
 </form>
-	<img><!--Hier Themenspezifische EInblendung von Hintergrundbildern--></img>
+	
 	<a href=quizseite.php> <button type=button id=previous>Vorherige Frage</button> </a>
 			
 	<a href=quizseite.php> <button type=button id=skip>Nächste Frage</button></a>
