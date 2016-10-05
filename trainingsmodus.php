@@ -11,6 +11,8 @@
 			<h1>Trainingsmodus</h1>	
 		</header>
 		
+		<img><!--Hier Themenspezifische EInblendung von Hintergrundbildern--></img>
+		
 		<?php include("Gruppen_de/training.php") ?>	
 		
 		<?php include("Gruppen_de/quiz.php") ?>	

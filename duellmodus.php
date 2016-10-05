@@ -9,6 +9,8 @@
 			<h1>Duellmodus</h1>	
 		</header>
 		
+		<img><!--Hier Themenspezifische EInblendung von Hintergrundbildern--></img>
+		
 		<?php include("Gruppen_de/duell.php") ?>
 		
 		<?php include("Gruppen_de/quiz.php") ?>	
