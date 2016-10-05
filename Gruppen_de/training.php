@@ -20,6 +20,6 @@
 		echo "<br>";
 		echo "Viel Spaß beim Quiz " ;
 		echo "<br>";
-		echo "<a href=quizseite.php> <button type=button id=start>Quizstart</button></a>";
+		
 		}
 	?>

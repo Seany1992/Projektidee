@@ -20,4 +20,4 @@
 			
 			<a href=Gruppen_de/regelwerk.txt> <button type=button id=regelwerk>Regelwerk aufrufen</button></a>
 			
-			<a href=quizseite.php> <button type=button id=start>Quizstart</button></a>
+			
