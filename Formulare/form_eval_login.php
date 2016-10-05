@@ -1,6 +1,5 @@
-
+<!-- Hier werden Eingaben aus login.php verarbeitet -->
 	<?php
-	// Aufgrund der PHP Einbindung befindet sich index.html mit dieser Datei im selben Verzeichnis.
 	echo "Vielen Dank für die Registrierung: ";
 	echo htmlspecialchars ($_POST["username"]);
 	echo "<br>";
