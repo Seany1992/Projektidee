@@ -41,7 +41,7 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -23- - Schaltfläche (Funktion:: Feedback absenden)
  
 -24- - Textfeld (Überschrift: Userfeedback)
--25- - Tabelle (<table> Inhalt: neueste Feedbacks werden angezeigt)
+-25- - Tabelle (<table> Inhalt: neueste userfeedbacks werden angezeigt)
 -26- - Schaltflächen (Funktion:: Feedback beantworten)
 -27- - Schaltflächen (Funktion:: Feedback löschen)
 -28- - Textfeld (Überschrift: Quizfrage erstellen/bearbeiten)
@@ -52,7 +52,6 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 	//Kommentar: Nutzer markiert die richtige Antwort zu der formulierten Quizfrage.
 -32- - Schaltfläche (Funktion:: Frage speichern)
 
--33- - Textfeld (Überschrift: Auswertung)
 -34- - Textfeld (Inhalt: Anzahl der richtigen & falschen Antworten)
 	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Funktion in PHP inkl. Datenbankanbindung in MySQL
 -35- - Tabelle  (Inhalt: Highscore-Liste)
@@ -82,7 +81,7 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Funktion in PHP inkl. Datenbankanbindung in MySQL
 -->
 
-<!-- Bei den Gruppen habe ich versucht, im Vergleich zur alten Version, die Code Redundanz zu minimieren. D.h. es gibt nurnoch eine Gruppe die das Quiz anzeigt([V] Quiz). Der Trainingsmodus und Duellmodus haben ihre eigenen strukturellen Elemente und verlinken weiter auf das Quiz. -->
+<!-- Die mit dem !...! "eingeklammerten" strukt. Elemente befinden sich nicht direkt in der Gruppe, sondern sind ausgelagert in einer PHP Datei, vorzufinden. -->
 <!-- Aufgabe 1.1 Version 6.0 04.10.2016  -->
 <!--
 =======================
@@ -102,13 +101,11 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 
 ([II] LogIn Admin "-gelöscht da doppelt-")
 
-[II] Userforum
--02- - Überschrift 
--25- - Tabelle (<table> Inhalt: neueste Feedbacks werden angezeigt)
+[II] Userfedback
 -50- - Formular Container (Funktion: form Container)
 -22- - Eingabefeld (Funktion: Feedback formulieren, in Form einer Textarea)
--23- - Schaltfläche (Funktion:: Feedback absenden)
--49- - Schaltfläche (Funktion:: Hauptmenü) 
+-23- - Schaltfläche (Funktion: Feedback absenden)
+-49- - Schaltfläche (Funktion: Hauptmenü) 
 
 [III] Verwaltung des Userfeedbacks
 -24- - Textfeld (Überschrift: Userfeedback)
@@ -165,8 +162,7 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 
 
 [VIII] Auswertung 
--33- - Textfeld (Überschrift: Auswertung) // in PHP umgesetzt
--34- - Textfeld (Inhalt: Anzahl der richtigen & falschen Antworten) // in PHP umgesetzt
+-34- - Textfeld (Inhalt: Anzahl der richtigen Antworten) // in PHP 	umgesetzt
 -56- - Textfeld (Inhalt: Erfolgsquote) // in PHP umgesetzt
 
 
@@ -178,12 +174,14 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -47- - Schatlfläche (Funktion:: Quizfragen bearbeiten)
 
 [X] Highscoreliste
--50- - Formular Container (Funktion: form Container)
 -35- - Tabelle  (Inhalt: Highscore-Liste) // in PHP umgesetzt
 -36- - Schatlfläche (Funktion:: Neustart des Quizes)
--49- - Schaltfläche (Funktion:: Hauptmenü) 
+-49- - Schaltfläche (Funktion:: Hauptmenü)
+
+[XI] Feedbacktabelle  
+-25- - Tabelle (<table> Inhalt: neueste userfeedbacks werden angezeigt) // in PHP umgesetzt
 -->
-<!-- Die mit dem !...! "eingeklammerten" strukt. Elemente befinden sich nicht direkt in der Gruppe, sondern sind ausgelagert in einer PHP Datei, vorzufinden. -->
+
 
 <!-- Für die Bessere Bedienbarkeit und Struktur habe ich die Ansicht und die Gruppe hauptmenue eingeführt. Sie dient, wie der Name bereits verrät, als zentraler Orientierungspunkt, von wo aus man zu jedem Bereich der Anwendung gelangt.  -->
 <!-- Aufgabe 1.2 Version 6.0 04.10.2016 -->
@@ -200,7 +198,8 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 ----------------------- 
 --- view_userforum  ---
 -----------------------
-[II] Userforum
+[II] Userfeedback
+[XI] Feedbacktabelle
 
 
 -----------------------
