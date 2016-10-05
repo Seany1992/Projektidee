@@ -20,13 +20,13 @@
 	</fieldset>	
 </form>
 	<img><!--Hier Themenspezifische EInblendung von Hintergrundbildern--></img>
-	<a href=quiz.php> <button type=button id=previous>Vorherige Frage</button> </a>
+	<a href=quizseite.php> <button type=button id=previous>Vorherige Frage</button> </a>
 			
-	<a href=quiz.php> <button type=button id=skip>Nächste Frage</button></a>
+	<a href=quizseite.php> <button type=button id=skip>Nächste Frage</button></a>
 			
-	<a href=auswertung.php> <button type=button id=auswertung>Zur Auswertung</button></a>
+	<a href=endabrechnung.php> <button type=button id=auswertung>Zur Auswertung</button></a>
 			
-	<a href=regelwerk.txt> <button type=button id=regelwerk>Regelwerk aufrufen</button></a>
+	<a href=Gruppen_de/regelwerk.txt> <button type=button id=regelwerk>Regelwerk aufrufen</button></a>
 	<aside>
 		<!-- Info: Hier soll eine Liste mit dem Fortschritt innerhalb des Quizes folgen. Es dient als Orientierungsliste für die Spielrunde. Angezeigt wird die Anzahl der noch offenen- und bereits richtig beantworteten Fragen. Die aktuelle Frage, bei der man sich befindet, wird gekennzeichnet.  -->
 		<?php

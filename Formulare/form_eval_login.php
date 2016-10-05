@@ -6,5 +6,5 @@
 	echo "Ihre E-Mail lautet: ";
 	echo htmlspecialchars ($_POST["email"]);
 	echo "<br>";
-	echo "<a href=hauptmenue.html> <button type=button id=hauptmenue>Hauptmenü</button></a>";
+	echo "<a href=../hub.php> <button type=button id=hauptmenue>Hauptmenü</button></a>";
 	?>

@@ -10,7 +10,7 @@
 	<input type=submit value=akzeptieren>
 	<br>
 </form>
-	<a href=regelwerk.txt> <button type=button id=regelwerk>Regelwerk aufrufen</button> </a>
+	<a href=Gruppen_de/regelwerk.txt> <button type=button id=regelwerk>Regelwerk aufrufen</button> </a>
 		
 	<?php
 	// Das formular <select> wird übermittelt und mittels PHP verarbeitet.
@@ -20,6 +20,6 @@
 		echo "<br>";
 		echo "Viel Spaß beim Quiz " ;
 		echo "<br>";
-		echo "<a href=quiz.php> <button type=button id=start>Quizstart</button></a>";
+		echo "<a href=quizseite.php> <button type=button id=start>Quizstart</button></a>";
 		}
 	?>

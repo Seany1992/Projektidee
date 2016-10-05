@@ -18,6 +18,6 @@
 			<button type=button id=start>Herausforderung absenden</button>
 			<!-- Funktion: Der Spieler sucht sich einen Gegenspieler aus der Tabelle aus und fordert ihn mit der Betätigung des Buttons zu einem Multiplayerspiel heraus -->
 			
-			<a href=regelwerk.txt> <button type=button id=regelwerk>Regelwerk aufrufen</button></a>
+			<a href=Gruppen_de/regelwerk.txt> <button type=button id=regelwerk>Regelwerk aufrufen</button></a>
 			
-			<a href=quiz.php> <button type=button id=start>Quizstart</button></a>
+			<a href=quizseite.php> <button type=button id=start>Quizstart</button></a>
