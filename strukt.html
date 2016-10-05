@@ -40,17 +40,15 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -22- - Eingabefeld (Funktion: Feedback formulieren)
 -23- - Schaltfläche (Funktion:: Feedback absenden)
  
--24- - Textfeld (Überschrift: Userfeedback)
 -25- - Tabelle (<table> Inhalt: neueste userfeedbacks werden angezeigt)
--26- - Schaltflächen (Funktion:: Feedback beantworten)
--27- - Schaltflächen (Funktion:: Feedback löschen)
+
 -28- - Textfeld (Überschrift: Quizfrage erstellen/bearbeiten)
--29- - Eingabefeld (Funktion: Quizfrage erstellen oder bearbeiten)
--30- - Eingabefeld (Funktion: Quizantwort formulieren oder bearbeiten)
+-29- - Eingabefeld (<textarea> Funktion: Quizfrage erstellen oder bearbeiten)
+-30- - Eingabefeld (<textarea> Funktion: Quizantwort formulieren oder bearbeiten)
 	//Kommentar: Doubletten entfernt 
 -31- - Checkbox (Funktion: Angabe der richtigen Antwort)	
 	//Kommentar: Nutzer markiert die richtige Antwort zu der formulierten Quizfrage.
--32- - Schaltfläche (Funktion:: Frage speichern)
+
 
 -34- - Textfeld (Inhalt: Anzahl der richtigen & falschen Antworten)
 	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Funktion in PHP inkl. Datenbankanbindung in MySQL
@@ -68,7 +66,6 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 	//Kommentar: Seit dem letzten Feedback neu hinzugefüge Struktur Elemente: 
 -45- - Eingabefeld (Funktion: Eingabe der E-Mail)
 -46- - Schaltfläche (Funktion:: Userforum)
--47- - Schatlfläche (Funktion:: Quizfrage erstellen/bearbeiten)
 -48- - Schaltfläche (Funktion:: Eingaben zurücksetzen) 
 -49- - Schaltfläche (Funktion:: Hauptmenü) 
 -50- - Formular Container (Funktion: form Container)
@@ -77,8 +74,9 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -53- - Schaltfläche (Funktion:: Quizstart)
 -54- - Drop Down Menü (<Select>)
 -55- - Schaltfläche (Funktion:: Zur Auswertung)
--56- - Textfeld (Inhalt: Erfolgquote)
+-56- - Textfeld (Inhalt: Erfolgsquote)
 	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Funktion in PHP inkl. Datenbankanbindung in MySQL
+-57- - Schaltfläche (Submit)
 -->
 
 <!-- Die mit dem !...! "eingeklammerten" strukt. Elemente befinden sich nicht direkt in der Gruppe, sondern sind ausgelagert in einer PHP Datei, vorzufinden. -->
@@ -107,25 +105,21 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -23- - Schaltfläche (Funktion: Feedback absenden)
 -49- - Schaltfläche (Funktion: Hauptmenü) 
 
-[III] Verwaltung des Userfeedbacks
--24- - Textfeld (Überschrift: Userfeedback)
--50- - Formular Container (Funktion: form Container)
--25- - Tabelle (<table> Inhalt: neueste Feedbacks werden angezeigt)
--26- - Schaltflächen (Funktion:: Feedback beantworten)
--27- - Schaltflächen (Funktion:: Feedback löschen)
 
-[IV] Quizfragen erstellen/bearbeiten
+[III] Quizfragen 
 -50- - Formular Container (Funktion: form Container)
--28- - Textfeld (Überschrift: Quizfrage erstellen/bearbeiten)
--29- - Eingabefeld (Funktion: Quizfrage erstellen)
--30- - Eingabefeld (Funktion: Quizantwort formulieren)
+-02- - Überschrift //<legend>
+-29- - Eingabefeld (<textarea> Funktion: Quizfrage erstellen) // mit PHP Einbindung 
+-30- - Eingabefeld (<textarea> Funktion: Quizantwort formulieren)
+	// mit PHP Einbindung
 	//Kommentar: Doubletten entfernt 
--31- - Checkbox (Funktion: Angabe der richtigen Antwort)	
+-31- - Checkbox (Funktion: Angabe der richtigen Antwort)
+	// mit PHP Einbindung
 	//Kommentar: Nutzer markiert die richtige Antwort zu der formulierten Quizfrage.
--32- - Schaltfläche (Funktion:: Frage erstellen)
--49- - Schaltfläche (Funktion:: Hauptmenü)
+-57- - Schaltfläche (Submit)
+-49- - Schaltfläche (Funktion: Hauptmenü)
 
-[V] Quiz
+[IV] Quiz
 -10- - Textfeld (Inhalt: fortlaufende Nummerierung der Fragen z.b. "1")
 -50- - Formular Container (Funktion: form Container)
 -51- - fieldset Container (Funktion: Gruppierung von Kontrollelementen)
@@ -142,7 +136,7 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -19- - Textfeld (Inhalt: Punktzahl Spieler)	// in PHP umgesetzt
 -20- - Textfeld (Inhalt: Zeitlimit)	// in PHP umgesetzt
 		
-[VI] Training
+[V] Training
 -50- - Formular Container (Funktion: form Container)
 -37- - Textfeld (Funktion: Schwierigkeitsgrad auswählen)
 -54- - Drop Down Menü (<Select>)
@@ -152,7 +146,7 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -05- - Schaltfläche (Funktion: Submit)
 -09- - Schaltfläche (Funktion: Regelwerk)
 
-[VII] Duell
+[VI] Duell
 -02- - Überschrift
 -50- - Formular Container (Funktion: form Container)
 -41- - Tabelle (Inhalt: Registrierte Nutzerprofile)
@@ -161,24 +155,24 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -53- - Schaltfläche (Funktion: Quizstart)
 
 
-[VIII] Auswertung 
+[VII] Auswertung 
 -34- - Textfeld (Inhalt: Anzahl der richtigen Antworten) // in PHP 	umgesetzt
 -56- - Textfeld (Inhalt: Erfolgsquote) // in PHP umgesetzt
 
 
-[IX] Hauptmenue
+[VIII] Hauptmenue
 -08- - Schaltfläche (Funktion:: Einzelspieler)
 -06- - Schaltfläche (Funktion:: Trainingsmodus)
 -07- - Schaltfläche (Funktion:: Duellmodus)
 -46- - Schaltfläche (Funktion:: Userforum)
 -47- - Schatlfläche (Funktion:: Quizfragen bearbeiten)
 
-[X] Highscoreliste
+[IX] Highscoreliste
 -35- - Tabelle  (Inhalt: Highscore-Liste) // in PHP umgesetzt
 -36- - Schatlfläche (Funktion:: Neustart des Quizes)
 -49- - Schaltfläche (Funktion:: Hauptmenü)
 
-[XI] Feedbacktabelle  
+[X] Feedbacktabelle  
 -25- - Tabelle (<table> Inhalt: neueste userfeedbacks werden angezeigt) // in PHP umgesetzt
 -->
 
@@ -199,45 +193,45 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 --- view_userforum  ---
 -----------------------
 [II] Userfeedback
-[XI] Feedbacktabelle
+[X] Feedbacktabelle
 
 
 -----------------------
 ---view_adminbereich---
 -----------------------
-[III] Verwaltung des Userfeedbacks
-[IV] Quizfragen erstellen/bearbeiten
+[X] Feedbacktabelle  
+[III] Quizfragen 
 
 
 -------------------------
 --- view_quizseite---
 -------------------------
-[V] Quiz
+[IV] Quiz
 
 
 --------------------------
 --- view_trainingsmodus---
 --------------------------
-[VI] Training
+[V] Training
 
 
 ----------------------
 --- view_duellmodus---
 ----------------------
-[VII] Duell
+[VI] Duell
 
 
 -------------------------
 --- view_Endabrechnung---
 -------------------------
-[VIII] Auswertung 
-[X] Highscoreliste
+[VII] Auswertung 
+[IX] Highscoreliste
 
 
 -------------------------
 --- view_hub---
 -------------------------
-[IX] Hauptmenue
+[VIII] Hauptmenue
 -->
 
 
