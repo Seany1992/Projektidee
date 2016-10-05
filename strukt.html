@@ -5,19 +5,18 @@
 =======================
 Die Absätze in der Struktur dienen nur zur Übersicht und besseren Lesbarkeit.
 Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersichtlicher ist und nicht zu Missverständen führt.
-(Doubletten entfernt und strukturelle Elemente einzeln aufgelistet, statt sie zusammenzufassen)
 ===================================
 == (1) Strukturierung von Ansichten
 ===================================
--02- - Überschrift 
+-01- - Überschrift 
 -03- - Eingabefeld (Funtkion: Eingabe Username)
--04- - Eingabefeld (Funktion: Eingabe Passwort)
+-04- - Eingabefeld (Zweck: Eingabe Passwort)
 	//Kommentar: Eingabe des Passwort Verschlüsselt
--05- - Schaltfläche (Funktion:: Submit)
--06- - Schaltfläche (Funktion:: Trainingsmodus)
--07- - Schaltfläche (Funktion:: Duellmodus)
--08- - Schaltfläche (Funktion:: Einzelspieler)
--09- - Schaltfläche (Funktion:: Regelwerk)
+-05- - Schaltfläche (Zweck: Submit)
+-06- - Schaltfläche (Zweck: Trainingsmodus)
+-07- - Schaltfläche (Zweck: Duellmodus)
+-08- - Schaltfläche (Zweck: Einzelspieler)
+-09- - Schaltfläche (Zweck: Regelwerk)
 
 -10- - Textfeld (Inhalt: fortlaufende Nummerierung der Fragen z.b. "1")
 -11- - Liste (Inhalt: Fortschritt innherhalb des Quiz)
@@ -27,131 +26,129 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 	//Kommentar: Doubletten entfernt. Textfelder mit Antworten 4x notwendig.
 -14- - Radio Button (Antwortmöglichkeit)
 	//Kommentar: Doubletten entfernt. Radio Buttons mit Antwortmöglichkeiten 4x notwendig
--15- - Hintergrundbild (Themespezifische Einblendung von Bildern)
--16- - Schaltfläche (Funktion:: nächste Frage)
--17- - Schaltfläche (Funktion:: vorherige Frage) 
+-16- - Schaltfläche (Zweck: nächste Frage)
+-17- - Schaltfläche (Zweck: vorherige Frage) 
 -18- - Textfeld (Inhalt: Versuche/Lebensanzahl) 
-	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Funktion in PHP inkl. Datenbankanbindung in MySQL
+	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Zweck in PHP inkl. Datenbankanbindung in MySQL
 -19- - Textfeld (Inhalt: Punktzahl Spieler)
-	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Funktion in PHP inkl. Datenbankanbindung in MySQL
+	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Zweck in PHP inkl. Datenbankanbindung in MySQL
 -20- - Textfeld (Inhalt: Zeitlimit)
-	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Funktion in PHP inkl. Datenbankanbindung in MySQL
+	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Zweck in PHP inkl. Datenbankanbindung in MySQL
 
--22- - Eingabefeld (Funktion: Feedback formulieren)
+-22- - Eingabefeld (Zweck: Feedback formulieren)
 
  
 -25- - Tabelle (<table> Inhalt: neueste userfeedbacks werden angezeigt)
 
 -28- - Textfeld (Überschrift: Quizfrage erstellen/bearbeiten)
--29- - Eingabefeld (<textarea> Funktion: Quizfrage erstellen oder bearbeiten)
--30- - Eingabefeld (<textarea> Funktion: Quizantwort formulieren oder bearbeiten)
+-29- - Eingabefeld (<textarea> Zweck: Quizfrage erstellen oder bearbeiten)
+-30- - Eingabefeld (<textarea> Zweck: Quizantwort formulieren oder bearbeiten)
 	//Kommentar: Doubletten entfernt 
--31- - Checkbox (Funktion: Angabe der richtigen Antwort)	
+-31- - Checkbox (Zweck: Angabe der richtigen Antwort)	
 	//Kommentar: Nutzer markiert die richtige Antwort zu der formulierten Quizfrage.
 
 
 -34- - Textfeld (Inhalt: Anzahl der richtigen & falschen Antworten)
-	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Funktion in PHP inkl. Datenbankanbindung in MySQL
+	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Zweck in PHP inkl. Datenbankanbindung in MySQL
 -35- - Tabelle  (Inhalt: Highscore-Liste)
 	//Kommentar: ausführliche Tabelle mit Usernamen, Platzierungen und Punktzahlen der Nutzer
--36- - Schatlfläche (Funktion:: Neustart des Quizes)
+-36- - Schatlfläche (Zweck: Neustart des Quizes)
 
 -37- - Textfeld (Überschrift: Schwierigkeitsgrad auswählen)
 -38- - Drop Down Menü (Auswahlmöglichkeit: <option> Leicht)
 -39- - Drop Down Menü (Auswahlmöglichkeit: <option> Mittel)
 -40- - Drop Down Menü (Auswahlmöglichkeit: <option> Schwer)
 -41- - Tabelle (Inhalt: Registrierte Nutzerprofile)
--43- - Schaltfläche (Funktion: Einen Spieler herauszufordern)
+-43- - Schaltfläche (Zweck: Einen Spieler herauszufordern)
 
 	//Kommentar: Seit dem letzten Feedback neu hinzugefüge Struktur Elemente: 
--45- - Eingabefeld (Funktion: Eingabe der E-Mail)
--46- - Schaltfläche (Funktion:: Userforum)
--48- - Schaltfläche (Funktion:: Eingaben zurücksetzen) 
--49- - Schaltfläche (Funktion:: Hauptmenü) 
--50- - Formular Container (Funktion: form Container)
--51- - fieldset Container (Funktion: Gruppierung von Kontrollelementen)
+-45- - Eingabefeld (Zweck: Eingabe der E-Mail)
+-46- - Schaltfläche (Zweck: Userforum)
+-48- - Schaltfläche (Zweck: Eingaben zurücksetzen) 
+-49- - Schaltfläche (Zweck: Hauptmenü) 
+-50- - Formular Container (Zweck: form Container)
+-51- - fieldset Container (Zweck: Gruppierung von Kontrollelementen)
 
--53- - Schaltfläche (Funktion:: Quizstart)
+-53- - Schaltfläche (Zweck: Quizstart)
 -54- - Drop Down Menü (<Select>)
--55- - Schaltfläche (Funktion:: Zur Auswertung)
+-55- - Schaltfläche (Zweck: Zur Auswertung)
 -56- - Textfeld (Inhalt: Erfolgsquote)
-	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Funktion in PHP inkl. Datenbankanbindung in MySQL
+	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Zweck in PHP inkl. Datenbankanbindung in MySQL
 -->
 
-<!-- Das !-49- - Schaltfläche (Funktion: Hauptmenü)! strukturelle Element befindet sich nicht direkt in der Gruppe, sondern ist ausgelagert in einer PHP Datei, vorzufinden. -->
+<!-- Das !-49- - Schaltfläche (Zweck: Hauptmenü)! strukturelle Element befindet sich nicht direkt in der Gruppe, sondern ist ausgelagert in einer PHP Datei, vorzufinden. -->
 <!-- Aufgabe 1.1 Version 6.0 04.10.2016  -->
 <!--
 =======================
 == (1.1) Gruppen bilden
 =======================
 [I] LogIn 
--50- - Formular Container (Funktion: form Container)
--51- - fieldset Container (Funktion: Gruppierung von Kontrollelementen)
--02- - Überschrift 
+-50- - Formular Container (Zweck: form Container)
+-51- - fieldset Container (Zweck: Gruppierung von Kontrollelementen)
+-01- - Überschrift 
 -03- - Eingabefeld (Funtkion: Eingabe Nutzername)
--04- - Eingabefeld (Funktion: Eingabe Passwort)
+-04- - Eingabefeld (Zweck: Eingabe Passwort)
 	//Kommentar: Eingabe des Passwort Verschlüsselt
--45- - Eingabefeld (Funktion: Eingabe der E-Mail)
--05- - Schaltfläche (Funktion: Submit)
--48- - Schaltfläche (Funktion: Eingaben zurücksetzen)
--49- - !Schaltfläche (Funktion: Hauptmenü)!
+-45- - Eingabefeld (Zweck: Eingabe der E-Mail)
+-05- - Schaltfläche (Zweck: Submit)
+-48- - Schaltfläche (Zweck: Eingaben zurücksetzen)
+-49- - !Schaltfläche (Zweck: Hauptmenü)!
 
 ([II] LogIn Admin "-gelöscht da doppelt-")
 
 [II] Userfedback
--50- - Formular Container (Funktion: form Container)
--22- - Eingabefeld (Funktion: Feedback formulieren, in Form einer Textarea)
--05- - Schaltfläche (Funktion:: Submit)
--49- - Schaltfläche (Funktion: Hauptmenü) 
+-50- - Formular Container (Zweck: form Container)
+-22- - Eingabefeld (Zweck: Feedback formulieren, in Form einer Textarea)
+-05- - Schaltfläche (Zweck:: Submit)
+-49- - Schaltfläche (Zweck: Hauptmenü) 
 
 
 [III] Quizfragen 
--50- - Formular Container (Funktion: form Container)
--02- - Überschrift //<legend>
--29- - Eingabefeld (<textarea> Funktion: Quizfrage erstellen) // mit PHP Einbindung 
--30- - Eingabefeld (<textarea> Funktion: Quizantwort formulieren)
+-50- - Formular Container (Zweck: form Container)
+-01- - Überschrift //<legend>
+-29- - Eingabefeld (<textarea> Zweck: Quizfrage erstellen) // mit PHP Einbindung 
+-30- - Eingabefeld (<textarea> Zweck: Quizantwort formulieren)
 	// mit PHP Einbindung
 	//Kommentar: Doubletten entfernt 
--31- - Checkbox (Funktion: Angabe der richtigen Antwort)
+-31- - Checkbox (Zweck: Angabe der richtigen Antwort)
 	// mit PHP Einbindung
 	//Kommentar: Nutzer markiert die richtige Antwort zu der formulierten Quizfrage.
--05- - Schaltfläche (Funktion:: Submit)
--49- - Schaltfläche (Funktion: Hauptmenü)
+-05- - Schaltfläche (Zweck:: Submit)
+-49- - Schaltfläche (Zweck: Hauptmenü)
 
 [IV] Quiz
 -10- - Textfeld (Inhalt: fortlaufende Nummerierung der Fragen z.b. "1")
--50- - Formular Container (Funktion: form Container)
--51- - fieldset Container (Funktion: Gruppierung von Kontrollelementen)
+-50- - Formular Container (Zweck: form Container)
+-51- - fieldset Container (Zweck: Gruppierung von Kontrollelementen)
 -12- - Textfeld (Inhalt: Fragestellung) // Besonderheit <legend> 
 -13- - Textfeld (Inhalt: Antwort)
 -14- - Radio Button (Antwortmöglichkeit)
--15- - Hintergrundbild (Themespezifische Einblendung von Bildern)
--17- - Schaltfläche (Funktion: vorherige Frage) 
--16- - Schaltfläche (Funktion: nächste Frage)
--55- - Schaltfläche (Funktion: Zur Auswertung)
--09- - Schaltfläche (Funktion:: Regelwerk)
+-17- - Schaltfläche (Zweck: vorherige Frage) 
+-16- - Schaltfläche (Zweck: nächste Frage)
+-55- - Schaltfläche (Zweck: Zur Auswertung)
+-09- - Schaltfläche (Zweck:: Regelwerk)
 -11- - Liste (Inhalt: Fortschritt innherhalb des Quiz) // in PHP umgesetzt
 -18- - Textfeld (Inhalt: Versuche/Lebensanzahl) // in PHP umgesetzt
 -19- - Textfeld (Inhalt: Punktzahl Spieler)	// in PHP umgesetzt
 -20- - Textfeld (Inhalt: Zeitlimit)	// in PHP umgesetzt
 		
 [V] Training
--50- - Formular Container (Funktion: form Container)
--37- - Textfeld (Funktion: Schwierigkeitsgrad auswählen)
+-50- - Formular Container (Zweck: form Container)
+-37- - Textfeld (Zweck: Schwierigkeitsgrad auswählen)
 -54- - Drop Down Menü (<Select>)
 -38- - Drop Down Menü (Auswahlmöglichkeit: <option> Leicht)
 -39- - Drop Down Menü (Auswahlmöglichkeit: <option> Mittel)
 -40- - Drop Down Menü (Auswahlmöglichkeit: <option> Schwer)
--05- - Schaltfläche (Funktion: Submit)
--09- - Schaltfläche (Funktion: Regelwerk)
+-05- - Schaltfläche (Zweck: Submit)
+-09- - Schaltfläche (Zweck: Regelwerk)
 
 [VI] Duell
--02- - Überschrift
--50- - Formular Container (Funktion: form Container)
+-01- - Überschrift
+-50- - Formular Container (Zweck: form Container)
 -41- - Tabelle (Inhalt: Registrierte Nutzerprofile)
--43- - Schaltfläche (Funktion: Einen Spieler herauszufordern)
--09- - Schaltfläche (Funktion: Regelwerk)
--53- - Schaltfläche (Funktion: Quizstart)
+-43- - Schaltfläche (Zweck: Einen Spieler herauszufordern)
+-09- - Schaltfläche (Zweck: Regelwerk)
+-53- - Schaltfläche (Zweck: Quizstart)
 
 
 [VII] Auswertung 
@@ -160,16 +157,16 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 
 
 [VIII] Hauptmenue
--08- - Schaltfläche (Funktion:: Einzelspieler)
--06- - Schaltfläche (Funktion:: Trainingsmodus)
--07- - Schaltfläche (Funktion:: Duellmodus)
--46- - Schaltfläche (Funktion:: Userforum)
--47- - Schatlfläche (Funktion:: Quizfragen bearbeiten)
+-08- - Schaltfläche (Zweck:: Einzelspieler)
+-06- - Schaltfläche (Zweck:: Trainingsmodus)
+-07- - Schaltfläche (Zweck:: Duellmodus)
+-46- - Schaltfläche (Zweck:: Userforum)
+-47- - Schatlfläche (Zweck:: Quizfragen bearbeiten)
 
 [IX] Highscoreliste
 -35- - Tabelle  (Inhalt: Highscore-Liste) // in PHP umgesetzt
--36- - Schatlfläche (Funktion:: Neustart des Quizes)
--49- - Schaltfläche (Funktion:: Hauptmenü)
+-36- - Schatlfläche (Zweck:: Neustart des Quizes)
+-49- - Schaltfläche (Zweck:: Hauptmenü)
 
 [X] Feedbacktabelle  
 -25- - Tabelle (<table> Inhalt: neueste userfeedbacks werden angezeigt) // in PHP umgesetzt
@@ -834,10 +831,10 @@ Wertung 5: Ansichten: 4 / 5 (Abzug, weil Doppelung nicht entfernt wurde)
 (1) Sie haben bei den strukturellen Elementen daran gearbeitet, effizient zu sein, aber dadurch ist die Aufstellung leider zum Teil unübersichtlich oder auch missverständlich geworden:
 
 (1.1) -06- - Buttons (Button1:Trainingsmodus starten |Button2: Duellmodus starten |Button3: Quiz starten |Button4: Regelwerk aufrufen)
-Wenn das hier vier unterschiedliche Schaltflächen sind, an die später unterschiedliche Funktionalitäten angebunden werden sollen, dann notieren Sie sie bitte einzelne. Denn wenn sich später herausstellt, dass einzelne wegfallen sollten oder neue hinzukommen, wird das in der Aufstellung nur schwer erkennbar sein. (Nicht vergessen: Dies ist ein Planungswerkzeug, der Inhalt wird sich also kontinuierlich ändern.)
+Wenn das hier vier unterschiedliche Schaltflächen sind, an die später unterschiedliche Zweckalitäten angebunden werden sollen, dann notieren Sie sie bitte einzelne. Denn wenn sich später herausstellt, dass einzelne wegfallen sollten oder neue hinzukommen, wird das in der Aufstellung nur schwer erkennbar sein. (Nicht vergessen: Dies ist ein Planungswerkzeug, der Inhalt wird sich also kontinuierlich ändern.)
 
 (1.2) -07- - Textfeld (Textfeld1:"Trainingsmodus" |Textfeld2:"Duellmodus" |Textfeld3: "Einzelspieler" |Textfeld4: "Regelwerk") 
-Wenn es hier lediglich darum geht, die Beschriftung der einzelnen Schaltflächen zu klären, dann handelt es sich um Funktion:s. Textfelder sind einzelne Texte, die direkt in der Webanwendung angezeigt werden und keinerlei Funktionalität haben.
+Wenn es hier lediglich darum geht, die Beschriftung der einzelnen Schaltflächen zu klären, dann handelt es sich um Zweck:s. Textfelder sind einzelne Texte, die direkt in der Webanwendung angezeigt werden und keinerlei Zweckalität haben.
 
 Ähnliches gilt z.B. für -10- und -11-.
 
@@ -873,7 +870,7 @@ P.S. Auch wenn hier noch einiges an Arbeit nötig ist, sollten Sie schon einmal 
 
 Schade, dass Sie mit der Umsetzung in HTML noch nicht angefangen haben. Denn abgesehen von der nicht allzu überlsichtlichen und teilweise redundanten Form war das beim letzten Mal ja schon recht gut. Natürlich ist es möglich, dass auch jetzt noch redundantes enthalten ist, aber es geht ja im Projekt nicht um Perfektion, sondern darum, dass Sie die üblichen Probleme und einfache Lösungsmöglichkeiten kennen lernen.
 
-Wie Sie sehen ist die Aufstellung jetzt zwar sinnvoll strukturiert, aber selbst so haben wir noch keine perfekte Lösung, um so effizient wie möglich zu arbeiten. Das ist der Grund, warum es professionelle Tools wie Ticketing Systeme gibt. Ein weiteres Tool ist die Arbeit mit Microservices, die sich mehr und mehr durchsetzt: Dabei wird ein Projekt so fein wie möglich in kleinste funktionale Einheiten zerlegt, die jeweils individuell ausgetauscht werden können. Aber auch hier gilt: Das sind Themen für spätere Projekte, für die Veranstaltung Software Engineering oder auch die ersten Monate in einer Anstellung...
+Wie Sie sehen ist die Aufstellung jetzt zwar sinnvoll strukturiert, aber selbst so haben wir noch keine perfekte Lösung, um so effizient wie möglich zu arbeiten. Das ist der Grund, warum es professionelle Tools wie Ticketing Systeme gibt. Ein weiteres Tool ist die Arbeit mit Microservices, die sich mehr und mehr durchsetzt: Dabei wird ein Projekt so fein wie möglich in kleinste Zweckale Einheiten zerlegt, die jeweils individuell ausgetauscht werden können. Aber auch hier gilt: Das sind Themen für spätere Projekte, für die Veranstaltung Software Engineering oder auch die ersten Monate in einer Anstellung...
 
 Tipp an der Stelle: Ansichten sollen im Wurzelverzeichnis erscheinen, Gruppen im Verzeichnis für die Gruppen. Ansichten sollen außerdem nicht view_... heißen; das view_ ist nur innerhalb der strukt.html nötig, um auf den ersten Blick zwischen Ansichten und Gruppen unterscheiden zu können.
 
