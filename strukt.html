@@ -9,167 +9,166 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 == (1) Strukturierung von Ansichten
 ===================================
 -01- - Überschrift 
--03- - Eingabefeld (Funtkion: Eingabe Username)
--04- - Eingabefeld (Zweck: Eingabe Passwort)
+-02- - Eingabefeld (Funtkion: Eingabe Username)
+-03- - Eingabefeld (Zweck: Eingabe Passwort)
 	//Kommentar: Eingabe des Passwort Verschlüsselt
--05- - Schaltfläche (Zweck: Submit)
--06- - Schaltfläche (Zweck: Trainingsmodus)
--07- - Schaltfläche (Zweck: Duellmodus)
--08- - Schaltfläche (Zweck: Einzelspieler)
--09- - Schaltfläche (Zweck: Regelwerk)
+-04- - Schaltfläche (Zweck: Submit)
+-05- - Schaltfläche (Zweck: Trainingsmodus)
+-06- - Schaltfläche (Zweck: Duellmodus)
+-07- - Schaltfläche (Zweck: Einzelspieler)
+-08- - Schaltfläche (Zweck: Regelwerk)
 
--10- - Textfeld (Inhalt: fortlaufende Nummerierung der Fragen z.b. "1")
--11- - Liste (Inhalt: Fortschritt innherhalb des Quiz)
+-09- - Textfeld (Inhalt: fortlaufende Nummerierung der Fragen z.b. "1")
+-10- - Liste (Inhalt: Fortschritt innherhalb des Quiz)
 	//Kommentar: Orientierungsleiste für die Spielrunde. Anzahl der noch offenen- und bereits richtig beantworteten Fragen.  
--12- - Textfeld (Inhalt: Fragestellung)
--13- - Textfeld (Inhalt: Antwort)
+-11- - Textfeld (Inhalt: Fragestellung)
+-12- - Textfeld (Inhalt: Antwort)
 	//Kommentar: Doubletten entfernt. Textfelder mit Antworten 4x notwendig.
--14- - Radio Button (Antwortmöglichkeit)
+-13- - Radio Button (Antwortmöglichkeit)
 	//Kommentar: Doubletten entfernt. Radio Buttons mit Antwortmöglichkeiten 4x notwendig
--16- - Schaltfläche (Zweck: nächste Frage)
--17- - Schaltfläche (Zweck: vorherige Frage) 
--18- - Textfeld (Inhalt: Versuche/Lebensanzahl) 
+-14- - Schaltfläche (Zweck: nächste Frage)
+-15- - Schaltfläche (Zweck: vorherige Frage) 
+-16- - Textfeld (Inhalt: Versuche/Lebensanzahl) 
 	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Zweck in PHP inkl. Datenbankanbindung in MySQL
--19- - Textfeld (Inhalt: Punktzahl Spieler)
+-17- - Textfeld (Inhalt: Punktzahl Spieler)
 	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Zweck in PHP inkl. Datenbankanbindung in MySQL
--20- - Textfeld (Inhalt: Zeitlimit)
+-18- - Textfeld (Inhalt: Zeitlimit)
 	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Zweck in PHP inkl. Datenbankanbindung in MySQL
 
--22- - Eingabefeld (Zweck: Feedback formulieren)
+-19- - Eingabefeld (Zweck: Feedback formulieren <Textarea>)
 
  
--25- - Tabelle (<table> Inhalt: neueste userfeedbacks werden angezeigt)
+-20- - Tabelle (<table> Inhalt: neueste userfeedbacks werden angezeigt)
 
--28- - Textfeld (Überschrift: Quizfrage erstellen/bearbeiten)
--29- - Eingabefeld (<textarea> Zweck: Quizfrage erstellen oder bearbeiten)
--30- - Eingabefeld (<textarea> Zweck: Quizantwort formulieren oder bearbeiten)
+-21- - Eingabefeld (<textarea> Zweck: Quizfrage erstellen oder bearbeiten)
+-22- - Eingabefeld (<textarea> Zweck: Quizantwort formulieren oder bearbeiten)
 	//Kommentar: Doubletten entfernt 
--31- - Checkbox (Zweck: Angabe der richtigen Antwort)	
+-23- - Checkbox (Zweck: Angabe der richtigen Antwort)	
 	//Kommentar: Nutzer markiert die richtige Antwort zu der formulierten Quizfrage.
 
 
--34- - Textfeld (Inhalt: Anzahl der richtigen & falschen Antworten)
+-24- - Textfeld (Inhalt: Anzahl der richtigen & falschen Antworten)
 	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Zweck in PHP inkl. Datenbankanbindung in MySQL
--35- - Tabelle  (Inhalt: Highscore-Liste)
+-25- - Tabelle  (Inhalt: Highscore-Liste)
 	//Kommentar: ausführliche Tabelle mit Usernamen, Platzierungen und Punktzahlen der Nutzer
--36- - Schatlfläche (Zweck: Neustart des Quizes)
+-26- - Schatlfläche (Zweck: Neustart des Quizes)
 
--37- - Textfeld (Überschrift: Schwierigkeitsgrad auswählen)
--38- - Drop Down Menü (Auswahlmöglichkeit: <option> Leicht)
--39- - Drop Down Menü (Auswahlmöglichkeit: <option> Mittel)
--40- - Drop Down Menü (Auswahlmöglichkeit: <option> Schwer)
--41- - Tabelle (Inhalt: Registrierte Nutzerprofile)
--43- - Schaltfläche (Zweck: Einen Spieler herauszufordern)
+-27- - Drop Down Menü (Auswahlmöglichkeit: <option> Leicht)
+-28- - Drop Down Menü (Auswahlmöglichkeit: <option> Mittel)
+-29- - Drop Down Menü (Auswahlmöglichkeit: <option> Schwer)
+-30- - Tabelle (Inhalt: Registrierte Nutzerprofile)
+-31- - Schaltfläche (Zweck: Einen Spieler herauszufordern)
 
 	//Kommentar: Seit dem letzten Feedback neu hinzugefüge Struktur Elemente: 
--45- - Eingabefeld (Zweck: Eingabe der E-Mail)
--46- - Schaltfläche (Zweck: Userforum)
--48- - Schaltfläche (Zweck: Eingaben zurücksetzen) 
--49- - Schaltfläche (Zweck: Hauptmenü) 
--50- - Formular Container (Zweck: form Container)
--51- - fieldset Container (Zweck: Gruppierung von Kontrollelementen)
+-32- - Eingabefeld (Zweck: Eingabe der E-Mail)
+-33- - Schaltfläche (Zweck: Userforum)
+-34- - Schaltfläche (Zweck: Eingaben zurücksetzen) 
+-35- - Schaltfläche (Zweck: Hauptmenü) 
+-36- - Formular Container (Zweck: form Container)
+-37- - fieldset Container (Zweck: Gruppierung von Kontrollelementen)
 
--53- - Schaltfläche (Zweck: Quizstart)
--54- - Drop Down Menü (<Select>)
--55- - Schaltfläche (Zweck: Zur Auswertung)
--56- - Textfeld (Inhalt: Erfolgsquote)
+-38- - Drop Down Menü (<Select>)
+-39- - Schaltfläche (Zweck: Zur Auswertung)
+-40- - Textfeld (Inhalt: Erfolgsquote)
 	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Zweck in PHP inkl. Datenbankanbindung in MySQL
+-41- - Textfeld (Zweck: Schwierigkeitsgrad auswählen)
+-42- - Schatlfläche (Zweck: Quizfragen bearbeiten)
 -->
 
-<!-- Das !-49- - Schaltfläche (Zweck: Hauptmenü)! strukturelle Element befindet sich nicht direkt in der Gruppe, sondern ist ausgelagert in einer PHP Datei, vorzufinden. -->
+<!-- Das !-35- - Schaltfläche (Zweck: Hauptmenü)! strukturelle Element befindet sich nicht direkt in der Gruppe, sondern ist ausgelagert in einer PHP Datei, vorzufinden. -->
 <!-- Aufgabe 1.1 Version 6.0 04.10.2016  -->
 <!--
 =======================
 == (1.1) Gruppen bilden
 =======================
 [I] LogIn 
--50- - Formular Container (Zweck: form Container)
--51- - fieldset Container (Zweck: Gruppierung von Kontrollelementen)
+-36- - Formular Container (Zweck: form Container)
+-37- - fieldset Container (Zweck: Gruppierung von Kontrollelementen)
 -01- - Überschrift 
--03- - Eingabefeld (Funtkion: Eingabe Nutzername)
--04- - Eingabefeld (Zweck: Eingabe Passwort)
+-02- - Eingabefeld (Funtkion: Eingabe Nutzername)
+-03- - Eingabefeld (Zweck: Eingabe Passwort)
 	//Kommentar: Eingabe des Passwort Verschlüsselt
--45- - Eingabefeld (Zweck: Eingabe der E-Mail)
--05- - Schaltfläche (Zweck: Submit)
--48- - Schaltfläche (Zweck: Eingaben zurücksetzen)
--49- - !Schaltfläche (Zweck: Hauptmenü)!
+-32- - Eingabefeld (Zweck: Eingabe der E-Mail)
+-04- - Schaltfläche (Zweck: Submit)
+-34- - Schaltfläche (Zweck: Eingaben zurücksetzen)
+-35- - !Schaltfläche (Zweck: Hauptmenü)!
 
 ([II] LogIn Admin "-gelöscht da doppelt-")
 
 [II] Userfedback
--50- - Formular Container (Zweck: form Container)
--22- - Eingabefeld (Zweck: Feedback formulieren, in Form einer Textarea)
--05- - Schaltfläche (Zweck:: Submit)
+-36- - Formular Container (Zweck: form Container)
+-19- - Eingabefeld (Zweck: Feedback formulieren, <Textarea>)
+-04- - Schaltfläche (Zweck:: Submit)
 -49- - Schaltfläche (Zweck: Hauptmenü) 
 
 
 [III] Quizfragen 
--50- - Formular Container (Zweck: form Container)
+-36- - Formular Container (Zweck: form Container)
 -01- - Überschrift //<legend>
--29- - Eingabefeld (<textarea> Zweck: Quizfrage erstellen) // mit PHP Einbindung 
--30- - Eingabefeld (<textarea> Zweck: Quizantwort formulieren)
+-21- - Eingabefeld (<textarea> Zweck: Quizfrage erstellen) // mit PHP Einbindung 
+-22- - Eingabefeld (<textarea> Zweck: Quizantwort formulieren)
 	// mit PHP Einbindung
 	//Kommentar: Doubletten entfernt 
--31- - Checkbox (Zweck: Angabe der richtigen Antwort)
+-23- - Checkbox (Zweck: Angabe der richtigen Antwort)
 	// mit PHP Einbindung
 	//Kommentar: Nutzer markiert die richtige Antwort zu der formulierten Quizfrage.
--05- - Schaltfläche (Zweck:: Submit)
+-04- - Schaltfläche (Zweck:: Submit)
 -49- - Schaltfläche (Zweck: Hauptmenü)
 
 [IV] Quiz
--10- - Textfeld (Inhalt: fortlaufende Nummerierung der Fragen z.b. "1")
--50- - Formular Container (Zweck: form Container)
--51- - fieldset Container (Zweck: Gruppierung von Kontrollelementen)
--12- - Textfeld (Inhalt: Fragestellung) // Besonderheit <legend> 
--13- - Textfeld (Inhalt: Antwort)
--14- - Radio Button (Antwortmöglichkeit)
--17- - Schaltfläche (Zweck: vorherige Frage) 
--16- - Schaltfläche (Zweck: nächste Frage)
--55- - Schaltfläche (Zweck: Zur Auswertung)
--09- - Schaltfläche (Zweck:: Regelwerk)
--11- - Liste (Inhalt: Fortschritt innherhalb des Quiz) // in PHP umgesetzt
--18- - Textfeld (Inhalt: Versuche/Lebensanzahl) // in PHP umgesetzt
--19- - Textfeld (Inhalt: Punktzahl Spieler)	// in PHP umgesetzt
--20- - Textfeld (Inhalt: Zeitlimit)	// in PHP umgesetzt
+-09- - Textfeld (Inhalt: fortlaufende Nummerierung der Fragen z.b. "1")
+-36- - Formular Container (Zweck: form Container)
+-37- - fieldset Container (Zweck: Gruppierung von Kontrollelementen)
+-11- - Textfeld (Inhalt: Fragestellung) // Besonderheit <legend> 
+-12- - Textfeld (Inhalt: Antwort)
+-13- - Radio Button (Antwortmöglichkeit)
+-15- - Schaltfläche (Zweck: vorherige Frage) 
+-14- - Schaltfläche (Zweck: nächste Frage)
+-39- - Schaltfläche (Zweck: Zur Auswertung)
+-08- - Schaltfläche (Zweck:: Regelwerk)
+-10- - Liste (Inhalt: Fortschritt innherhalb des Quiz) // in PHP umgesetzt
+-16- - Textfeld (Inhalt: Versuche/Lebensanzahl) // in PHP umgesetzt
+-17- - Textfeld (Inhalt: Punktzahl Spieler)	// in PHP umgesetzt
+-18- - Textfeld (Inhalt: Zeitlimit)	// in PHP umgesetzt
 		
 [V] Training
--50- - Formular Container (Zweck: form Container)
--37- - Textfeld (Zweck: Schwierigkeitsgrad auswählen)
--54- - Drop Down Menü (<Select>)
--38- - Drop Down Menü (Auswahlmöglichkeit: <option> Leicht)
--39- - Drop Down Menü (Auswahlmöglichkeit: <option> Mittel)
--40- - Drop Down Menü (Auswahlmöglichkeit: <option> Schwer)
--05- - Schaltfläche (Zweck: Submit)
--09- - Schaltfläche (Zweck: Regelwerk)
+-36- - Formular Container (Zweck: form Container)
+-41- - Textfeld (Zweck: Schwierigkeitsgrad auswählen)
+-38- - Drop Down Menü (<Select>)
+-27- - Drop Down Menü (Auswahlmöglichkeit: <option> Leicht)
+-28- - Drop Down Menü (Auswahlmöglichkeit: <option> Mittel)
+-29- - Drop Down Menü (Auswahlmöglichkeit: <option> Schwer)
+-04- - Schaltfläche (Zweck: Submit)
+-08- - Schaltfläche (Zweck: Regelwerk)
 
 [VI] Duell
 -01- - Überschrift
--50- - Formular Container (Zweck: form Container)
--41- - Tabelle (Inhalt: Registrierte Nutzerprofile)
--43- - Schaltfläche (Zweck: Einen Spieler herauszufordern)
--09- - Schaltfläche (Zweck: Regelwerk)
--53- - Schaltfläche (Zweck: Quizstart)
+-36- - Formular Container (Zweck: form Container)
+-30- - Tabelle (Inhalt: Registrierte Nutzerprofile)
+-31- - Schaltfläche (Zweck: Einen Spieler herauszufordern)
+-08- - Schaltfläche (Zweck: Regelwerk)
+
 
 
 [VII] Auswertung 
--34- - Textfeld (Inhalt: Anzahl der richtigen Antworten) // in PHP 	umgesetzt
--56- - Textfeld (Inhalt: Erfolgsquote) // in PHP umgesetzt
+-24- - Textfeld (Inhalt: Anzahl der richtigen Antworten) // in PHP 	umgesetzt
+-40- - Textfeld (Inhalt: Erfolgsquote) // in PHP umgesetzt
 
 
 [VIII] Hauptmenue
--08- - Schaltfläche (Zweck:: Einzelspieler)
--06- - Schaltfläche (Zweck:: Trainingsmodus)
--07- - Schaltfläche (Zweck:: Duellmodus)
--46- - Schaltfläche (Zweck:: Userforum)
--47- - Schatlfläche (Zweck:: Quizfragen bearbeiten)
+-07- - Schaltfläche (Zweck: Einzelspieler)
+-05- - Schaltfläche (Zweck: Trainingsmodus)
+-06- - Schaltfläche (Zweck: Duellmodus)
+-33- - Schaltfläche (Zweck: Userforum)
+-42- - Schatlfläche (Zweck: Quizfragen bearbeiten)
 
 [IX] Highscoreliste
--35- - Tabelle  (Inhalt: Highscore-Liste) // in PHP umgesetzt
--36- - Schatlfläche (Zweck:: Neustart des Quizes)
--49- - Schaltfläche (Zweck:: Hauptmenü)
+-25- - Tabelle  (Inhalt: Highscore-Liste) // in PHP umgesetzt
+-26- - Schatlfläche (Zweck: Neustart des Quizes)
+-35- - Schaltfläche (Zweck: Hauptmenü)
 
 [X] Feedbacktabelle  
--25- - Tabelle (<table> Inhalt: neueste userfeedbacks werden angezeigt) // in PHP umgesetzt
+-20- - Tabelle (<table> Inhalt: neueste userfeedbacks werden angezeigt) // in PHP umgesetzt
 -->
 
 
