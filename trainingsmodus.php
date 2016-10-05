@@ -13,6 +13,7 @@
 		
 		<?php include("Gruppen_de/training.php") ?>	
 		
+		<?php include("Gruppen_de/quiz.php") ?>	
 	</body>
 </html>
 

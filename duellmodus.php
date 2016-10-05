@@ -11,5 +11,6 @@
 		
 		<?php include("Gruppen_de/duell.php") ?>
 		
+		<?php include("Gruppen_de/quiz.php") ?>	
 	</body>
 </html>
