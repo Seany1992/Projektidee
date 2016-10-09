@@ -1,5 +1,7 @@
-﻿<p>Frage 1 von X</p> 
-	<!--Funktion: Wird eine fortlaufende Nummerierung der Fragen z.b. "1"-->
+﻿<ol>
+	<li>Frage 1 von X</li> 
+</ol>
+	<!-- Wird eine fortlaufende Nummerierung der Fragen z.b. "1"-->
 		
 <form action=form_eval_quiz.php method=POST>
 	<fieldset>
