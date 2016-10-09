@@ -1,4 +1,4 @@
-<p>Frage 1 von X</p> 
+﻿<p>Frage 1 von X</p> 
 	<!--Funktion: Wird eine fortlaufende Nummerierung der Fragen z.b. "1"-->
 		
 <form action=form_eval_quiz.php method=POST>
@@ -20,9 +20,9 @@
 	</fieldset>	
 </form>
 	
-	<a href=quizseite.php> <button type=button id=previous>Vorherige Frage</button> </a>
+	<a href=einzelspieler.php> <button type=button id=previous>Vorherige Frage</button> </a>
 			
-	<a href=quizseite.php> <button type=button id=skip>Nächste Frage</button></a>
+	<a href=einzelspieler.php> <button type=button id=skip>Nächste Frage</button></a>
 			
 	<a href=endabrechnung.php> <button type=button id=auswertung>Zur Auswertung</button></a>
 			

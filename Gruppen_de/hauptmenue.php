@@ -1,5 +1,5 @@
 
-	<a href=quiz.php> <button type=button id=einzelspieler>Einzelspieler</button></a> 
+	<a href=einzelspieler.php> <button type=button id=einzelspieler>Einzelspieler</button></a> 
 	 <br>
 							
 	<a href=trainingsmodus.php> <button type=button id=trainingsmodus>Trainingsmodus</button></a>
