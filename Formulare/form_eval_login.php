@@ -8,6 +8,17 @@
 	echo "<br>";
 	echo "<a href=../hub.php> <button type=button id=hauptmenue>Hauptmenü</button></a>";
 	
+	// Für den korrekten Login, soll die Funktion die richtigen Werte aus der Datenbank abgreifen
+		$isLoggedIn = false;
+	$enteredUsername = $_POST['username'];
+	$enteredPassword = $_POST['password'];
+	$username = "Mustermann"; //Wert aus Datenbank
+	$password = "Musterpasswort"; //Wert aus Datenbank
+	if ($enteredUsername == $username && $enteredPassword == $password) 
+	{
+		$isLoggedIn = true;
+	}
+	
 	// ===================================
 	// === Feedback Alpers, 2016-10-04 ===
 	// ===================================
