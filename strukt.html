@@ -36,16 +36,12 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Zweck in PHP inkl. Datenbankanbindung in MySQL
 
 -19- - Eingabefeld (Zweck: Feedback formulieren <Textarea>)
-
- 
 -20- - Tabelle (<table> Inhalt: neueste userfeedbacks werden angezeigt)
-
 -21- - Eingabefeld (<textarea> Zweck: Quizfrage erstellen oder bearbeiten)
 -22- - Eingabefeld (<textarea> Zweck: Quizantwort formulieren oder bearbeiten)
 	//Kommentar: Doubletten entfernt 
 -23- - Checkbox (Zweck: Angabe der richtigen Antwort)	
 	//Kommentar: Nutzer markiert die richtige Antwort zu der formulierten Quizfrage.
-
 
 -24- - Textfeld (Inhalt: Anzahl der richtigen & falschen Antworten)
 	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Zweck in PHP inkl. Datenbankanbindung in MySQL
@@ -66,13 +62,14 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -35- - Schaltfläche (Zweck: Hauptmenü) 
 -36- - Formular Container (Zweck: form Container)
 -37- - fieldset Container (Zweck: Gruppierung von Kontrollelementen)
-
 -38- - Drop Down Menü (<Select>)
 -39- - Schaltfläche (Zweck: Zur Auswertung)
 -40- - Textfeld (Inhalt: Erfolgsquote)
 	//Kommentar: Dynamisch veränderbares Textfeld mithilfe einer Zweck in PHP inkl. Datenbankanbindung in MySQL
 -41- - Textfeld (Zweck: Schwierigkeitsgrad auswählen)
 -42- - Schatlfläche (Zweck: Quizfragen bearbeiten)
+-43- - Bild (Hintergrundbild)
+-44- - Bild (Projektlogo)
 -->
 
 <!-- Das !-35- - Schaltfläche (Zweck: Hauptmenü)! strukturelle Element befindet sich nicht direkt in der Gruppe, sondern ist ausgelagert, in einer PHP Datei, vorzufinden. -->
@@ -95,6 +92,7 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 
 ([II] LogIn Admin "-gelöscht da doppelt-")
 
+
 [II] Userfedback
 -36- - Formular Container (Zweck: form Container)
 -19- - Eingabefeld (Zweck: Feedback formulieren, <Textarea>)
@@ -115,6 +113,7 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -04- - Schaltfläche (Zweck:: Submit)
 -49- - Schaltfläche (Zweck: Hauptmenü)
 
+
 [IV] Quiz
 -09- - Textfeld (Inhalt: fortlaufende Nummerierung der Fragen z.b. "1")
 -36- - Formular Container (Zweck: form Container)
@@ -130,7 +129,8 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -16- - Textfeld (Inhalt: Versuche/Lebensanzahl) // in PHP umgesetzt
 -17- - Textfeld (Inhalt: Punktzahl Spieler)	// in PHP umgesetzt
 -18- - Textfeld (Inhalt: Zeitlimit)	// in PHP umgesetzt
-		
+	
+	
 [V] Training
 -36- - Formular Container (Zweck: form Container)
 -41- - Textfeld (Zweck: Schwierigkeitsgrad auswählen)
@@ -141,13 +141,13 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -04- - Schaltfläche (Zweck: Submit)
 -08- - Schaltfläche (Zweck: Regelwerk)
 
+
 [VI] Duell
 -01- - Überschrift
 -36- - Formular Container (Zweck: form Container)
 -30- - Tabelle (Inhalt: Registrierte Nutzerprofile)
 -31- - Schaltfläche (Zweck: Einen Spieler herauszufordern)
 -08- - Schaltfläche (Zweck: Regelwerk)
-
 
 
 [VII] Auswertung 
@@ -162,17 +162,19 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -33- - Schaltfläche (Zweck: Userforum)
 -42- - Schatlfläche (Zweck: Quizfragen bearbeiten)
 
+
 [IX] Highscoreliste
 -25- - Tabelle  (Inhalt: Highscore-Liste) // in PHP umgesetzt
 -26- - Schatlfläche (Zweck: Neustart des Quizes)
 -35- - Schaltfläche (Zweck: Hauptmenü)
+
 
 [X] Feedbacktabelle  
 -20- - Tabelle (<table> Inhalt: neueste userfeedbacks werden angezeigt) // in PHP umgesetzt
 -->
 
 
-<!-- Für die Bessere Bedienbarkeit und Struktur habe ich die Ansicht und die Gruppe hauptmenue eingeführt. Sie dient, wie der Name bereits verrät, als zentraler Orientierungspunkt, von wo aus man zu jedem Bereich der Anwendung gelangt.  -->
+<!-- Die strukt. Elemente -43- Bild (Hintergrundbild) und -44- Bild (Projektlogo) sind eine der wenigen Ausnahmen, bei denen einzelne strukturelles Element in einem View sinnvoll sind  -->
 <!-- Aufgabe 1.2 Version 6.0 04.10.2016 -->
 <!--
 =========================
@@ -181,6 +183,7 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 ------------------------
 --- view_startseite  ---
 ------------------------
+-44- - Bild (Projektlogo)
 [I]LogIn 
 
 
@@ -201,12 +204,14 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -------------------------
 --- view_einzelspieler---
 -------------------------
+-43- - Bild (Hintergrundbild)
 [IV] Quiz
 
 
 --------------------------
 --- view_trainingsmodus---
 --------------------------
+-43- - Bild (Hintergrundbild)
 [V] Training
 [IV] Quiz
 
@@ -214,6 +219,7 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 ----------------------
 --- view_duellmodus---
 ----------------------
+-43- - Bild (Hintergrundbild)
 [VI] Duell
 [IV] Quiz
 
@@ -228,6 +234,7 @@ Bei diesem Entwurf der strukt.html habe ich darauf geachtet, dass sie übersicht
 -------------------------
 --- view_hub---
 -------------------------
+-44- - Bild (Projektlogo)
 [VIII] Hauptmenue
 -->
 
