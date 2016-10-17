@@ -6,7 +6,6 @@
 	</head>
 
 	<header>
-			<img><!-- Hier wird das Logo des Quizes eingefügt --></img>
 			<h1>Adminbereich</h1> 
 	</header>
 	

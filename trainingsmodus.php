@@ -7,7 +7,6 @@
 
 	<body>
 		<header>
-			<img><!-- Hier wird das Logo des Quizes eingefügt --></img>
 			<h1>Trainingsmodus</h1>	
 		</header>
 		

@@ -5,7 +5,6 @@
 		<title>Quizprojekt</title> 
 	<body>
 		<header>
-			<img><!-- Hier wird das Logo des Quizes eingefügt --></img>
 			<h1>Duellmodus</h1>	
 		</header>
 		
