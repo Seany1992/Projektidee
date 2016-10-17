@@ -7,8 +7,7 @@
 
 	<body>
 		<header>
-			<img><!-- Hier wird das Logo des Quizes eingefügt --></img>
-			<h1>Quiz</h1>	 
+			<h1>Einzelspieler</h1>	 
 		</header>
 		
 		<img><!--Hier Themenspezifische EInblendung von Hintergrundbildern--></img>
