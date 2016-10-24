@@ -1,46 +1,47 @@
 ﻿=====================================================
-=== Projektidee Seany1992, 2016-06-09 Version 4.0 ===
+=== Projektidee Seany1992, 2016-10-24 Version 5.0 ===
 =====================================================
 
-Meine Projektidee: Es soll ein Quiz auf Basis von Html, PHP und SQL programmiert werden (Webanwendung)
+Die Projektidee: Meine Webanwendung soll ein Quiz werden, welches auf Basis von Html, PHP und SQL programmiert wird.
 
-- Vier Multiple Choice Antwortmöglichkeiten, durch eine richtige Antwort gelangt man zur nächsten Frage.
-- LogIn: Für Nutzer und Admin, beide können sich einloggen oder ggf. ein Konto einrichten. (Nutzernamen und Passwort)
-- Nachdem Quizteil wird die erreichte Punktzahl errechnet (Highscore).
-- Es wird eine Highscoreliste am Ende jedes Spieldurchlaufes geben.(Datenbank SQL)
-- Der Admin hat die Möglichkeit neue Fragen hinzuzufügen und sie zu bearbeiten.
-- Nutzer werden sich über Fragen und deren Antwortmöglichkeiten austauschedsn können (User Forum).
-- Ticketsystem für den Admin ist geplant, zur Verwaltung von User-Feedbacks.
-- Es wird für Einsteiger einen Trainingsmodus geben.
-
-- Besonderheiten (Spielregeln): 
-
-	- Ziel des Quiz: Eine hohe Punktzahl (Highscore), durch Schnelligkeit & richtige Antworten. 
-	
-	- Spieler startet mit 3 "Leben/Versuchen".
-	
-	- Zeitlimit bei jeder Frage, welches immer kürzer wird. (Maximal 15 Sekunden zum Anfang pro Frage)
-	
-	- Höhere Punktzahl durch schnelle Beantwortung. Es wird ein Zähler mitlaufen, der die benötige Zeit pro Frage abfängt.
-
-	- 5 richtig beantworteten Fragen hintereinander, Spieler erhält ein "Leben/Versuch" zurück.
-
-	- Niederlagebedingung: Sobald der Spieler alle "Leben/Versuche" verloren hat, dies geschieht durch falsche Antworten.
-	
-	- Siegbedingung: 20 Richtige Antworten und mindestens 1 "Leben/Versuch" übrig.
-
-- Interaktionen zwischen Spieler und Spiel:
-	- Ein computergesteuerter Gegenspieler für den Trainingsmodus wird eingebaut. 
-	- Spielverhalten von Nutzern wird abgespeichert.
-	- Das Spielverhalten der registrierten Nutzerprofile wird von dem computergesteuerten Gegenspieler adaptiert. 
-	- Dadurch wird es eine große Anzahl an verschiedenen Gegenspieler geben(unterschiedlicher Schwierigkeitsgrad).
-	
-- Interaktionen zwischen Spieler und Spieler:
+Kurze Überblick (Zusammenfassung):
+	- Eine Fragestellung, vier Multiple Choice Antwortmöglichkeiten und nur eine richtige Antwort.
+	- LogIn: Für Nutzer und Admin, beide können sich einloggen oder ggf. ein Konto einrichten. (Nutzernamen und Passwort)
+	- Der Nutzer durchläuft 20 Quizfragen, die per Zufallsprinzip ausgesucht werden.
+	- Am Ende jeder Runde steht eine Highscoreliste, mit dem erreichten Highscore.(Datenbank SQL)
+	- Der Admin hat die Möglichkeit neue Fragen hinzuzufügen und sie zu bearbeiten.
+	- Ein Ticketsystem, für den Admin, zur Verwaltung von Nutzerfeedbacks ist geplant. 
+	- Es wird ein Userforum programmiert.
 	- Es wird ein Duellmodus eingebaut.
+	- Es wird einen Trainingmodus für Neulinge geben.
+
+
+Allgemeine Spielregeln: 
+	- Ziel des Quiz: Eine hohe Punktzahl (Highscore), durch Schnelligkeit & richtige Antworten. 	
+	- Spieler startet mit drei "Leben/Versuchen".	
+	- Zeitlimit bei jeder Frage, welche sich von Quizfrage zu Quizfrage verkürzt. (Anfangs: 15 Sekunden)	
+	- Höhere Punktzahl durch schnelle Beantwortung. Es wird ein Zähler mitlaufen, der die benötige Zeit pro Frage abfängt.
+	- Fünf richtig beantworteten Fragen hintereinander, Spieler erhält ein "Leben/Versuch" zurück.
+	- Zielbedingung: 20 Gelöste Quizfragen und mindestens 1 "Leben/Versuch" übrig. 
+	- Siegbedingung: Die Höhe des Highscores entscheidet über den Erfolg einer Spielrunde. 
+	- Niederlagebedingung: Der Spieler scheidet aus, sobald er alle "Leben/Versuche" verloren hat. Dies geschieht durch falsche Antworten.
+
+
+Interaktionen zwischen Spieler und Spiel:
+	- Ein computergesteuerter Gegenspieler für den Trainingsmodus wird eingebaut. 
+	- Das Spielverhalten von Nutzern wird abgespeichert.
+	- Das Spielverhalten der registrierten Nutzerprofile wird von dem computergesteuerten Gegenspieler adaptiert. 
+	- Dadurch wird es eine große Anzahl an unterschiedlichen Gegenspieler geben.
+	- Daraus resultiert eine Implementierung unterschiedlicher Schwierigkeitsgrade für den Nutzer.
+
+
+Interaktionen zwischen Spieler und Spieler:
+	- Der Duellmodus ist der Mehrspielerbereich innerhalb der Anwendung.
 	- Nutzer werden andere Nutzer herausfordern können.
 	- Die Nutzer spielen gleichzeitig, beiden werden die gleichen Fragen gestellt. Derjenige mit der höheren Punktzahl gewinnt.
 	- Kommunikation in Chatform wird möglich sein.
-
+	- Das Userforum dient zum Austausch von Meinungen der Nutzer, bezüglich der Quizfragen und deren Antwortmöglichkeiten. 
+	
 =====================================================
 === Projektidee Seany1992, 2016-05-31 Version 3.0 ===
 =====================================================
