@@ -1,0 +1,275 @@
+﻿=====================================================
+=== Projektidee Seany1992, 2016-10-24 Version 5.0 ===
+=====================================================
+
+Die Projektidee: Meine Webanwendung soll ein Quiz werden, welches auf Basis von Html, PHP und SQL programmiert wird.
+
+Kurze Überblick (Zusammenfassung):
+	- Eine Fragestellung, vier Multiple Choice Antwortmöglichkeiten und nur eine richtige Antwort.
+	- LogIn: Für Nutzer und Admin, beide können sich einloggen oder ggf. ein Konto einrichten. (Nutzernamen und Passwort)
+	- Der Nutzer durchläuft 20 Quizfragen, die per Zufallsprinzip ausgesucht werden.
+	- Am Ende jeder Runde steht eine Highscoreliste, mit dem erreichten Highscore.(Datenbank SQL)
+	- Der Admin hat die Möglichkeit neue Fragen hinzuzufügen und sie zu bearbeiten.
+	- Ein Ticketsystem, für den Admin, zur Verwaltung von Nutzerfeedbacks ist geplant. 
+	- Es wird ein Userforum programmiert.
+	- Es wird ein Duellmodus eingebaut.
+	- Es wird einen Trainingmodus für Neulinge geben.
+
+
+Allgemeine Spielregeln: 
+	- Ziel des Quiz: Eine hohe Punktzahl (Highscore), durch Schnelligkeit & richtige Antworten. 	
+	- Spieler startet mit drei "Leben/Versuchen".	
+	- Zeitlimit bei jeder Frage, welche sich von Quizfrage zu Quizfrage verkürzt. (Anfangs: 15 Sekunden)	
+	- Höhere Punktzahl durch schnelle Beantwortung. Es wird ein Zähler mitlaufen, der die benötige Zeit pro Frage abfängt.
+	- Fünf richtig beantworteten Fragen hintereinander, Spieler erhält ein "Leben/Versuch" zurück.
+	- Zielbedingung: 20 Gelöste Quizfragen und mindestens 1 "Leben/Versuch" übrig. 
+	- Siegbedingung: Die Höhe des Highscores entscheidet über den Erfolg einer Spielrunde. 
+	- Niederlagebedingung: Der Spieler scheidet aus, sobald er alle "Leben/Versuche" verloren hat. Dies geschieht durch falsche Antworten.
+
+
+Interaktionen zwischen Spieler und Spiel:
+	- Ein computergesteuerter Gegenspieler für den Trainingsmodus wird eingebaut. 
+	- Das Spielverhalten von Nutzern wird abgespeichert.
+	- Das Spielverhalten der registrierten Nutzerprofile wird von dem computergesteuerten Gegenspieler adaptiert. 
+	- Dadurch wird es eine große Anzahl an unterschiedlichen Gegenspieler geben.
+	- Daraus resultiert eine Implementierung unterschiedlicher Schwierigkeitsgrade für den Nutzer.
+
+
+Interaktionen zwischen Spieler und Spieler:
+	- Der Duellmodus ist der Mehrspielerbereich innerhalb der Anwendung.
+	- Nutzer werden andere Nutzer herausfordern können.
+	- Die Nutzer spielen gleichzeitig, beiden werden die gleichen Fragen gestellt. Derjenige mit der höheren Punktzahl gewinnt.
+	- Kommunikation in Chatform wird möglich sein.
+	- Das Userforum dient zum Austausch von Meinungen der Nutzer, bezüglich der Quizfragen und deren Antwortmöglichkeiten. 
+	
+=====================================================
+=== Projektidee Seany1992, 2016-05-31 Version 3.0 ===
+=====================================================
+
+Meine Projektidee: Es soll ein Quiz auf Basis von Html, PHP und SQL programmiert werden (verteilte Webanwendung)
+
+- Vier Multiple Choice Antwortmöglichkeiten, durch eine richtige Antwort gelangt man zur nächsten Frage.
+- LogIn: Die Spieler können sich einloggen und ein Konto einrichten, beinhaltet Nutzernamen und Passwort.
+- LogIn für den Admin mitsamt Nutzernamen und Passwort.
+- Nachdem Quizteil wird die erreichte Punktzahl errechnet (Highscore)
+- Es wird eine Highscoreliste am Ende jedes Spieldurchlaufes geben.(Datenbank SQL)
+- Der Admin hat die Möglichkeit neue Fragen hinzuzufügen und sie zu bearbeiten.
+- Nutzer werden sich über  Fragen und deren Antwortmöglichkeiten austauschen können d.h. Interaktion mit anderen Spielern (User Forum).
+- Ticketsystem für den Admin ist geplant, zur Verwaltung von User-feedbacks.
+- Es wird für Anfänger ein Trainingsmodus eingebaut.
+
+- Besonderheiten (Spielregeln): 
+
+	- Ziel des Quiz: Eine hohe Punktzahl (Highscore), durch Schnelligkeit & richtige Antworten. 
+	
+	- Spieler startet mit 3 "Leben/Versuchen".
+	
+	- Zeitlimit bei jeder Frage, welches immer kürzer wird. (Maximal 15 Sekunden zum Anfang pro Frage)
+	
+	- Höhere Punktzahl durch schnelle Beantwortung. Es wird ein Zähler mitlaufen, der die benötige Zeit pro Frage abfängt.
+
+	- 5 richtig beantworteten Fragen hintereinander, Spieler erhält ein "Leben/Versuch" zurück.
+
+	- Niederlagebedingung: Sobald der Spieler alle "Leben/Versuche" verloren hat, dies geschieht durch falsche Antworten.
+	
+	- Siegbedingung: 20 Richtige Antworten und mindestens 1 "Leben/Versuch" übrig.
+
+=====================================================
+=== Projektidee Seany1992, 2016-05-10 Version 2.0 ===
+=====================================================
+
+Meine Projektidee: Es soll ein Quiz auf Basis von Html, PHP und SQL programmiert werden (verteilte Webanwendung)
+
+- Quiz mit vier Multiple Choice Antwortmöglichkeiten. Durch eine richtige Antwort, gelangt man zur nächsten Frage.
+- Die Spieler können sich einloggen und ein Konto einrichten, geschieht mit Nutzernamen und Passwort (Log in Maske).
+- Es wird eine LogIn Maske für den Admin geben.
+- Eine richtige Antwort, durch Schaltflächen kann man "weiter" oder "zurück" gehen in den Fragen
+- Durch "Abgabe" (bei der letzten Frage) wird die erreichte Punktzahl errechnet.
+- Eine Highscoreliste am Ende jedes Spieldurchlaufes ist geplant. (Stichwort Datenbank SQL)
+- Einrichtung eines Interfaces, damit der Admin neue Fragen hinzufügen -und sie bearbeiten kann.
+- User können sich über die Fragen und Antwortmöglichkeiten austauschen, d.h. sie können Feedback abgeben. (User Forum)
+- Ticketsystem für den Admin ist geplant, zur Verwaltung von User-feedback.
+
+- Besonderheiten (Spielregeln): 
+	
+	- Der Spieler startet mit 3 "Leben".
+	
+	- Es besteht ein Zeitlimit für jede Frage, welche immer kürzer wird. (Maximal 15 Sekunden zum Anfang pro Frage)
+	
+	- Je schneller der Nutzer/Spieler die Fragen beantwortet, desto mehr "Punkte" erhält dieser. Es wird ein Zähler mitlaufen, der die benötige Zeit pro Frage abfängt.
+
+	- Ziel des Quiz: Möglichst hohe Punktzahl (Highscore), voraussetzung Schnelligkeit & richtige Antworten. (Zielbedingung)
+
+	- Bei 6 richtig beantworteten Fragen hintereinander, besteht die Möglichkeit ein "Leben" zurück zu erhalten.
+
+	- Das Spiel ist vorbei, sobald der Spieler alle "Leben" verloren hat, dies geschieht durch falsche Antworten. (Niederlagebedingung)
+	
+	- Geschafft hat man es, wenn man durch alle Fragen gekommen ist und man mindestens noch 1 "Leben" übrig hat. (Siegbedingung)
+
+=========================================
+=== Projektidee Seany1992, 2016-04-05 ===
+=========================================
+
+Meine Projektidee: Ein Quiz (verteilte Webanwendung)
+
+- Einem Quiz mit vier Multiple Choice Antwortmöglichkeiten. Durch anklicken der richtigen Antwort, gelangt man zur nächsten Frage.
+
+- Es wird für die Bedienung, die Maus oder der Touchscreen als Eingabegemethoden erkannt, die Schaltflächen etc. werden damit bedient.
+
+- Die Spieler werden die Möglichkeit haben sich einloggen zu können, um ihren Nutzernamen anzugeben ggf. mit Passwort (Log in Maske).
+
+- Nur eine Antwort ist immer richtig, durch Schaltflächen kann man "weiter" oder "zurück" gehen in den Fragen und am Ende (letzte
+  Frage) wird durch "Abgabe" die erreichte Punktzahl errechnet.
+
+- Eine Highscoreliste am Ende jeder Runde ist geplant. (Stichwort Datenbank)
+
+- Einrichtung eines Interfaces, damit der Admin neue Fragen hinzufügen -und sie bearbeiten kann.
+
+- User können sich über die Fragen und Antworten austauschen, d.h. sie können Feedback abgeben. (User Forum)
+
+- Der Fragepool besteht aus simplen und komplexen Fragen. (Bereiche Medien, Computer, Games und Film)
+
+- Besonderheiten: 
+
+	- Es besteht ein Zeitlimit für jede Frage, welche immer kürzer wird. (Maximal 15 Sekunden zum Anfang pro Frage)
+	
+	- Je schneller der Nutzer/Spieler die Fragen beantwortet, desto mehr "Punkte" erhält dieser.
+
+	- Ziel des Quizes ist es, eine möglichst hohe Punktzahl (Highscore), durch Schnelligkeit, zu erreichen.
+
+	- Der Nutzer startet mit 3 "Leben".
+
+	- Bei 10 richtig beantworteten Fragen hintereinander, besteht die Möglichkeit ein "Leben" zurück zu erhalten.
+
+	- Verloren hat man, sobald alle "Leben" verloren sind, durch falsche Antworten. (Niederlagebedingung)
+	
+	- Geschafft hat man es, wenn man durch alle Fragen gekommen ist und man mindestens noch 1 "Leben" übrig hat. (Siegbedingung)
+
+
+===================================
+=== Feedback Alpers, 2016-04-06 ===
+===================================
+
+Der Vorschlag ist gut.
+
+Allerdings legen Sie bei der Beschreibung den Fokus an einigen Stellen auf Aspekte, die nicht direkt die zu programmierende Funktionalität betreffen:
+
+> Der Fragepool besteht aus simplen und komplexen Fragen. (Bereiche Medien, Computer, Games und Film)
+> Die Fragen werden mit der Zeit anspruchsvoller/komplexer.
+
+Das sind zwei inhaltliche Punkte: Zum einen die Schwierigkeit, die sich nicht aus dem Programmablauf, sondern aus der textuellen Gestaltung des Inhalts ergibt. Zum anderen wären die Themenbereiche zu nennen. Beides wären Aufgabenbereich für Texter und weniger für Programmierer.
+
+> Schnelligkeit und schnelles Denken steht im Vordergrund!
+
+Das ist ein Werbeslogan.
+
+> Als Eingabegerät wird die Maus genutzt.
+
+Wirklich? Sie wollen nicht, dass das Spiel mit einem Touchscreen bedient werden kann? Letztlich ist das eine Designentscheidung und hat mit der eigentlichen Funktionalität des Spiels aus Sicht der Programmierung nur wenig zu tun.
+
+> "Joker" oder Hilfen gibt es keine.
+
+Wenn es etwas nicht gibt, dann lassen Sie es bei der Beschreibung bitte weg.
+
+===================================
+=== Feedback Alpers, 2016-04-27 ===
+===================================
+
+Momentan ist Ihr Entwurf noch zu knapp, um als ein vollwertiges Projekt zu gelten. Erweitern Sie Ihre aktuelle Projektidee jetzt. Hier ein paar Vorschläge, was Sie da alles tun könnten/sollten:
+
+- Fragen sollten mit Hilfe eines Interface für Admins geändert werden können. 
+- Neue Fragen sollten über ein Interface durch Admins eingestellt werden können.
+- Bauen Sie einen Log-In ein.
+- Nutzer sollten sich mit anderen in einer Highscore-Liste vergleichen können.
+- Nutzer sollten ein Feedback geben können. (Stichwort: Antwort ... war missverständlich. / Die Antwort ist falsch.)
+- Es sollte einen Trainingsmodus geben, bei dem Fragen, die falsch beantwortet wurden öfter wieder gestellt werden als Fragen, die richtig beantwortet wurden.
+- Ein Forum wäre auch gut; User lieben nichts so sehr wie Diskussionen.
+
+===================================
+=== Feedback Alpers, 2016-06-08 ===
+===================================
+
+Momentan fehlen noch zwei Aspekte:
+
+(1) Die Interaktion zwischen Spieler und Spiel (z.B. durch einen computergesteuerten Gegenspieler).
+(2) Die Interaktion zwischen menschlichen Spielern.
+
+Anm.: Eine Webanwendung ist eine verteilte Anwendung. Wenn Sie also von einer verteilten Webanwendung sprechen ist das doppelt gemoppelt.
+
+Wertung 2: Projektbeschreibung: gesamt: 5 / 10
+- Pro Interaktionsmöglichkeit: 0 
+- Knappe aber klare Beschreibung: 5
+- Werbeslogans u.ä.: 0 
+- Designaspekte: 0 
+- Voraussetzung bekannten Wissens: 0 
+
+===================================
+=== Feedback Alpers, 2016-06-27 ===
+===================================
+
+Gut Überarbeitung der fehlenden Aspekte. Sie werden zwar später feststellen, dass Ihnen hier wichtige Details finden, aber diese Beschreibung ist eine gute Basis für die weitere Arbeit.
+
+Wertung 2: Projektbeschreibung: gesamt: 9 / 10
+
+======================================
+=== Wertung 1: Formale Vorgaben: - ===
+======================================
+- Missachtung der Konventionen für Dateinamen, Verzeichnisstruktur usw. (je -1 Pk.)
+
+=================================================
+=== Wertung 2: Projektentwurf: gesamt: 10 / 10 ===
+=================================================
+- Knappe und klare Stichpunkte 0 bis 2 Pk.: 2 
+- Umfang der eigentlichen Anwendung 0 bis 3 Pk.: 3
+- Aspekte verteilter Anwendungen 0 bis 3 Pk.: 3
+- Aspekte adaptiver Anwendungen 0 bis 2 Pk.: 2
+=== (Malus beim Projektentwurf) ===
+- Werbeslogans u.ä. bis zu 3 Pk. Abzug: 0 
+- Design- oder Layoutvorgaben bis zu 5 Pk. Abzug: 0 
+- Voraussetzung bekannten Wissens bis zu 5 Pk. Abzug: 0
+(Dies ist keine abschließende Wertung.)
+
+================================================================
+=== Wertung 3: Ausarbeitung der strukt. Elem. gesamt: 7 / 10 ===
+================================================================
+- Knappe Form 0 bis 3 Pk.: 3 
+- Für je 5 unterschiedl. strukt. Elem (keine Gruppierungen) 1 Pk., 0 bis 7 Pk.: 4 
+=== (Malus bei strukt. Elem.) ===
+- Vermischung strukt. Elem., Gruppierung, Abläufe usw. bis zu 5 Pk. Abzug: 0 
+(Dies ist keine abschließende Wertung.)
+
+=======================================
+=== Wertung 4: Microservices: 5 / 5 ===
+=======================================
+- für jeden für die Kernanwendung sinnvollen Microservice 1 Pk.: 5 
+=== (Malus bei strukt. Elem.) ===
+- Wenn Micrservices vergessen wurden, die für verteilte adaptive Anwendungen eine Voraussetzung sind, je 1 Pk. Abzug: 0 
+(Dies ist keine abschließende Wertung.)
+
+=========================================
+=== Wertung 5: Ansichten/Views: 0 / 5 ===
+=========================================
+- für jede sinnvolle Ansicht 1 Pk.: 0 (Ansichten entsprechen weitgehend den Gruppen.)
+(Dies ist keine abschließende Wertung.)
+
+Aufgabe 6 und 7 setzen voraus, dass in Aufgabe 1 - 5 insgesamt min. 20 Punkte erreicht wurden.
+Tipp: Dennoch ist es sinnvoll, dass Sie Microservices direkt in HTML mit PHP- und MySQL-Anbindung umsetzen. Denn so können Sie erkennen, wo Ihre Planung Schwächen hat.
+
+=================================
+=== Wertung 6: HTML 5: 5 / 10 ===
+=================================
+- Umsetzung pro Microservice je 1 Pk. (max. 10): 10
+- Missachtung von Änderungen von HTML 4.01 zu 5 (-5 bis 0 Pk.): 0
+- Abweichung von den Vorgaben in der strukt.txt (je -1/2 Pk.): -5
+
+====================================
+=== Wertung 7: PHP/MySQL: 9 / 30 ===
+====================================
+- Funktionalität von Formularen 0 bis 5 Pk.: 3
+- Funktionalität für Microservices 0 bis 5 Pk.: 5
+- Realisierung einer Programmlogik 0 bis 10 Pk.: 0
+- Erzeugung einer DB 0 bis 5 Pk.: 0
+- Anbindung einer Transaktion, um Variablen in der Anwendung zu verwenden 0 bis 5 Pk.: 1
+
+
+Damit haben Sie 36 von 35 nötigen Punkten erreicht und damit bestanden.
